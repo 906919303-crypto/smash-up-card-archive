@@ -117,7 +117,7 @@ const COPY = {
     viewEnglish: "\u5207\u6362\u82f1\u6587",
     viewChinese: "\u5207\u6362\u4e2d\u6587",
     sourceText: "\u8d44\u6599\u6765\u6e90",
-    type: { all: "\u5168\u90e8", minion: "\u968f\u4ece", character: "\u89d2\u8272", action: "\u884c\u52a8", titan: "\u6cf0\u5766", other: "\u5176\u4ed6" },
+    type: { all: "\u5168\u90e8", minion: "\u968f\u4ece", character: "\u89d2\u8272", action: "\u6218\u672f", titan: "\u6cf0\u5766", other: "\u5176\u4ed6" },
   },
   en: {
     archive: "SMASH UP \u00b7 CARD ARCHIVE",
