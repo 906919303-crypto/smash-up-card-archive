@@ -107,6 +107,8 @@ const COPY = {
     sheetNote: "\u8be5\u6388\u6743\u79cd\u65cf\u7684\u6765\u6e90\u53ea\u63d0\u4f9b\u79cd\u65cf\u7ea7\u53c2\u8003\u56fe\uff0c\u5e76\u975e\u6bcf\u5f20\u724c\u7684\u72ec\u7acb\u626b\u63cf\u3002\u4e3a\u907f\u514d\u9519\u914d\uff0c\u672c\u7ad9\u4e0d\u4f1a\u628a\u5176\u4ed6\u724c\u56fe\u5f53\u4f5c\u672c\u5361\u663e\u793a\u3002",
     imageFallback: "\u6765\u6e90\u672a\u63d0\u4f9b\u8fd9\u5f20\u724c\u7684\u72ec\u7acb\u5361\u56fe\u3002",
     imageLoading: "\u6b63\u5728\u8f7d\u5165\u5361\u56fe\u2026",
+    zoomImage: "\u70b9\u51fb\u67e5\u770b\u5927\u56fe",
+    closeImage: "\u5173\u95ed\u5927\u56fe",
     copiesInDeck: "\u672c\u5361\u7ec4\u5185\u526f\u672c",
     translationNote: "\u4e2d\u6587\u540d\u79f0\u4e0e\u89c4\u5219\u4e3a\u81ea\u52a8\u8bd1\u6587\uff1b\u8bf7\u4ee5\u82f1\u6587\u539f\u6587\u3001\u5b9e\u4f53\u5361\u724c\u548c\u94fe\u63a5\u51fa\u5904\u4e3a\u51c6\u3002",
     scope: "\u672c\u7ad9\u6536\u5f55\u79cd\u65cf\u5361\u7ec4\uff0820 \u5f20\u724c\uff09\u4e0e\u5173\u8054\u6cf0\u5766\uff1b\u57fa\u5730\u724c\u4e0d\u5728\u672c\u76ee\u5f55\u4e2d\u3002",
@@ -154,6 +156,8 @@ const COPY = {
     sheetNote: "This licensed faction source only provides a faction-level reference image, not an independent scan for every card. To avoid mismatches, this archive does not present another card's image as this card.",
     imageFallback: "The source does not provide an independent image for this card.",
     imageLoading: "Loading card image…",
+    zoomImage: "View full-size image",
+    closeImage: "Close full-size image",
     copiesInDeck: "Copies in this deck",
     translationNote: "Chinese names and rules are automated translations. Use the English text, physical cards, and linked sources as the authority.",
     scope: "This archive covers 20-card faction decks and their Titans; base cards are outside the catalog.",
@@ -232,6 +236,7 @@ export default function Home() {
   const [selectedCard, setSelectedCard] = useState(DEFAULT_FACTION.cards[0]?.id ?? "");
   const [selectedCopy, setSelectedCopy] = useState(1);
   const [imageState, setImageState] = useState<"loading" | "ready" | "error">("loading");
+  const [isImageZoomOpen, setImageZoomOpen] = useState(false);
   const shouldJumpToCards = useRef(false);
   const cardStageRef = useRef<HTMLElement>(null);
 
@@ -303,7 +308,22 @@ export default function Home() {
 
   useEffect(() => {
     setImageState(currentCard?.imageUrl ? "loading" : "error");
+    setImageZoomOpen(false);
   }, [currentCard?.id, currentCard?.imageUrl]);
+
+  useEffect(() => {
+    if (!isImageZoomOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setImageZoomOpen(false);
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [isImageZoomOpen]);
 
   useEffect(() => {
     if (cardIndex < 0) return;
@@ -498,16 +518,25 @@ export default function Home() {
                       {currentCard.imageUrl && imageState !== "error" ? (
                         <>
                           {imageState === "loading" && <div className="imageLoading" aria-live="polite">{ui.imageLoading}</div>}
-                          <img
-                            key={currentCard.imageUrl}
-                            src={currentCard.imageUrl}
-                            alt={currentCard.imageAlt || cardLabel(currentCard, language)}
-                            loading="eager"
-                            decoding="async"
-                            referrerPolicy="no-referrer"
-                            onLoad={() => setImageState("ready")}
-                            onError={() => setImageState("error")}
-                          />
+                          <button
+                            className="imageZoomButton"
+                            type="button"
+                            onClick={() => setImageZoomOpen(true)}
+                            aria-label={ui.zoomImage}
+                            disabled={imageState !== "ready"}
+                          >
+                            <img
+                              key={currentCard.imageUrl}
+                              src={currentCard.imageUrl}
+                              alt={currentCard.imageAlt || cardLabel(currentCard, language)}
+                              loading="eager"
+                              decoding="async"
+                              referrerPolicy="no-referrer"
+                              onLoad={() => setImageState("ready")}
+                              onError={() => setImageState("error")}
+                            />
+                            <span className="imageZoomHint">{ui.zoomImage}</span>
+                          </button>
                         </>
                       ) : (
                         <div className="imageFallback">
@@ -595,6 +624,24 @@ export default function Home() {
           ))}
         </div>
       </footer>
+
+      {isImageZoomOpen && currentCard?.imageUrl && imageState === "ready" && (
+        <div
+          className="imageLightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label={ui.zoomImage}
+          onClick={(event) => {
+            if (event.target === event.currentTarget) setImageZoomOpen(false);
+          }}
+        >
+          <div className="imageLightboxFrame">
+            <button className="lightboxClose" type="button" onClick={() => setImageZoomOpen(false)} aria-label={ui.closeImage}>{"\u00d7"}</button>
+            <img src={currentCard.imageUrl} alt={currentCard.imageAlt || cardLabel(currentCard, language)} referrerPolicy="no-referrer" />
+            <p>{cardLabel(currentCard, language)}</p>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
