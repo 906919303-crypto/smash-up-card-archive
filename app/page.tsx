@@ -328,6 +328,7 @@ export default function Home() {
 
   function chooseFaction(faction: Faction) {
     shouldJumpToCards.current = true;
+    setQuery("");
     setSelectedFaction(faction.slug);
     setSelectedCard(faction.cards[0]?.id ?? "");
     setSelectedCopy(1);
@@ -367,7 +368,7 @@ export default function Home() {
               <span>{ui.language}</span>
               <b>{ui.languageAlt}</b>
             </button>
-            <a href="#catalog">{ui.enter} \u2198</a>
+            <a href="#catalog">{ui.enter} {"\u2198"}</a>
           </div>
         </div>
         <div className="heroGrid">
@@ -382,7 +383,7 @@ export default function Home() {
             <div><strong>{catalog.extraction.titanCards}</strong><span>{ui.titans}</span></div>
           </section>
         </div>
-        <p className="sourceLine">{ui.updated} {shownDate} \u00b7 {catalog.extraction.uniqueCardEntries.toLocaleString()} {ui.entries}</p>
+        <p className="sourceLine">{ui.updated} {shownDate} {"\u00b7"} {catalog.extraction.uniqueCardEntries.toLocaleString()} {ui.entries}</p>
       </header>
 
       <section className="catalogShell" id="catalog" aria-label="Smash Up card catalog">
@@ -403,7 +404,7 @@ export default function Home() {
               onChange={(event) => setQuery(event.target.value)}
               placeholder={ui.searchPlaceholder}
             />
-            <b>\u2315</b>
+            <b>{"\u2315"}</b>
           </label>
 
           <div className="factionList" role="list">
@@ -432,7 +433,7 @@ export default function Home() {
               <h2>{factionLabel(activeFaction, language)}</h2>
               <p className="setName">{language === "zh" ? activeFaction.setZh || activeFaction.set : activeFaction.set}</p>
             </div>
-            <a className="sourceLink" href={activeFaction.sourceUrl} target="_blank" rel="noreferrer">{ui.source} \u2197</a>
+            <a className="sourceLink" href={activeFaction.sourceUrl} target="_blank" rel="noreferrer">{ui.source} {"\u2197"}</a>
           </div>
 
           <div className="metaRow">
@@ -465,7 +466,7 @@ export default function Home() {
             <nav className="cardList" aria-label={ui.cards}>
               <div className="cardListHeader">
                 <span>03 / {ui.cards.toUpperCase()}</span>
-                <b title={language === "zh" ? "独立条目 / 实体卡张数" : "Unique entries / physical cards"}>{visibleCards.length} / {physicalCards.length}</b>
+                <b title={language === "zh" ? "独立条目 / 实体卡张数" : "Unique entries / physical cards"}>{language === "zh" ? `${visibleCards.length} \u79cd \u00b7 ${physicalCards.length} \u5f20` : `${visibleCards.length} types \u00b7 ${physicalCards.length} cards`}</b>
               </div>
               {visibleCards.map((card) => (
                 <button
@@ -475,7 +476,7 @@ export default function Home() {
                 >
                   <span className="typeMark">{ui.type[card.type] ?? ui.type.other}</span>
                   <span className="cardRowName">{cardLabel(card, language)}</span>
-                  <strong>\u00d7{card.quantity}</strong>
+                  <strong>{"\u00d7"}{card.quantity}</strong>
                 </button>
               ))}
               {!visibleCards.length && <p className="emptyList">{ui.noCards}</p>}
@@ -487,8 +488,8 @@ export default function Home() {
                   <div className="stageTop">
                     <span>{language === "zh" ? `第 ${cardIndex + 1} / ${physicalCards.length} 张` : `${cardIndex + 1} / ${physicalCards.length} cards`}</span>
                     <div className="stepButtons">
-                      <button onClick={() => goToCard(-1)} aria-label={ui.previous}>\u2190</button>
-                      <button onClick={() => goToCard(1)} aria-label={ui.next}>\u2192</button>
+                      <button onClick={() => goToCard(-1)} aria-label={ui.previous}>{"\u2190"}</button>
+                      <button onClick={() => goToCard(1)} aria-label={ui.next}>{"\u2192"}</button>
                     </div>
                   </div>
 
@@ -511,12 +512,12 @@ export default function Home() {
                       ) : (
                         <div className="imageFallback">
                           <p>{ui.imageFallback}</p>
-                          <a href={activeFaction.sourceUrl} target="_blank" rel="noreferrer">{ui.source} \u2197</a>
+                          <a href={activeFaction.sourceUrl} target="_blank" rel="noreferrer">{ui.source} {"\u2197"}</a>
                         </div>
                       )}
                       <figcaption>
                         <span>{currentCard.imageKind === "faction-sheet" ? ui.factionSheet : ui.artwork}</span>
-                        <a href={activeFaction.sourceUrl} target="_blank" rel="noreferrer">{ui.source} \u2197</a>
+                        <a href={activeFaction.sourceUrl} target="_blank" rel="noreferrer">{ui.source} {"\u2197"}</a>
                       </figcaption>
                     </figure>
 
@@ -590,7 +591,7 @@ export default function Home() {
         </div>
         <div className="footerLinks">
           {(catalog.source.sources ?? [{ name: catalog.source.name, url: catalog.source.url }]).map((source) => (
-            <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.name} \u2197</a>
+            <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.name} {"\u2197"}</a>
           ))}
         </div>
       </footer>
