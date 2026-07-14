@@ -400,7 +400,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "动作英雄",
-      "setZh": "很棒的电影，伙计们！",
+      "setZh": "超棒电影，伙计们！",
       "mechanicsZh": [
         "如果基地里只有一个小兵的话奖励",
         "六个独特的 Power-5 小黄人"
@@ -999,14 +999,14 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "阿拉丁",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
       "slug": "aliens",
       "name": "Aliens",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Aliens",
-      "set": "Core (Base game)",
+      "set": "Core (Base Game)",
       "complexity": "LOW-MEDIUM",
       "mechanics": [
         "Returning Minions to hand",
@@ -1264,7 +1264,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "外星人",
-      "setZh": "核心（基础游戏）",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "将小黄人返回手牌",
         "副总裁增益"
@@ -1867,7 +1867,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "古埃及人",
-      "setZh": "哎呀，你又这么做了",
+      "setZh": "哎呀，你又来了！",
       "mechanicsZh": [
         "埋卡"
       ]
@@ -2536,7 +2536,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "太空骑士",
-      "setZh": "停止和停止",
+      "setZh": "停止并禁止",
       "mechanicsZh": [
         "增强力量的战术",
         "十个独特的小黄人"
@@ -2913,7 +2913,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "复仇者联盟",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
@@ -3185,7 +3185,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "倒计时器",
-      "setZh": "很棒的电影，伙计们！",
+      "setZh": "超棒电影，伙计们！",
       "mechanicsZh": [
         "停滞"
       ]
@@ -3473,7 +3473,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "熊骑兵",
-      "setZh": "9000级真棒",
+      "setZh": "9000级超赞",
       "mechanicsZh": [
         "将小兵移入陷阱"
       ]
@@ -3749,7 +3749,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "美女与野兽",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
@@ -4063,7 +4063,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "大英雄6",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
@@ -4357,7 +4357,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "改变机器人",
-      "setZh": "停止和停止",
+      "setZh": "停止并禁止",
       "mechanicsZh": [
         "使用天赋在统计数据和/或能力之间进行更改",
         "在基地之间移动",
@@ -4638,7 +4638,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "神职人员",
-      "setZh": "粉碎：芒奇金",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "怪物",
         "停滞"
@@ -4648,7 +4648,7 @@
       "slug": "clowns",
       "name": "Clowns",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Clowns",
-      "set": "Smash Up Clowns",
+      "set": "Smash Up: Clowns",
       "complexity": "MEDIUM-HIGH",
       "mechanics": [
         "Discarding Actions",
@@ -4958,7 +4958,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "小丑",
-      "setZh": "粉碎小丑",
+      "setZh": "小丑",
       "mechanicsZh": [
         "丢弃战术",
         "重复废弃的战术"
@@ -5258,7 +5258,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "牛仔队",
-      "setZh": "哎呀，你又这么做了",
+      "setZh": "哎呀，你又来了！",
       "mechanicsZh": [
         "决斗",
         "临时功率提升"
@@ -5538,7 +5538,7 @@
       "slug": "dinosaurs",
       "name": "Dinosaurs",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Dinosaurs",
-      "set": "Core (Base game)",
+      "set": "Core (Base Game)",
       "complexity": "LOW",
       "mechanics": [
         "Big Minions",
@@ -5836,7 +5836,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "恐龙",
-      "setZh": "核心（基础游戏）",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "大奴才",
         "夸大所说的小黄人"
@@ -5846,7 +5846,7 @@
       "slug": "disco-dancers",
       "name": "Disco Dancers",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Disco_Dancers",
-      "set": "That 70's Expansion",
+      "set": "That '70s Expansion",
       "complexity": "HIGH",
       "mechanics": [
         "Minions That Copy Standard Actions Played On Others",
@@ -6165,7 +6165,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "迪斯科舞者",
-      "setZh": "70年代的扩张",
+      "setZh": "70年代扩展",
       "mechanicsZh": [
         "复制其他人的标准战术的小兵",
         "影响小兵的标准战术",
@@ -6452,7 +6452,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "龙",
-      "setZh": "这是你的错！",
+      "setZh": "都是你的错！",
       "mechanicsZh": [
         "减少断点",
         "惩罚对手"
@@ -6712,7 +6712,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "矮人",
-      "setZh": "粉碎：芒奇金",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "宝藏",
         "更多宝藏！"
@@ -6722,7 +6722,7 @@
       "slug": "elder-things",
       "name": "Elder Things",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Elder_Things",
-      "set": "The Obligatory Cthulhu",
+      "set": "The Obligatory Cthulhu Set",
       "complexity": "MEDIUM-HIGH",
       "mechanics": [
         "Madness",
@@ -6992,7 +6992,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "老东西",
-      "setZh": "克苏鲁的义务",
+      "setZh": "克苏鲁必备套装",
       "mechanicsZh": [
         "疯狂",
         "+1 能量计数器"
@@ -7252,7 +7252,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "精灵",
-      "setZh": "粉碎：芒奇金",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "帮助其他玩家",
         "让其他玩家感到沮丧"
@@ -7552,7 +7552,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "探险家",
-      "setZh": "我们在想什么？",
+      "setZh": "我们当时在想什么？",
       "mechanicsZh": [
         "操纵基础甲板",
         "移动你的小黄人"
@@ -7562,7 +7562,7 @@
       "slug": "extramorphs",
       "name": "Extramorphs",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Extramorphs",
-      "set": "Excellent Movies, Dude!",
+      "set": "Excellent Movies, Dudes!",
       "complexity": "MEDIUM",
       "mechanics": [
         "Playing Minions Off The Top Of Your Deck"
@@ -7827,7 +7827,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "异形体",
-      "setZh": "很棒的电影，伙计！",
+      "setZh": "超棒电影，伙计们！",
       "mechanicsZh": [
         "充分发挥小兵的作用"
       ]
@@ -8126,7 +8126,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "仙女们",
-      "setZh": "相当漂亮粉碎",
+      "setZh": "萌萌大乱斗",
       "mechanicsZh": [
         "效果选择",
         "移动战术"
@@ -8443,7 +8443,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "冷冻",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
@@ -9009,7 +9009,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "极客",
-      "setZh": "更大的极客盒子",
+      "setZh": "更大、更极客的盒子",
       "mechanicsZh": [
         "干扰对手"
       ]
@@ -9303,7 +9303,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "鬼魂",
-      "setZh": "9000级真棒",
+      "setZh": "9000级超赞",
       "mechanicsZh": [
         "手里牌很少"
       ]
@@ -9589,7 +9589,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "巨型蚂蚁",
-      "setZh": "怪物粉碎",
+      "setZh": "怪物乱斗",
       "mechanicsZh": [
         "待定"
       ]
@@ -9598,7 +9598,7 @@
       "slug": "goblins",
       "name": "Goblins",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Goblins",
-      "set": "Smash Up Goblins",
+      "set": "Smash Up: Goblins",
       "complexity": "MEDIUM-HIGH",
       "mechanics": [
         "Coin Flips"
@@ -9847,7 +9847,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "哥布林",
-      "setZh": "粉碎哥布林",
+      "setZh": "哥布林",
       "mechanicsZh": [
         "抛硬币"
       ]
@@ -10126,7 +10126,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "老奶奶们",
-      "setZh": "我们在想什么？",
+      "setZh": "我们当时在想什么？",
       "mechanicsZh": [
         "将牌排列在牌堆的顶部或底部",
         "整理牌组的奖励"
@@ -10788,7 +10788,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "半身人",
-      "setZh": "粉碎：芒奇金",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "机械师A",
         "机械师乙"
@@ -10985,7 +10985,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "九头蛇",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
@@ -11281,7 +11281,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "卑鄙者",
-      "setZh": "停止和停止",
+      "setZh": "停止并禁止",
       "mechanicsZh": [
         "为了利益而给予小兵控制权"
       ]
@@ -11290,7 +11290,7 @@
       "slug": "innsmouth",
       "name": "Innsmouth",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Innsmouth",
-      "set": "The Obligatory Cthulu",
+      "set": "The Obligatory Cthulhu Set",
       "complexity": "MEDIUM-HIGH",
       "mechanics": [
         "Minions With The Same Name",
@@ -11508,7 +11508,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "因斯茅斯",
-      "setZh": "克苏鲁的义务",
+      "setZh": "克苏鲁必备套装",
       "mechanicsZh": [
         "同名小黄人",
         "支持小家伙"
@@ -11518,7 +11518,7 @@
       "slug": "itty-critters",
       "name": "Itty Critters",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Itty_Critters",
-      "set": "Big In Japan",
+      "set": "Big in Japan",
       "complexity": "HIGH",
       "mechanics": [
         "Temporarily Searching And Summoning Power 2 Or Less Minions",
@@ -11892,7 +11892,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "小小动物",
-      "setZh": "日本大",
+      "setZh": "大闹日本",
       "mechanicsZh": [
         "暂时搜索并召唤力量 2 或更少的小兵",
         "六个独特的实用小兵"
@@ -12243,7 +12243,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "怪兽",
-      "setZh": "在日本大",
+      "setZh": "大闹日本",
       "mechanicsZh": [
         "支持戈戈佐拉",
         "直接提供电力的基地战术",
@@ -12254,7 +12254,7 @@
       "slug": "killer-plants",
       "name": "Killer Plants",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Killer_Plants",
-      "set": "Not stated",
+      "set": "Awesome Level 9000",
       "complexity": "LOW-MEDIUM",
       "mechanics": [
         "Growing",
@@ -12540,7 +12540,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "杀手植物",
-      "setZh": "未说明",
+      "setZh": "9000级超赞",
       "mechanicsZh": [
         "成长",
         "像野草一样蔓延"
@@ -12800,7 +12800,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "凯蒂猫",
-      "setZh": "相当漂亮粉碎",
+      "setZh": "萌萌大乱斗",
       "mechanicsZh": [
         "控制弱小兵",
         "削弱小兵"
@@ -12810,7 +12810,7 @@
       "slug": "knights-of-the-round-table",
       "name": "Knights of the Round Table",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Knights_of_the_Round_Table",
-      "set": "Smash Up Knights of the Round Table",
+      "set": "Smash Up: Knights of the Round Table",
       "complexity": "MEDIUM",
       "mechanics": [
         "Seven Unique High-Power Minions",
@@ -13180,7 +13180,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "圆桌骑士",
-      "setZh": "粉碎圆桌骑士",
+      "setZh": "圆桌骑士",
       "mechanicsZh": [
         "七个独特的高能小兵",
         "将小兵移至基地战术"
@@ -13437,7 +13437,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "克里人",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
@@ -13718,7 +13718,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "功夫战士",
-      "setZh": "70 年代的扩张",
+      "setZh": "70年代扩展",
       "mechanicsZh": [
         "生成 +1 能量计数器",
         "移动 +1 能量指示物"
@@ -14030,7 +14030,7 @@
       "slug": "mad-scientists",
       "name": "Mad Scientists",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mad_Scientists",
-      "set": "Mad Scientists",
+      "set": "Monster Smash",
       "complexity": "LOW-MEDIUM",
       "mechanics": [
         "Power Counters",
@@ -14308,7 +14308,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "疯狂科学家",
-      "setZh": "疯狂科学家",
+      "setZh": "怪物乱斗",
       "mechanicsZh": [
         "功率计数器",
         "从消灭你的爪牙中受益"
@@ -14318,7 +14318,7 @@
       "slug": "mages",
       "name": "Mages",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mages",
-      "set": "Smash Up: Munhckin",
+      "set": "Smash Up: Munchkin",
       "complexity": "MEDIUM",
       "mechanics": [
         "Mechanic A",
@@ -14568,7 +14568,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "法师",
-      "setZh": "粉碎：Munhckin",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "机械师A",
         "机械师乙"
@@ -14977,7 +14977,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "魔法少女",
-      "setZh": "在日本大",
+      "setZh": "大闹日本",
       "mechanicsZh": [
         "关心基地里的随从数量",
         "有天赋的小黄人",
@@ -15235,14 +15235,14 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "邪恶大师",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
       "slug": "mega-troopers",
       "name": "Mega Troopers",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mega_Troopers",
-      "set": "Big In Japan",
+      "set": "Big in Japan",
       "complexity": "MEDIUM",
       "mechanics": [
         "Power counters",
@@ -15584,7 +15584,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "超级士兵",
-      "setZh": "日本大",
+      "setZh": "大闹日本",
       "mechanicsZh": [
         "功率计数器",
         "包括一个泰坦"
@@ -15854,7 +15854,7 @@
       "slug": "minions-of-cthulhu",
       "name": "Minions of Cthulhu",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Minions_of_Cthulhu",
-      "set": "Not stated",
+      "set": "The Obligatory Cthulhu Set",
       "complexity": "HIGH",
       "mechanics": [
         "Power At The Cost Of Madness"
@@ -16167,7 +16167,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "克苏鲁的爪牙",
-      "setZh": "未说明",
+      "setZh": "克苏鲁必备套装",
       "mechanicsZh": [
         "以疯狂为代价的权力"
       ]
@@ -16176,7 +16176,7 @@
       "slug": "miskatonic-university",
       "name": "Miskatonic University",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Miskatonic_University",
-      "set": "The Obligatory Cthulhu",
+      "set": "The Obligatory Cthulhu Set",
       "complexity": "MEDIUM",
       "mechanics": [
         "Madness cards",
@@ -16452,7 +16452,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "密斯卡托尼克大学",
-      "setZh": "克苏鲁的义务",
+      "setZh": "克苏鲁必备套装",
       "mechanicsZh": [
         "疯狂卡牌",
         "+1 能量计数器"
@@ -17027,7 +17027,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "木兰",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
@@ -17656,7 +17656,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "希腊神话",
-      "setZh": "这是你的错！",
+      "setZh": "都是你的错！",
       "mechanicsZh": [
         "从玩耍战术中获益",
         "十个独特的战术"
@@ -17919,7 +17919,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "神话马",
-      "setZh": "相当漂亮粉碎",
+      "setZh": "萌萌大乱斗",
       "mechanicsZh": [
         "友谊的力量（或者更具体地说，有其他小黄人在同一基地）"
       ]
@@ -18210,7 +18210,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "忍者",
-      "setZh": "核心（基础游戏）",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "暗杀",
         "潜行和交换"
@@ -18470,7 +18470,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "兽人",
-      "setZh": "粉碎：芒奇金",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "机械师A",
         "机械师乙"
@@ -18740,7 +18740,7 @@
       "slug": "penguins",
       "name": "Penguins",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Penguins",
-      "set": "Smash Up Penguins",
+      "set": "Smash Up: Penguins",
       "complexity": "MEDIUM-HIGH",
       "mechanics": [
         "Playing off the top of the deck",
@@ -19120,7 +19120,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "企鹅",
-      "setZh": "粉碎企鹅",
+      "setZh": "企鹅",
       "mechanicsZh": [
         "在甲板顶部进行游戏",
         "功率计数器"
@@ -19130,7 +19130,7 @@
       "slug": "pirates",
       "name": "Pirates",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Pirates",
-      "set": "Not stated",
+      "set": "Core (Base Game)",
       "complexity": "LOW-MEDIUM",
       "mechanics": [
         "Sailing Between Bases",
@@ -19424,7 +19424,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "海盗",
-      "setZh": "未说明",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "基地之间航行",
         "让小奴才走木板"
@@ -20030,7 +20030,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "公主们",
-      "setZh": "相当漂亮粉碎",
+      "setZh": "萌萌大乱斗",
       "mechanicsZh": [
         "强大的独特随从",
         "多种效果",
@@ -20046,7 +20046,7 @@
       "slug": "robots",
       "name": "Robots",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Robots",
-      "set": "Core (Base game)",
+      "set": "Core (Base Game)",
       "complexity": "LOW",
       "mechanics": [
         "Swarming",
@@ -20268,7 +20268,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "机器人",
-      "setZh": "核心（基础游戏）",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "蜂拥而至",
         "实用程序 Minions 而不是战术"
@@ -20532,7 +20532,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "摇滚明星",
-      "setZh": "我们在想什么？",
+      "setZh": "我们当时在想什么？",
       "mechanicsZh": [
         "21 个或更多断点",
         "搜索和玩追星族"
@@ -20862,7 +20862,7 @@
       "slug": "russian-fairy-tales",
       "name": "Russian Fairy Tales",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Russian_Fairy_Tales",
-      "set": "World Tour Culture Shock",
+      "set": "World Tour: Culture Shock",
       "complexity": "MEDIUM",
       "mechanics": [
         "Transforming Minions Into Other Minions"
@@ -21221,7 +21221,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "俄罗斯童话",
-      "setZh": "世界巡演文化冲击",
+      "setZh": "世界巡演：文化冲击",
       "mechanicsZh": [
         "将小兵变成其他小兵"
       ]
@@ -21433,7 +21433,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "盾。",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
@@ -21717,7 +21717,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "武士",
-      "setZh": "哎呀，你又这么做了",
+      "setZh": "哎呀，你又来了！",
       "mechanicsZh": [
         "从游戏中弃牌中获得好处"
       ]
@@ -22302,7 +22302,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "鲨鱼",
-      "setZh": "这是你的错！",
+      "setZh": "都是你的错！",
       "mechanicsZh": [
         "消灭小兵",
         "从小兵破坏中受益"
@@ -22839,7 +22839,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "险恶六人组",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
@@ -23104,7 +23104,7 @@
       "slug": "slashers",
       "name": "Slashers",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Slashers",
-      "set": "Smash Up Slashers",
+      "set": "Smash Up: Slashers",
       "complexity": "MEDIUM",
       "mechanics": [
         "Five Unique Power-5 Minions",
@@ -23479,7 +23479,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "砍杀者",
-      "setZh": "粉碎砍杀者",
+      "setZh": "砍杀者",
       "mechanicsZh": [
         "五个独特的 Power-5 小兵",
         "消灭低功率小兵",
@@ -23927,7 +23927,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "粉碎全明星",
-      "setZh": "更大的极客盒子",
+      "setZh": "更大、更极客的盒子",
       "mechanicsZh": [
         "20 张独特卡牌"
       ]
@@ -24135,7 +24135,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "蜘蛛侠宇宙",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
@@ -24434,7 +24434,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "星漫游者",
-      "setZh": "停止和停止",
+      "setZh": "停止并禁止",
       "mechanicsZh": [
         "将你的随从移回你的手上",
         "在基地之间移动小兵"
@@ -24710,7 +24710,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "蒸汽朋克",
-      "setZh": "9000级真棒",
+      "setZh": "9000级超赞",
       "mechanicsZh": [
         "在基地上进战术作",
         "小黄人和战术互相支持"
@@ -25294,7 +25294,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "超级英雄",
-      "setZh": "这是你的错！",
+      "setZh": "都是你的错！",
       "mechanicsZh": [
         "增强力量 5 改变自我",
         "具有非常低功率或非常高功率的小兵"
@@ -25856,7 +25856,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "泰迪熊",
-      "setZh": "我们在想什么？",
+      "setZh": "我们当时在想什么？",
       "mechanicsZh": [
         "额外的小黄人",
         "对抗对手"
@@ -25866,7 +25866,7 @@
       "slug": "teens",
       "name": "Teens",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Teens",
-      "set": "Teens",
+      "set": "Smash Up: Teens",
       "complexity": "REPLACE",
       "mechanics": [
         "Power-3 Minions",
@@ -26453,7 +26453,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "狮子王",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
@@ -26767,7 +26767,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "圣诞节前的噩梦",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
@@ -27024,7 +27024,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "盗贼",
-      "setZh": "粉碎：芒奇金",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "机械师A",
         "机械师乙"
@@ -27626,7 +27626,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "龙卷风",
-      "setZh": "这是你的错！",
+      "setZh": "都是你的错！",
       "mechanicsZh": [
         "移动小黄人",
         "得分前移动"
@@ -27636,7 +27636,7 @@
       "slug": "tricksters",
       "name": "Tricksters",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Tricksters",
-      "set": "Core",
+      "set": "Core (Base Game)",
       "complexity": "MEDIUM",
       "mechanics": [
         "Creating Hazards",
@@ -27910,7 +27910,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "骗子",
-      "setZh": "核心",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "制造危险",
         "惩罚对手"
@@ -28200,7 +28200,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "卡车司机",
-      "setZh": "70 年代的扩张",
+      "setZh": "70年代扩展",
       "mechanicsZh": [
         "基地比赛战术",
         "移动基地战术来移动你的小兵"
@@ -28413,7 +28413,7 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "终极技能",
-      "setZh": "粉碎：漫威",
+      "setZh": "漫威",
       "mechanicsZh": []
     },
     {
@@ -28699,7 +28699,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "吸血鬼",
-      "setZh": "怪物粉碎",
+      "setZh": "怪物乱斗",
       "mechanicsZh": [
         "埋葬",
         "融合",
@@ -29084,7 +29084,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "义务警员",
-      "setZh": "70 年代的扩张",
+      "setZh": "70年代扩展",
       "mechanicsZh": [
         "七个独特的 Power-4 小黄人",
         "强大的随从能力"
@@ -29380,7 +29380,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "维京人",
-      "setZh": "哎呀，你又这么做了",
+      "setZh": "哎呀，你又来了！",
       "mechanicsZh": [
         "掠夺对手的牌",
         "将牌放在你的牌组顶部以获得力量"
@@ -29640,7 +29640,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "勇士",
-      "setZh": "粉碎：芒奇金",
+      "setZh": "芒奇金",
       "mechanicsZh": [
         "机械师A",
         "机械师乙"
@@ -29936,7 +29936,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "狼人",
-      "setZh": "怪物粉碎",
+      "setZh": "怪物乱斗",
       "mechanicsZh": [
         "临时功率提升",
         "高功率奖励"
@@ -29946,7 +29946,7 @@
       "slug": "wizards",
       "name": "Wizards",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Wizards",
-      "set": "Core (base game)",
+      "set": "Core (Base Game)",
       "complexity": "MEDIUM",
       "mechanics": [
         "Drawing Extra Cards",
@@ -30236,7 +30236,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "奇才",
-      "setZh": "核心（基础游戏）",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "抽取额外卡牌",
         "进行额外战术"
@@ -30992,7 +30992,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "幽灵盗贼",
-      "setZh": "很棒的电影，伙计们！",
+      "setZh": "超棒电影，伙计们！",
       "mechanicsZh": [
         "摧毁你的基地战术",
         "幽灵基地战术为被摧毁带来好处"
@@ -31269,14 +31269,14 @@
       ],
       "sourceProvider": "SmashUp Wiki",
       "nameZh": "无敌破坏王",
-      "setZh": "Smash Up：迪士尼版",
+      "setZh": "迪士尼版",
       "mechanicsZh": []
     },
     {
       "slug": "zombies",
       "name": "Zombies",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Zombies",
-      "set": "Core (base game)",
+      "set": "Core (Base Game)",
       "complexity": "LOW",
       "mechanics": [
         "bRAIns... (Resurrecting Minions)",
@@ -31542,7 +31542,7 @@
       ],
       "sourceProvider": "官方规则维基",
       "nameZh": "僵尸",
-      "setZh": "核心（基础游戏）",
+      "setZh": "基础游戏",
       "mechanicsZh": [
         "大脑...（复活小兵）",
         "布拉阿恩斯！ （填满你的废弃堆）"

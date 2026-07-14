@@ -236,9 +236,46 @@ h1 em {
 
 .factionList {
   display: grid;
-  gap: 3px;
+  align-content: start;
+  gap: 16px;
   overflow: auto;
   padding-right: 3px;
+}
+
+.factionGroup {
+  padding-top: 10px;
+  border-top: 1px solid rgba(21, 20, 17, 0.12);
+}
+
+.factionGroup:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.factionGroupHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 10px 7px;
+  color: #71695d;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.factionGroupHeading span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.factionGroupHeading small {
+  flex: 0 0 auto;
+  color: var(--orange);
+  font-size: 10px;
+}
+
+.factionGroupItems {
+  display: grid;
+  gap: 3px;
 }
 
 .factionButton {
@@ -659,7 +696,7 @@ footer p:not(.eyebrow) {
   .heroGrid, .catalogShell, .browserLayout { grid-template-columns: 1fr; }
   .statStack { grid-template-columns: repeat(3, 1fr); }
   .factionPanel { min-height: 0; max-height: 390px; border-right: 0; border-bottom: 1px solid var(--line); }
-  .factionList { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .factionGroupItems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .factionButton { border-bottom: 1px solid rgba(21,20,17,0.09); }
   .contentPanel { padding: 28px 20px 36px; }
   .cardList { max-height: 330px; border-right: 0; border-bottom: 1px solid var(--line); }
@@ -674,7 +711,7 @@ footer p:not(.eyebrow) {
   .heroText { font-size: 14px; }
   .statStack strong { font-size: 25px; }
   .statStack div { padding: 14px 10px; }
-  .factionList { grid-template-columns: 1fr; }
+  .factionGroupItems { grid-template-columns: 1fr; }
   .factionSummary { align-items: start; flex-direction: column; }
   .cardFace { padding: 17px; border-width: 5px; }
   .cardRules { font-size: 15px; }

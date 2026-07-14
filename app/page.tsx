@@ -179,6 +179,43 @@ const COMPLEXITY: Record<string, { zh: string; en: string }> = {
   "NOT STATED": { zh: "\u672a\u6ce8\u660e", en: "Not stated" },
 };
 
+const EXPANSION_ORDER = [
+  { set: "Core (Base Game)", setZh: "基础游戏" },
+  { set: "Awesome Level 9000", setZh: "9000级超赞" },
+  { set: "The Obligatory Cthulhu Set", setZh: "克苏鲁必备套装" },
+  { set: "Science Fiction Double Feature", setZh: "科幻双片" },
+  { set: "Monster Smash", setZh: "怪物乱斗" },
+  { set: "Pretty Pretty Smash Up", setZh: "萌萌大乱斗" },
+  { set: "Smash Up: Munchkin", setZh: "芒奇金" },
+  { set: "It's Your Fault!", setZh: "都是你的错！" },
+  { set: "What Were We Thinking?", setZh: "我们当时在想什么？" },
+  { set: "Cease and Desist", setZh: "停止并禁止" },
+  { set: "Big in Japan", setZh: "大闹日本" },
+  { set: "That '70s Expansion", setZh: "70年代扩展" },
+  { set: "The Bigger Geekier Box", setZh: "更大、更极客的盒子" },
+  { set: "Oops, You Did It Again", setZh: "哎呀，你又来了！" },
+  { set: "World Tour: International Incident", setZh: "世界巡演：国际事件" },
+  { set: "Smash Up: Penguins", setZh: "企鹅" },
+  { set: "World Tour: Culture Shock", setZh: "世界巡演：文化冲击" },
+  { set: "Smash Up: Marvel", setZh: "漫威" },
+  { set: "Smash Up: Goblins", setZh: "哥布林" },
+  { set: "Smash Up: Knights of the Round Table", setZh: "圆桌骑士" },
+  { set: "10th Anniversary", setZh: "十周年纪念" },
+  { set: "Smash Up: Disney Edition", setZh: "迪士尼版" },
+  { set: "Smash Up: Teens", setZh: "青少年" },
+  { set: "Excellent Movies, Dudes!", setZh: "超棒电影，伙计们！" },
+  { set: "Half the Battle", setZh: "战斗已成功一半" },
+  { set: "Smash Up: Clowns", setZh: "小丑" },
+  { set: "Smash Up: Slashers", setZh: "砍杀者" },
+] as const;
+
+const EXPANSION_RANK = new Map(EXPANSION_ORDER.map((expansion, index) => [expansion.set, index]));
+const EXPANSION_ZH = new Map(EXPANSION_ORDER.map((expansion) => [expansion.set, expansion.setZh]));
+
+function expansionLabel(set: string, language: Language) {
+  return language === "zh" ? EXPANSION_ZH.get(set) ?? set : set;
+}
+
 function factionLabel(faction: Faction, language: Language) {
   return language === "zh" ? faction.nameZh || faction.name : faction.name;
 }
@@ -251,6 +288,23 @@ export default function Home() {
       }),
     [term],
   );
+
+  const groupedFactions = useMemo(() => {
+    const groups = new Map<string, Faction[]>();
+    for (const faction of visibleFactions) {
+      const factions = groups.get(faction.set) ?? [];
+      factions.push(faction);
+      groups.set(faction.set, factions);
+    }
+    return [...groups.entries()]
+      .sort(([left], [right]) => (EXPANSION_RANK.get(left) ?? Number.MAX_SAFE_INTEGER) - (EXPANSION_RANK.get(right) ?? Number.MAX_SAFE_INTEGER) || left.localeCompare(right))
+      .map(([set, factions]) => ({
+        set,
+        factions: factions.sort((left, right) =>
+          factionLabel(left, language).localeCompare(factionLabel(right, language), language === "zh" ? "zh-CN" : "en"),
+        ),
+      }));
+  }, [language, visibleFactions]);
 
   const activeFaction =
     catalog.factions.find((faction) => faction.slug === selectedFaction) ??
@@ -428,20 +482,30 @@ export default function Home() {
           </label>
 
           <div className="factionList" role="list">
-            {visibleFactions.map((faction) => {
-              const count = faction.cards.reduce((sum, card) => sum + card.quantity, 0);
-              return (
-                <button
-                  className={faction.slug === activeFaction.slug ? "factionButton active" : "factionButton"}
-                  key={faction.slug}
-                  onClick={() => chooseFaction(faction)}
-                  aria-pressed={faction.slug === activeFaction.slug}
-                >
-                  <span>{factionLabel(faction, language)}</span>
-                  <small>{count} {language === "zh" ? "\u5f20" : ""}</small>
-                </button>
-              );
-            })}
+            {groupedFactions.map(({ set, factions }) => (
+              <section className="factionGroup" key={set} aria-label={expansionLabel(set, language)}>
+                <div className="factionGroupHeading">
+                  <span>{expansionLabel(set, language)}</span>
+                  <small>{factions.length}</small>
+                </div>
+                <div className="factionGroupItems" role="list">
+                  {factions.map((faction) => {
+                    const count = faction.cards.reduce((sum, card) => sum + card.quantity, 0);
+                    return (
+                      <button
+                        className={faction.slug === activeFaction.slug ? "factionButton active" : "factionButton"}
+                        key={faction.slug}
+                        onClick={() => chooseFaction(faction)}
+                        aria-pressed={faction.slug === activeFaction.slug}
+                      >
+                        <span>{factionLabel(faction, language)}</span>
+                        <small>{count} {language === "zh" ? "\u5f20" : ""}</small>
+                      </button>
+                    );
+                  })}
+                </div>
+              </section>
+            ))}
             {!visibleFactions.length && <p className="emptyList">{ui.noFactions}</p>}
           </div>
         </aside>
