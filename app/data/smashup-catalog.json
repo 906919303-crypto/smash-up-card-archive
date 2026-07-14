@@ -14,7 +14,7 @@
         "url": "https://smashup.fandom.com/wiki/Category:Factions"
       }
     ],
-    "imageScope": "Official Rulebook Wiki factions use individual card scans. Licensed Marvel/Disney factions use a faction-level reference image only when the source provides one; cards without an independent scan are clearly marked instead of being assigned an incorrect image.",
+    "imageScope": "Every faction-card entry now has an image reference. Individual card scans are shown where the source provides them; licensed Marvel/Disney entries that have only a faction photo are explicitly labelled as faction reference images rather than being misrepresented as single-card scans.",
     "translationScope": "Chinese names and rules are automated translations. The English card text and linked source remain the authoritative reference."
   },
   "factions": [
@@ -10816,7 +10816,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "红骷髅",
           "textZh": "力量 5 - 持续能力：当你的一个角色被消灭后，抓一张牌。天赋：摧毁你的一个角色来抽一张牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Red Skull"
         },
         {
           "id": "hydra-2",
@@ -10832,7 +10836,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "斯特拉克男爵",
           "textZh": "力量 4 - 天赋：摧毁你的一个角色。当它被摧毁后，将最多两个角色从其他基地移动到这里。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Baron Strucker"
         },
         {
           "id": "hydra-3",
@@ -10848,7 +10856,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "九头蛇夫人",
           "textZh": "力量 4 - 天赋：消灭你的一个角色，使该角色获得 +2 力量，直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Madame Hydra"
         },
         {
           "id": "hydra-4",
@@ -10864,7 +10876,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "阿尼姆·佐拉",
           "textZh": "力量 2 - 持续能力：此角色对这里打印的力量为 2 或更少的每个其他角色都有 +1 力量。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Arnim Zola"
         },
         {
           "id": "hydra-5",
@@ -10900,7 +10916,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "狂热的奉献",
           "textZh": "基础修饰符。持续能力：如果本回合你的一个或多个角色在这里被摧毁，那么你这里的每个角色都有+2力量。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Fanatical Devotion"
         },
         {
           "id": "hydra-7",
@@ -10916,7 +10936,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "九头蛇万岁！",
           "textZh": "消灭你的一名角色即可抽出与其力量等值的牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Hail Hydra!"
         },
         {
           "id": "hydra-8",
@@ -10932,7 +10956,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "命运时刻",
           "textZh": "在你的牌组中搜索至多两名力量为 2 或以下的角色，将其展示并抽牌。然后洗牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Hour of Destiny"
         },
         {
           "id": "hydra-9",
@@ -10948,7 +10976,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "重新激活代理",
           "textZh": "从你的弃牌堆中将至多两个力量为 2 或更少的角色置入你的手牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Reactivate Agents"
         },
         {
           "id": "hydra-10",
@@ -10964,7 +10996,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "秘密储备",
           "textZh": "将任意数量的力量为 2 或更少的角色从你的弃牌堆洗入你的牌库。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Secret Reserves"
         },
         {
           "id": "hydra-11",
@@ -10980,7 +11016,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "还有两个将取而代之",
           "textZh": "摧毁你的一个角色。当它被摧毁后，在该基地上打出最多两个力量为 2 或更少的角色作为额外角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/9/99/Hydra.jpg/revision/latest?cb=20210114135455",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Hydra faction reference photo including Two More Shall Take Its Place"
         }
       ],
       "sourceProvider": "SmashUp Wiki",
@@ -21248,7 +21288,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "尼克·弗瑞",
           "textZh": "power 5 - 你可以在这里打出一个额外的角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Nick Fury"
         },
         {
           "id": "s-h-i-e-l-d--2",
@@ -21284,7 +21328,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "科尔森特工",
           "textZh": "力量 3 - 您可以在这里打出力量 2 或以下的角色作为额外角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Agent Coulson"
         },
         {
           "id": "s-h-i-e-l-d--4",
@@ -21300,7 +21348,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "盾。代理",
           "textZh": "力量 2 - 持续能力：如果你的另一个角色在这里，则该角色拥有 +1 力量。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including S.H.I.E.L.D. Agent"
         },
         {
           "id": "s-h-i-e-l-d--5",
@@ -21316,7 +21368,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "切入点",
           "textZh": "打出一个额外的角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Entry Point"
         },
         {
           "id": "s-h-i-e-l-d--6",
@@ -21332,7 +21388,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "任务汇报",
           "textZh": "选择一个基地。为每个角色抽一张卡。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Mission Debriefing"
         },
         {
           "id": "s-h-i-e-l-d--7",
@@ -21348,7 +21408,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "试验场",
           "textZh": "基础修饰符。天赋：在这里打出一个力量为3或更少的角色作为额外角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Proving Ground"
         },
         {
           "id": "s-h-i-e-l-d--8",
@@ -21364,7 +21428,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "重新分配",
           "textZh": "选择一个基地。将最多两个角色从其他基地移动到那里。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Reassignment"
         },
         {
           "id": "s-h-i-e-l-d--9",
@@ -21380,7 +21448,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "救援任务",
           "textZh": "特殊能力：在基地计分后，将所有角色洗入其所有者的牌库中并抽一张牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Rescue Mission"
         },
         {
           "id": "s-h-i-e-l-d--10",
@@ -21396,7 +21468,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "超强火力",
           "textZh": "消灭一个基础修正值或一个力量为 3 或以下的角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Superior Firepower"
         },
         {
           "id": "s-h-i-e-l-d--11",
@@ -21412,7 +21488,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "部队空投",
           "textZh": "打出一个力量为 3 或以下的角色作为额外角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Troop Drop"
         },
         {
           "id": "s-h-i-e-l-d--12",
@@ -21428,7 +21508,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "一起工作",
           "textZh": "当前在场的每个角色都会获得 +1 力量，直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/4/43/Shield.jpg/revision/latest?cb=20210114135859",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "S.H.I.E.L.D. faction reference photo including Work Together"
         }
       ],
       "sourceProvider": "SmashUp Wiki",
@@ -22642,7 +22726,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "神秘客",
           "textZh": "力量 4 - 天赋：在这里发挥基本修正作为额外战术或抓一张牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Mysterio"
         },
         {
           "id": "sinister-six-3",
@@ -22658,7 +22746,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "绿魔",
           "textZh": "power 3 - 天赋：将该基地的断点减少 3 点，直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Green Goblin"
         },
         {
           "id": "sinister-six-4",
@@ -22674,7 +22766,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "秃鹫",
           "textZh": "力量 3 - 您可以将弃牌堆中的基础修饰符放在牌组顶部。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Vulture"
         },
         {
           "id": "sinister-six-5",
@@ -22690,7 +22786,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "电子",
           "textZh": "power 2 - 持续能力：该基地的断点减少 2。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Electro"
         },
         {
           "id": "sinister-six-6",
@@ -22706,7 +22806,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "桑德曼",
           "textZh": "力量 2 - 持续能力：如果此处的断点为 19 或更少，则该角色的力量为 +2。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Sandman"
         },
         {
           "id": "sinister-six-7",
@@ -22722,7 +22826,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "伏击",
           "textZh": "将基地的断点减少 4 点，直至回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Ambush"
         },
         {
           "id": "sinister-six-8",
@@ -22738,7 +22846,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "覆盖出口",
           "textZh": "基础修饰符。持续能力：你的角色拥有+1力量。在此基地计分后，如果其断点为 19 或更少，则将最多两个角色洗入其所有者的套牌中。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Cover the Exits"
         },
         {
           "id": "sinister-six-9",
@@ -22754,7 +22866,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "煽动恐慌",
           "textZh": "基础修饰符。持续能力：这里的其他玩家角色的力量为-1。如果此处的断点为 19 或更少，则在该基地计分时其他玩家无法使用特殊能力。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Incite Panic"
         },
         {
           "id": "sinister-six-10",
@@ -22770,7 +22886,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "搬运货物",
           "textZh": "将基础修改器从一个基础移动到另一个基础。特殊能力：您可以在基地计分后玩此游戏。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Move the Goods"
         },
         {
           "id": "sinister-six-11",
@@ -22786,7 +22906,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "我的总体规划",
           "textZh": "基础修饰符。天赋：如果这里的断点是19或更少，抓一张牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including My Master Plan"
         },
         {
           "id": "sinister-six-12",
@@ -22802,7 +22926,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "来自各方的压力",
           "textZh": "基础修饰符。天赋：每有一个角色，该基地的断点就会减少1点，直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Pressure from All Sides"
         },
         {
           "id": "sinister-six-13",
@@ -22818,7 +22946,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "重新布线电源",
           "textZh": "基础修饰符。天赋：如果这里的断点是19或更少，则给你的一个角色+3力量，直到你的下一回合开始。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Reroute the Power"
         },
         {
           "id": "sinister-six-14",
@@ -22834,7 +22966,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "见证我们的优势",
           "textZh": "基础修饰符。持续能力：该基地的能力被取消。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/19/Sinister_Six.jpg/revision/latest?cb=20210726154731",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Sinister Six faction reference photo including Witness Our Superiority"
         }
       ],
       "sourceProvider": "SmashUp Wiki",
@@ -23954,7 +24090,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蜘蛛侠",
           "textZh": "力量 5 - 持续能力：当你打出一张具有特殊能力的牌后，该角色的力量获得 +1 直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Spider-Man"
         },
         {
           "id": "spider-verse-2",
@@ -23970,7 +24110,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "幽灵蜘蛛",
           "textZh": "力量 4 - 查看牌组顶三张牌，抽一张，然后将其余牌按任意顺序放回牌组顶部和/或底部。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Ghost-Spider"
         },
         {
           "id": "spider-verse-3",
@@ -23986,7 +24130,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "迈尔斯·莫拉莱斯",
           "textZh": "power 3 - 特殊能力：在基地计分前，如果你在那里有一个角色，你可以在那里打出这个角色，并给予它-1力量直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Miles Morales"
         },
         {
           "id": "spider-verse-4",
@@ -24002,7 +24150,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蜘蛛侠2099",
           "textZh": "力量 2 - 持续能力：该角色不能被其他玩家的牌摧毁。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Spider-Man 2099"
         },
         {
           "id": "spider-verse-5",
@@ -24018,7 +24170,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "...责任重大",
           "textZh": "打出一个额外的角色。特殊能力：您可以在拥有角色的基地计分前玩此游戏。在那里打出额外的角色。它获得-1力量直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including ...Comes Great Responsibility"
         },
         {
           "id": "spider-verse-6",
@@ -24034,7 +24190,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蜘蛛感应",
           "textZh": "抽两张牌。特殊能力：您可以在有角色的基地计分后玩此游戏。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Spider-Sense"
         },
         {
           "id": "spider-verse-7",
@@ -24050,7 +24210,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蜘蛛侠宇宙债券",
           "textZh": "字符修改器。持续能力：此角色对这里的其他每个角色都有 +1 力量。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Spider-Verse Bond"
         },
         {
           "id": "spider-verse-8",
@@ -24066,7 +24230,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蜘蛛反射",
           "textZh": "查看牌组顶三张牌，抽一张，然后将其余牌按任意顺序放回牌组顶部和/或底部。你可以进行一个额外的战术。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Spider Reflexes"
         },
         {
           "id": "spider-verse-9",
@@ -24082,7 +24250,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "从上面看到的景色",
           "textZh": "说“角色”或“战术”。从你的牌库顶展示牌，直到你展示一张该类型的牌，然后抽出它。将其余的洗入你的套牌中。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including The View From Above"
         },
         {
           "id": "spider-verse-10",
@@ -24098,7 +24270,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蹼状向上",
           "textZh": "字符修改器。持续能力：该角色的力量为-2，其能力被取消。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Webbed Up"
         },
         {
           "id": "spider-verse-11",
@@ -24114,7 +24290,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "凭借强大的力量...",
           "textZh": "给予角色+3力量直到回合结束。特殊能力：您可以在基地计分前玩此游戏。给那里的角色+2力量直到回合结束而不是+3。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including With Great Power..."
         },
         {
           "id": "spider-verse-12",
@@ -24130,7 +24310,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "您的友好邻里英雄",
           "textZh": "特殊能力：在基地计分后，将你的一个角色放置在其所有者的牌组顶部。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/1/18/Spiderverse.jpg/revision/latest?cb=20210114140631",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Spider-Verse faction reference photo including Your Friendly Neighborhood Hero"
         }
       ],
       "sourceProvider": "SmashUp Wiki",
@@ -28228,7 +28412,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "惊奇队长",
           "textZh": "power 5 - 天赋：将此角色移动到另一个基地。当前所在的所有其他角色直到回合结束为止都获得 +1 力量。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Captain Marvel"
         },
         {
           "id": "ultimates-2",
@@ -28244,7 +28432,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "光谱",
           "textZh": "power 4 - 天赋：将此角色移动到另一个基地。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Spectrum"
         },
         {
           "id": "ultimates-3",
@@ -28260,7 +28452,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "亚美莉卡·查韦斯",
           "textZh": "力量 3 - 持续能力：当另一个角色移入或移出该基地后，该角色获得 +1 力量，直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including America Chavez"
         },
         {
           "id": "ultimates-4",
@@ -28276,7 +28472,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蓝色奇迹",
           "textZh": "力量 2 - 持续能力：该角色移动到另一个基地后，其力量获得 +1 直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Blue Marvel"
         },
         {
           "id": "ultimates-5",
@@ -28312,7 +28512,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "协同攻击",
           "textZh": "选择一个基地。将最多三个角色从其他基地移动到那里。他们各自获得+1力量直到回合结束。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Coordinated Attack"
         },
         {
           "id": "ultimates-7",
@@ -28328,7 +28532,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "宇宙知识",
           "textZh": "将任意数量的手牌放在牌库底部，然后再抽一张比你放置的牌多的牌。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Cosmic Knowledge"
         },
         {
           "id": "ultimates-8",
@@ -28344,7 +28552,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "第一个到达",
           "textZh": "在没有角色的基地上打出额外的角色。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including First to Arrive"
         },
         {
           "id": "ultimates-9",
@@ -28360,7 +28572,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "英勇登陆",
           "textZh": "将任意数量的角色移动到其他基地。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Heroic Landing"
         },
         {
           "id": "ultimates-10",
@@ -28376,7 +28592,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "举起和搬运",
           "textZh": "将角色移动到另一个基地。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Lift and Carry"
         },
         {
           "id": "ultimates-11",
@@ -28392,7 +28612,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "功率和速度",
           "textZh": "你的一个角色获得+2力量直到回合结束。您可以将其移动到另一个基地。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Power and Speed"
         },
         {
           "id": "ultimates-12",
@@ -28408,7 +28632,11 @@
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "争夺",
           "textZh": "将你的一个角色移动到另一个基地。特殊能力：您可以在基地计分前玩此游戏。",
-          "clarificationsZh": []
+          "clarificationsZh": [],
+          "imageUrl": "https://static.wikia.nocookie.net/smashup/images/b/b1/Ultimates.jpg/revision/latest?cb=20210114141027",
+          "imageKind": "faction-sheet",
+          "imageSource": "SmashUp Wiki faction reference photo",
+          "imageAlt": "Ultimates faction reference photo including Scramble"
         }
       ],
       "sourceProvider": "SmashUp Wiki",
