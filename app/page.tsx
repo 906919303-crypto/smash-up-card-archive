@@ -380,19 +380,19 @@ export default function Home() {
   }, [isImageZoomOpen]);
 
   useEffect(() => {
-    if (cardIndex < 0) return;
-    const nearby = [physicalCards[cardIndex - 1], physicalCards[cardIndex], physicalCards[cardIndex + 1]];
-    const loaded = new Set<string>();
-    nearby.forEach((entry) => {
-      const imageUrl = entry?.card.imageUrl;
-      if (!imageUrl || entry?.card.imageKind === "faction-sheet" || loaded.has(imageUrl)) return;
-      loaded.add(imageUrl);
+    if (imageState !== "ready" || cardIndex < 0 || !physicalCards.length) return;
+    const nextEntry = physicalCards[(cardIndex + 1) % physicalCards.length];
+    const imageUrl = nextEntry?.card.imageUrl;
+    if (!imageUrl || nextEntry?.card.imageKind === "faction-sheet" || imageUrl === currentCard?.imageUrl) return;
+
+    const timer = window.setTimeout(() => {
       const image = new Image();
       image.decoding = "async";
       image.referrerPolicy = "no-referrer";
       image.src = imageUrl;
-    });
-  }, [cardIndex, physicalCards]);
+    }, 700);
+    return () => window.clearTimeout(timer);
+  }, [cardIndex, currentCard?.imageUrl, imageState, physicalCards]);
 
   useEffect(() => {
     if (!shouldJumpToCards.current) return;
@@ -594,6 +594,7 @@ export default function Home() {
                               src={currentCard.imageUrl}
                               alt={currentCard.imageAlt || cardLabel(currentCard, language)}
                               loading="eager"
+                              fetchPriority="high"
                               decoding="async"
                               referrerPolicy="no-referrer"
                               onLoad={() => setImageState("ready")}
