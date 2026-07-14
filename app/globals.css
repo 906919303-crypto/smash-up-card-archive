@@ -714,6 +714,7 @@ footer p:not(.eyebrow) {
 }
 
 .artwork {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -727,6 +728,8 @@ footer p:not(.eyebrow) {
   box-shadow: 8px 10px 0 rgba(21, 20, 17, 0.09);
 }
 
+.artwork:not(.sheet) { min-height: 290px; }
+
 .artwork img {
   display: block;
   width: 100%;
@@ -739,6 +742,21 @@ footer p:not(.eyebrow) {
 .artwork.sheet img {
   object-fit: contain;
   background: #19140d;
+}
+
+.artwork.isLoading img { opacity: 0; }
+
+.imageLoading {
+  position: absolute;
+  inset: 0 0 36px;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  padding: 20px;
+  color: #766f64;
+  background: #e8dfd0;
+  font-size: 12px;
+  text-align: center;
 }
 
 .artwork figcaption {
@@ -763,10 +781,50 @@ footer p:not(.eyebrow) {
   display: grid;
   min-height: 250px;
   place-items: center;
+  align-content: center;
+  gap: 12px;
   padding: 20px;
   color: #766f64;
   text-align: center;
   font-size: 12px;
+}
+
+.imageFallback p { margin: 0; }
+
+.imageFallback a {
+  color: #3d352b;
+  font-weight: 800;
+  text-decoration-color: var(--orange);
+  text-underline-offset: 3px;
+}
+
+.copyRail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  color: #675f54;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.copyButtons { display: flex; flex-wrap: wrap; gap: 5px; }
+
+.copyButtons button {
+  min-width: 28px;
+  height: 26px;
+  border: 1px solid rgba(21,20,17,0.2);
+  color: #4a4338;
+  background: var(--cream);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.copyButtons button:hover, .copyButtons button.active {
+  border-color: var(--orange);
+  color: var(--ink);
+  background: var(--sun);
 }
 
 .cardViewer .cardFace {

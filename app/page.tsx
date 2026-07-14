@@ -27,6 +27,11 @@ type Card = {
   sourceProvider?: string;
 };
 
+type PhysicalCard = {
+  card: Card;
+  copy: number;
+};
+
 type Faction = {
   slug: string;
   name: string;
@@ -98,9 +103,11 @@ const COPY = {
     errata: "\u52d8\u8bef\u72b6\u6001",
     clarifications: "\u89c4\u5219\u8bf4\u660e",
     artwork: "\u5361\u56fe",
-    factionSheet: "\u6388\u6743\u5361\u7ec4\u56fe",
-    sheetNote: "\u8be5\u6388\u6743\u5361\u7ec4\u91c7\u7528\u6574\u7ec4\u5361\u56fe\uff1b\u5361\u724c\u6587\u5b57\u4e0e\u6765\u6e90\u94fe\u63a5\u53ef\u9010\u5f20\u6838\u5bf9\u3002",
-    imageFallback: "\u8d44\u6599\u6e90\u6682\u672a\u63d0\u4f9b\u5361\u56fe\u3002",
+    factionSheet: "\u79cd\u65cf\u53c2\u8003\u56fe\uff08\u975e\u5355\u5361\uff09",
+    sheetNote: "\u8be5\u6388\u6743\u79cd\u65cf\u7684\u6765\u6e90\u53ea\u63d0\u4f9b\u79cd\u65cf\u7ea7\u53c2\u8003\u56fe\uff0c\u5e76\u975e\u6bcf\u5f20\u724c\u7684\u72ec\u7acb\u626b\u63cf\u3002\u4e3a\u907f\u514d\u9519\u914d\uff0c\u672c\u7ad9\u4e0d\u4f1a\u628a\u5176\u4ed6\u724c\u56fe\u5f53\u4f5c\u672c\u5361\u663e\u793a\u3002",
+    imageFallback: "\u6765\u6e90\u672a\u63d0\u4f9b\u8fd9\u5f20\u724c\u7684\u72ec\u7acb\u5361\u56fe\u3002",
+    imageLoading: "\u6b63\u5728\u8f7d\u5165\u5361\u56fe\u2026",
+    copiesInDeck: "\u672c\u5361\u7ec4\u5185\u526f\u672c",
     translationNote: "\u4e2d\u6587\u540d\u79f0\u4e0e\u89c4\u5219\u4e3a\u81ea\u52a8\u8bd1\u6587\uff1b\u8bf7\u4ee5\u82f1\u6587\u539f\u6587\u3001\u5b9e\u4f53\u5361\u724c\u548c\u94fe\u63a5\u51fa\u5904\u4e3a\u51c6\u3002",
     scope: "\u672c\u7ad9\u6536\u5f55\u79cd\u65cf\u5361\u7ec4\uff0820 \u5f20\u724c\uff09\u4e0e\u5173\u8054\u6cf0\u5766\uff1b\u57fa\u5730\u724c\u4e0d\u5728\u672c\u76ee\u5f55\u4e2d\u3002",
     language: "\u4e2d\u6587",
@@ -143,9 +150,11 @@ const COPY = {
     errata: "Errata status",
     clarifications: "Clarifications",
     artwork: "Card artwork",
-    factionSheet: "Licensed faction sheet",
-    sheetNote: "This licensed faction uses a complete faction-card sheet; use the text and source link to verify each card.",
-    imageFallback: "No reference image is available from the source.",
+    factionSheet: "Faction reference image (not this card)",
+    sheetNote: "This licensed faction source only provides a faction-level reference image, not an independent scan for every card. To avoid mismatches, this archive does not present another card's image as this card.",
+    imageFallback: "The source does not provide an independent image for this card.",
+    imageLoading: "Loading card image…",
+    copiesInDeck: "Copies in this deck",
     translationNote: "Chinese names and rules are automated translations. Use the English text, physical cards, and linked sources as the authority.",
     scope: "This archive covers 20-card faction decks and their Titans; base cards are outside the catalog.",
     language: "English",
@@ -221,6 +230,8 @@ export default function Home() {
   const [type, setType] = useState("all");
   const [selectedFaction, setSelectedFaction] = useState(DEFAULT_FACTION.slug);
   const [selectedCard, setSelectedCard] = useState(DEFAULT_FACTION.cards[0]?.id ?? "");
+  const [selectedCopy, setSelectedCopy] = useState(1);
+  const [imageState, setImageState] = useState<"loading" | "ready" | "error">("loading");
   const shouldJumpToCards = useRef(false);
   const cardStageRef = useRef<HTMLElement>(null);
 
@@ -249,8 +260,19 @@ export default function Home() {
     [activeFaction, term, type],
   );
 
-  const currentCard = visibleCards.find((card) => card.id === selectedCard) ?? visibleCards[0];
-  const cardIndex = currentCard ? visibleCards.findIndex((card) => card.id === currentCard.id) : -1;
+  const physicalCards = useMemo<PhysicalCard[]>(
+    () => visibleCards.flatMap((card) => Array.from({ length: card.quantity }, (_, index) => ({ card, copy: index + 1 }))),
+    [visibleCards],
+  );
+  const selectedPhysicalCard = physicalCards.find(
+    (entry) => entry.card.id === selectedCard && entry.copy === selectedCopy,
+  );
+  const currentPhysicalCard = selectedPhysicalCard ?? physicalCards[0];
+  const currentCard = currentPhysicalCard?.card;
+  const currentCopy = currentPhysicalCard?.copy ?? 1;
+  const cardIndex = currentPhysicalCard
+    ? physicalCards.findIndex((entry) => entry.card.id === currentPhysicalCard.card.id && entry.copy === currentPhysicalCard.copy)
+    : -1;
   const shownDate = new Intl.DateTimeFormat(language === "zh" ? "zh-CN" : "en-US", {
     year: "numeric",
     month: "short",
@@ -261,14 +283,42 @@ export default function Home() {
     if (visibleFactions.length > 0 && !visibleFactions.some((faction) => faction.slug === selectedFaction)) {
       setSelectedFaction(visibleFactions[0].slug);
       setSelectedCard(visibleFactions[0].cards[0]?.id ?? "");
+      setSelectedCopy(1);
     }
   }, [selectedFaction, visibleFactions]);
 
   useEffect(() => {
     if (visibleCards.length > 0 && !visibleCards.some((card) => card.id === selectedCard)) {
       setSelectedCard(visibleCards[0].id);
+      setSelectedCopy(1);
     }
   }, [selectedCard, visibleCards]);
+
+  useEffect(() => {
+    if (!selectedPhysicalCard && physicalCards[0]) {
+      setSelectedCard(physicalCards[0].card.id);
+      setSelectedCopy(physicalCards[0].copy);
+    }
+  }, [physicalCards, selectedPhysicalCard]);
+
+  useEffect(() => {
+    setImageState(currentCard?.imageUrl ? "loading" : "error");
+  }, [currentCard?.id, currentCard?.imageUrl]);
+
+  useEffect(() => {
+    if (cardIndex < 0) return;
+    const nearby = [physicalCards[cardIndex - 1], physicalCards[cardIndex], physicalCards[cardIndex + 1]];
+    const loaded = new Set<string>();
+    nearby.forEach((entry) => {
+      const imageUrl = entry?.card.imageUrl;
+      if (!imageUrl || entry?.card.imageKind === "faction-sheet" || loaded.has(imageUrl)) return;
+      loaded.add(imageUrl);
+      const image = new Image();
+      image.decoding = "async";
+      image.referrerPolicy = "no-referrer";
+      image.src = imageUrl;
+    });
+  }, [cardIndex, physicalCards]);
 
   useEffect(() => {
     if (!shouldJumpToCards.current) return;
@@ -280,19 +330,26 @@ export default function Home() {
     shouldJumpToCards.current = true;
     setSelectedFaction(faction.slug);
     setSelectedCard(faction.cards[0]?.id ?? "");
+    setSelectedCopy(1);
   }
 
   function chooseCard(card: Card) {
     setSelectedCard(card.id);
+    setSelectedCopy(1);
     if (window.matchMedia("(max-width: 860px)").matches) {
       requestAnimationFrame(() => cardStageRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
     }
   }
 
+  function choosePhysicalCard(entry: PhysicalCard) {
+    setSelectedCard(entry.card.id);
+    setSelectedCopy(entry.copy);
+  }
+
   function goToCard(direction: number) {
-    if (!visibleCards.length || cardIndex < 0) return;
-    const nextIndex = (cardIndex + direction + visibleCards.length) % visibleCards.length;
-    chooseCard(visibleCards[nextIndex]);
+    if (!physicalCards.length || cardIndex < 0) return;
+    const nextIndex = (cardIndex + direction + physicalCards.length) % physicalCards.length;
+    choosePhysicalCard(physicalCards[nextIndex]);
   }
 
   return (
@@ -408,7 +465,7 @@ export default function Home() {
             <nav className="cardList" aria-label={ui.cards}>
               <div className="cardListHeader">
                 <span>03 / {ui.cards.toUpperCase()}</span>
-                <b>{visibleCards.length}</b>
+                <b title={language === "zh" ? "独立条目 / 实体卡张数" : "Unique entries / physical cards"}>{visibleCards.length} / {physicalCards.length}</b>
               </div>
               {visibleCards.map((card) => (
                 <button
@@ -428,7 +485,7 @@ export default function Home() {
               {currentCard ? (
                 <>
                   <div className="stageTop">
-                    <span>{cardIndex + 1} / {visibleCards.length}</span>
+                    <span>{language === "zh" ? `第 ${cardIndex + 1} / ${physicalCards.length} 张` : `${cardIndex + 1} / ${physicalCards.length} cards`}</span>
                     <div className="stepButtons">
                       <button onClick={() => goToCard(-1)} aria-label={ui.previous}>\u2190</button>
                       <button onClick={() => goToCard(1)} aria-label={ui.next}>\u2192</button>
@@ -436,16 +493,26 @@ export default function Home() {
                   </div>
 
                   <div className="cardViewer">
-                    <figure className={"artwork " + (currentCard.imageKind === "faction-sheet" ? "sheet" : "")}>
-                      {currentCard.imageUrl ? (
-                        <img
-                          src={currentCard.imageUrl}
-                          alt={currentCard.imageAlt || cardLabel(currentCard, language)}
-                          loading="lazy"
-                          referrerPolicy="no-referrer"
-                        />
+                    <figure className={"artwork " + (currentCard.imageKind === "faction-sheet" ? "sheet " : "") + (imageState === "loading" ? "isLoading" : "")}>
+                      {currentCard.imageUrl && imageState !== "error" ? (
+                        <>
+                          {imageState === "loading" && <div className="imageLoading" aria-live="polite">{ui.imageLoading}</div>}
+                          <img
+                            key={currentCard.imageUrl}
+                            src={currentCard.imageUrl}
+                            alt={currentCard.imageAlt || cardLabel(currentCard, language)}
+                            loading="eager"
+                            decoding="async"
+                            referrerPolicy="no-referrer"
+                            onLoad={() => setImageState("ready")}
+                            onError={() => setImageState("error")}
+                          />
+                        </>
                       ) : (
-                        <div className="imageFallback">{ui.imageFallback}</div>
+                        <div className="imageFallback">
+                          <p>{ui.imageFallback}</p>
+                          <a href={activeFaction.sourceUrl} target="_blank" rel="noreferrer">{ui.source} \u2197</a>
+                        </div>
                       )}
                       <figcaption>
                         <span>{currentCard.imageKind === "faction-sheet" ? ui.factionSheet : ui.artwork}</span>
@@ -456,7 +523,7 @@ export default function Home() {
                     <article className={"cardFace " + currentCard.type}>
                       <div className="cardFaceTop">
                         <span>{ui.type[currentCard.type] ?? ui.type.other}</span>
-                        <span>\u00d7{currentCard.quantity}</span>
+                        <span>{language === "zh" ? `第 ${currentCopy} / ${currentCard.quantity} 张副本` : `Copy ${currentCopy} of ${currentCard.quantity}`}</span>
                       </div>
                       <div className="cardNameBlock">
                         <h3>{cardLabel(currentCard, language)}</h3>
@@ -473,6 +540,22 @@ export default function Home() {
                         <span>SMASH UP</span>
                       </div>
                     </article>
+                  </div>
+
+                  <div className="copyRail">
+                    <span>{ui.copiesInDeck}</span>
+                    <div className="copyButtons" role="group" aria-label={ui.copiesInDeck}>
+                      {Array.from({ length: currentCard.quantity }, (_, index) => index + 1).map((copy) => (
+                        <button
+                          className={copy === currentCopy ? "active" : ""}
+                          key={copy}
+                          onClick={() => choosePhysicalCard({ card: currentCard, copy })}
+                          aria-pressed={copy === currentCopy}
+                        >
+                          {copy}
+                        </button>
+                      ))}
+                    </div>
                   </div>
 
                   {currentCard.imageKind === "faction-sheet" && <p className="sheetNote">{ui.sheetNote}</p>}
