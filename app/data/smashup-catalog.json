@@ -2711,7 +2711,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Cap’s Shield card art from Smash Up: Marvel",
           "nameZh": "帽子之盾",
-          "textZh": "字符修改器。持续能力：你的角色不会受到其他玩家战术的影响。如果这张卡在美国队长身上，他们也各有 +1 力量。",
+          "textZh": "随从修正战术。持续能力：你的角色不会受到其他玩家战术的影响。如果这张卡在美国队长身上，他们也各有 +1 力量。",
           "clarificationsZh": []
         },
         {
@@ -2791,7 +2791,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Mjolnir card art from Smash Up: Marvel",
           "nameZh": "姆约尼尔",
-          "textZh": "字符修改器。持续能力：如果这张卡位于托尔身上，则其力量+2。否则，它的功率为-2。",
+          "textZh": "随从修正战术。持续能力：如果这张卡位于托尔身上，则其力量+2。否则，它的功率为-2。",
           "clarificationsZh": []
         },
         {
@@ -3841,7 +3841,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Honey Lemon card art from Smash Up: Disney Edition",
           "nameZh": "蜂蜜柠檬",
-          "textZh": "力量 3 - 天赋：在这里摧毁一个基地或角色修饰符，或者如果这个角色有任何力量指示物，你可以执行一个额外的战术。",
+          "textZh": "力量 3 - 天赋：在这里摧毁一个基地或随从修正战术，或者如果这个角色有任何力量指示物，你可以执行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -3921,7 +3921,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Control Mask card art from Smash Up: Disney Edition",
           "nameZh": "控制面罩",
-          "textZh": "字符修改器。打出非微型机器人群角色。在你的牌组中搜索微型机器人群，展示它，抽出它，然后洗牌。天赋：打出一个微型机器人群作为额外角色，或者将任意数量的微型机器人群移动到这里或从这里移动。",
+          "textZh": "随从修正战术。打出非微型机器人群角色。在你的牌组中搜索微型机器人群，展示它，抽出它，然后洗牌。天赋：打出一个微型机器人群作为额外角色，或者将任意数量的微型机器人群移动到这里或从这里移动。",
           "clarificationsZh": []
         },
         {
@@ -13435,7 +13435,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Relentless Attack card art from Smash Up: Marvel",
           "nameZh": "无情的攻击",
-          "textZh": "字符修改器。天赋：进行额外战术。",
+          "textZh": "随从修正战术。天赋：进行额外战术。",
           "clarificationsZh": []
         },
         {
@@ -13455,7 +13455,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Righteous Fury card art from Smash Up: Marvel",
           "nameZh": "正义之怒",
-          "textZh": "字符修改器。持续能力：该角色拥有+3力量。",
+          "textZh": "随从修正战术。持续能力：该角色拥有+3力量。",
           "clarificationsZh": []
         },
         {
@@ -15173,7 +15173,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Ball and Chain card art from Smash Up: Marvel",
           "nameZh": "球链",
-          "textZh": "字符修改器。持续能力：该角色拥有+2力量，并且不会被其他玩家的卡牌摧毁。",
+          "textZh": "随从修正战术。持续能力：该角色拥有+2力量，并且不会被其他玩家的卡牌摧毁。",
           "clarificationsZh": []
         },
         {
@@ -17005,7 +17005,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Family Sword card art from Smash Up: Disney Edition",
           "nameZh": "家族剑",
-          "textZh": "字符修改器。持续能力：该角色拥有+3力量。",
+          "textZh": "随从修正战术。持续能力：该角色拥有+3力量。",
           "clarificationsZh": []
         },
         {
@@ -24213,7 +24213,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蜘蛛侠宇宙债券",
-          "textZh": "字符修改器。持续能力：此角色对这里的其他每个角色都有 +1 力量。",
+          "textZh": "随从修正战术。持续能力：此角色对这里的其他每个角色都有 +1 力量。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/spider-verse-7.webp",
           "imageKind": "card",
@@ -24273,7 +24273,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "蹼状向上",
-          "textZh": "字符修改器。持续能力：该角色的力量为-2，其能力被取消。",
+          "textZh": "随从修正战术。持续能力：该角色的力量为-2，其能力被取消。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/spider-verse-10.webp",
           "imageKind": "card",
@@ -26495,7 +26495,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Circle of Life card art from Smash Up: Disney Edition",
           "nameZh": "生命圈",
-          "textZh": "字符修改器。打出你的角色。特殊能力：在该角色进入弃牌堆后，你可以从你的手牌或弃牌堆中使用另一个力量为3或更少的角色作为额外角色。",
+          "textZh": "随从修正战术。打出你的角色。特殊能力：在该角色进入弃牌堆后，你可以从你的手牌或弃牌堆中使用另一个力量为3或更少的角色作为额外角色。",
           "clarificationsZh": []
         },
         {
@@ -26669,7 +26669,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Jack Skellington card art from Smash Up: Disney Edition",
           "nameZh": "杰克·斯凯林顿",
-          "textZh": "power 5 - 将你的弃牌堆中的一个角色修正值放入你的手上。持续能力：在你使用角色修饰符后，你可以在角色上放置一个+1力量指示物，或者你可以抓一张牌。",
+          "textZh": "力量 5 - 将你弃牌堆中的一张随从修正战术移回你的手上。持续能力：在你打出一张随从修正战术后，你可以在一个随从上放置一个 +1 力量指示物，或抓一张牌。",
           "clarificationsZh": []
         },
         {
@@ -26689,7 +26689,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Dr. Finkelstein card art from Smash Up: Disney Edition",
           "nameZh": "芬克尔斯坦博士",
-          "textZh": "power 4 - 天赋：将角色修饰符从一个角色移动到另一个角色。",
+          "textZh": "力量 4 - 天赋：将一张随从修正战术从一个随从移到另一个随从上。",
           "clarificationsZh": []
         },
         {
@@ -26709,7 +26709,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Sally card art from Smash Up: Disney Edition",
           "nameZh": "莎莉",
-          "textZh": "力量 4 - 天赋：以额外战术发挥角色修饰符。",
+          "textZh": "力量 4 - 天赋：以额外战术打出一张随从修正战术。",
           "clarificationsZh": []
         },
         {
@@ -26729,7 +26729,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Lock, Shock & Barrel card art from Smash Up: Disney Edition",
           "nameZh": "锁、减震器和枪管",
-          "textZh": "力量 3 - 特殊能力：在此基地计分前，您可以对此处的角色使用角色修饰符作为额外战术。",
+          "textZh": "力量 3 - 特殊能力：在此基地计分前，你可以将一张随从修正战术打出到此处的一个随从上，作为额外战术。",
           "clarificationsZh": []
         },
         {
@@ -26749,7 +26749,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "The Mayor of Halloween Town card art from Smash Up: Disney Edition",
           "nameZh": "万圣节镇镇长",
-          "textZh": "力量 3 - 持续能力：如果你在这里控制角色修饰符，你的角色在这里拥有 +1 力量。",
+          "textZh": "力量 3 - 持续能力：若你控制此处的一张随从修正战术，此处你的随从有 +1 力量。",
           "clarificationsZh": []
         },
         {
@@ -26769,7 +26769,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Zero card art from Smash Up: Disney Edition",
           "nameZh": "零",
-          "textZh": "力量 0 - 持续能力：如果你在此处控制任何角色修饰符，则该角色拥有 +3 力量。特殊能力：在此基地计分后，将该角色返回到您的手上而不是弃牌堆中，并且您可以将其作为额外角色在另一个基地上使用。",
+          "textZh": "力量 0 - 持续能力：若你控制此处任意一张随从修正战术，该随从有 +3 力量。特殊能力：在此基地计分后，将该随从移回你的手上而不是弃牌堆；你可以将它作为额外随从打出到另一个基地上。",
           "clarificationsZh": []
         },
         {
@@ -26789,7 +26789,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Halloween Town Folks card art from Smash Up: Disney Edition",
           "nameZh": "万圣节镇的人们",
-          "textZh": "power 2 - 显示你牌组顶部的三张牌。如果有任何角色修饰符，请绘制一个。将其余的按任意顺序放在牌组的顶部和/或底部。",
+          "textZh": "力量 2 - 展示你牌库顶的三张牌。若其中有随从修正战术，抓一张牌。将其余牌以任意顺序放到牌库顶和／或底。",
           "clarificationsZh": []
         },
         {
@@ -26829,7 +26829,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Ghostly Presents card art from Smash Up: Disney Edition",
           "nameZh": "幽灵礼物",
-          "textZh": "字符修改器。持续能力：如果你控制该角色，立即破坏该卡并额外使用一个力量为 3 或更少的角色。否则，其控制器无法在此打出力量为 3 或以下的角色。",
+          "textZh": "随从修正战术。持续能力：若你控制该随从，立即摧毁此卡并打出一个力量为 3 或更少的额外随从；否则，该随从的控制者不能将力量为 3 或更少的随从打出到此处。",
           "clarificationsZh": []
         },
         {
@@ -26849,7 +26849,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Jack-O’lantern-in-the-Box card art from Smash Up: Disney Edition",
           "nameZh": "盒子里的杰克南瓜灯",
-          "textZh": "字符修改器。持续能力：如果你操控该角色，则在你的回合结束前再抓一张牌；否则，该角色的操控者在其回合中不得将额外的牌添加至手牌。",
+          "textZh": "随从修正战术。持续能力：若你控制该随从，在你的回合结束前额外抓一张牌；否则，该随从的控制者在其回合中不能额外抓牌。",
           "clarificationsZh": []
         },
         {
@@ -26869,7 +26869,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Monster Garland card art from Smash Up: Disney Edition",
           "nameZh": "怪物花环",
-          "textZh": "字符修改器。持续能力：如果你控制这个角色，它的力量+3；否则，它的幂为-2。",
+          "textZh": "随从修正战术。持续能力：若你控制该随从，它有 +3 力量；否则，它有 -2 力量。",
           "clarificationsZh": []
         },
         {
@@ -26889,7 +26889,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Oogie Boogie card art from Smash Up: Disney Edition",
           "nameZh": "奥吉·布吉",
-          "textZh": "字符修改器。您可以将该角色移动到另一个基地。持续能力：该角色的力量为 0，其能力被取消。如果这里的其他角色的力量为 5 或以上，则破坏这张卡。",
+          "textZh": "随从修正战术。你可以将该随从移到另一个基地。持续能力：该随从力量为 0，且其能力被取消。若此处有另一个力量为 5 或更多的随从，摧毁此卡。",
           "clarificationsZh": []
         },
         {
@@ -26909,7 +26909,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Sandy Claws Costume card art from Smash Up: Disney Edition",
           "nameZh": "沙爪服装",
-          "textZh": "字符修改器。持续能力：对于你控制的每个角色修饰符，该角色的力量+1。特殊能力：在获得此基地计分后，将此角色移回其拥有者的手上，并将此卡置于你的牌库底部。",
+          "textZh": "随从修正战术。持续能力：你控制的每张随从修正战术都使该随从获得 +1 力量。特殊能力：在此基地计分后，将该随从移回其拥有者的手上，并将此卡置于你牌库底。",
           "clarificationsZh": []
         },
         {
@@ -26929,7 +26929,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Winter Surprise card art from Smash Up: Disney Edition",
           "nameZh": "冬季惊喜",
-          "textZh": "从你的弃牌堆中使用一个角色修饰符作为额外战术。将这张卡洗入你的牌库。",
+          "textZh": "将你弃牌堆中的一张随从修正战术作为额外战术打出。将此卡洗入你的牌库。",
           "clarificationsZh": []
         },
         {
@@ -26949,7 +26949,7 @@
           "imageSource": "SmashUp Wiki faction photo — cropped to this card",
           "imageAlt": "Zombie Duck Toy card art from Smash Up: Disney Edition",
           "nameZh": "僵尸鸭玩具",
-          "textZh": "字符修改器。特殊能力：当此基地计分时，如果你控制该角色，你将多获得1点VP；否则，其控制者将减少 1 VP。",
+          "textZh": "随从修正战术。特殊能力：当此基地计分时，若你控制该随从，你额外获得 1 VP；否则，该随从的控制者少获得 1 VP。",
           "clarificationsZh": []
         }
       ],
@@ -31435,7 +31435,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "King Candy card art from Smash Up: Disney Edition",
           "nameZh": "糖果王",
-          "textZh": "基础修饰符。天赋：你可以将这张卡移动到另一个基地。选择这张卡底部的一个角色。在你的下一个回合开始之前，其角色修饰符的能力将被取消，其力量指示物也不会增加其力量。",
+          "textZh": "基础修饰符。天赋：你可以将这张卡移动到另一个基地。选择这张卡底部的一个角色。在你的下一个回合开始之前，其随从修正战术的能力将被取消，其力量指示物也不会增加其力量。",
           "clarificationsZh": []
         },
         {
