@@ -14,6 +14,13 @@ export type TrackerCard = {
   type: "minion" | "character" | "action" | "titan" | "other";
   quantity: number;
   power: number | null;
+  breakpoint: number | null;
+  vp: number[] | null;
+  text: string;
+  textZh?: string;
+  imageUrl?: string;
+  imageAlt?: string;
+  imageKind?: "card" | "faction-sheet";
 };
 
 export type TrackerFaction = {
@@ -72,6 +79,14 @@ const COPY = {
     noHand: "尚未标记手牌",
     noDiscard: "暂无弃牌",
     copy: "副本",
+    details: "查看详情",
+    close: "关闭",
+    rules: "规则",
+    artwork: "卡图",
+    noArtwork: "暂无单卡卡图",
+    power: "力量",
+    breakpoint: "临界点",
+    vp: "胜利点",
     type: { minion: "随从", character: "角色", action: "战术", titan: "泰坦", other: "其他" },
   },
   en: {
@@ -104,6 +119,14 @@ const COPY = {
     noHand: "No cards marked in hand",
     noDiscard: "No discarded cards",
     copy: "Copy",
+    details: "View details",
+    close: "Close",
+    rules: "Rules",
+    artwork: "Artwork",
+    noArtwork: "No individual card artwork available",
+    power: "Power",
+    breakpoint: "Breakpoint",
+    vp: "Victory points",
     type: { minion: "Minion", character: "Character", action: "Action", titan: "Titan", other: "Other" },
   },
 } as const;
@@ -114,6 +137,10 @@ function factionLabel(faction: TrackerFaction, language: Language) {
 
 function cardLabel(card: TrackerCard, language: Language) {
   return language === "zh" ? card.nameZh || card.name : card.name;
+}
+
+function cardText(card: TrackerCard, language: Language) {
+  return language === "zh" ? card.textZh || card.text : card.text;
 }
 
 function makeInstanceId(side: Side, faction: TrackerFaction, card: TrackerCard, copy: number) {
@@ -166,6 +193,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
   const [match, setMatch] = useState<Match | null>(null);
   const [hydrated, setHydrated] = useState(false);
   const [restored, setRestored] = useState(false);
+  const [detailCard, setDetailCard] = useState<TrackedCard | null>(null);
 
   const factionsBySet = useMemo(() => {
     const groups = new Map<string, TrackerFaction[]>();
@@ -210,6 +238,15 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
     }
   }, [hydrated, match]);
 
+  useEffect(() => {
+    if (!detailCard) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setDetailCard(null);
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [detailCard]);
+
   function updateSelection(side: Side, position: 0 | 1, value: string) {
     setSetup((current) => {
       const next = [...current[side]] as SideFactions;
@@ -240,6 +277,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
   function clearMatch() {
     setMatch(null);
     setRestored(false);
+    setDetailCard(null);
     window.localStorage.removeItem(STORAGE_KEY);
   }
 
@@ -311,7 +349,8 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
   }
 
   return (
-    <section className="trackerShell" id="tracker" aria-label={ui.title}>
+    <>
+      <section className="trackerShell" id="tracker" aria-label={ui.title}>
       <div className="trackerIntro">
         <div>
           <p className="eyebrow">{ui.eyebrow}</p>
@@ -407,6 +446,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
                         {zone !== "deck" && <b>{zone === "hand" ? ui.inHand : ui.discarded}</b>}
                       </button>
                       <div className="trackerCardActions">
+                        <button type="button" onClick={() => setDetailCard(entry)}>{ui.details}</button>
                         {zone !== "hand" && <button type="button" onClick={() => setZone(entry.instanceId, "hand")}>{ui.moveToHand}</button>}
                         {zone !== "deck" && <button type="button" onClick={() => setZone(entry.instanceId, "deck")}>{ui.restore}</button>}
                       </div>
@@ -418,6 +458,50 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
           );
         })}
       </div>
-    </section>
+      </section>
+
+      {detailCard && (
+        <div
+          className="trackerDetailOverlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={cardLabel(detailCard.card, language)}
+          onClick={(event) => {
+            if (event.target === event.currentTarget) setDetailCard(null);
+          }}
+        >
+          <article className="trackerDetailModal">
+            <button className="trackerDetailClose" type="button" onClick={() => setDetailCard(null)} aria-label={ui.close}>×</button>
+            <div className="trackerDetailContent">
+              <figure className="trackerDetailArtwork">
+                {detailCard.card.imageUrl && detailCard.card.imageKind !== "faction-sheet" ? (
+                  <img
+                    src={detailCard.card.imageUrl}
+                    alt={detailCard.card.imageAlt || cardLabel(detailCard.card, language)}
+                    loading="eager"
+                    decoding="async"
+                    referrerPolicy="no-referrer"
+                  />
+                ) : <figcaption>{ui.noArtwork}</figcaption>}
+              </figure>
+              <div className="trackerDetailRules">
+                <span className="trackerCardTop">
+                  <i>{ui.type[detailCard.card.type] ?? ui.type.other}</i>
+                  <em>#{detailCard.copy}</em>
+                </span>
+                <p className="trackerDetailFaction">{factionLabel(detailCard.faction, language)}</p>
+                <h3>{cardLabel(detailCard.card, language)}</h3>
+                <div className="trackerDetailStats">
+                  {detailCard.card.power !== null && <span><b>{detailCard.card.power}</b>{ui.power}</span>}
+                  {detailCard.card.breakpoint !== null && <span><b>{detailCard.card.breakpoint}</b>{ui.breakpoint}</span>}
+                  {detailCard.card.vp && <span><b>{detailCard.card.vp.join(" / ")}</b>{ui.vp}</span>}
+                </div>
+                <p className="trackerDetailRuleText">{cardText(detailCard.card, language)}</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      )}
+    </>
   );
 }
