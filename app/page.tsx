@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import catalogJson from "./data/smashup-catalog.json";
+import { CardTracker } from "./card-tracker";
 
 type Language = "zh" | "en";
 type CardType = "minion" | "character" | "action" | "titan" | "other";
@@ -267,6 +268,7 @@ function cardMatches(card: Card, term: string) {
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("zh");
+  const [view, setView] = useState<"archive" | "tracker">("archive");
   const [query, setQuery] = useState("");
   const [type, setType] = useState("all");
   const [selectedFaction, setSelectedFaction] = useState(DEFAULT_FACTION.slug);
@@ -442,7 +444,24 @@ export default function Home() {
               <span>{ui.language}</span>
               <b>{ui.languageAlt}</b>
             </button>
-            <a href="#catalog">{ui.enter} {"\u2198"}</a>
+            <div className="modeToggle" role="group" aria-label="View switch">
+              <button
+                className={view === "archive" ? "active" : ""}
+                type="button"
+                onClick={() => setView("archive")}
+                aria-pressed={view === "archive"}
+              >
+                {language === "zh" ? "\u6863\u6848" : "Archive"}
+              </button>
+              <button
+                className={view === "tracker" ? "active" : ""}
+                type="button"
+                onClick={() => setView("tracker")}
+                aria-pressed={view === "tracker"}
+              >
+                {language === "zh" ? "\u8bb0\u724c\u5668" : "Tracker"}
+              </button>
+            </div>
           </div>
         </div>
         <div className="heroGrid">
@@ -460,6 +479,10 @@ export default function Home() {
         <p className="sourceLine">{ui.updated} {shownDate} {"\u00b7"} {catalog.extraction.uniqueCardEntries.toLocaleString()} {ui.entries}</p>
       </header>
 
+      {view === "tracker" ? (
+        <CardTracker factions={catalog.factions} language={language} />
+      ) : (
+        <>
       <section className="catalogShell" id="catalog" aria-label="Smash Up card catalog">
         <aside className="factionPanel">
           <div className="panelHeading">
@@ -689,6 +712,8 @@ export default function Home() {
           ))}
         </div>
       </footer>
+        </>
+      )}
 
       {isImageZoomOpen && currentCard?.imageUrl && imageState === "ready" && (
         <div
