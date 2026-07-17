@@ -16299,7 +16299,7 @@
           "power": 2,
           "breakpoint": null,
           "vp": null,
-          "text": "Power 2 - Effect",
+          "text": "Power 2 - You may draw a Madness card to place a +1 power counter on a minion.",
           "errata": "Unknown",
           "clarifications": [],
           "sourceProvider": "官方规则维基",
@@ -16308,7 +16308,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Researcher 璺?Smash Up",
           "nameZh": "研究员",
-          "textZh": "Power 2 - 效果说明：无",
+          "textZh": "力量 2 - 你可以抽取一张疯狂卡，以在一名随从上放置一个 +1 力量指示物。",
           "clarificationsZh": []
         },
         {
@@ -20641,7 +20641,7 @@
           "power": 3,
           "breakpoint": null,
           "vp": null,
-          "text": "Power 3 - Effect",
+          "text": "Power 3 - Talent: Play an extra action on a minion that does not have one on it.",
           "errata": "No",
           "clarifications": [],
           "sourceProvider": "官方规则维基",
@@ -20650,7 +20650,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Andko 璺?Smash Up",
           "nameZh": "安德科",
-          "textZh": "力量 3 - 效果",
+          "textZh": "力量 3 - 天赋：将一张额外战术打出到一名尚未有战术的随从上。",
           "clarificationsZh": []
         },
         {
