@@ -1295,6 +1295,25 @@ footer p:not(.eyebrow) {
 
 .trackerZoneHeading b { color: var(--ink); font-size: 14px; }
 
+.trackerZoneTools {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.trackerRestoreAll {
+  border: 1px solid rgba(21,20,17,0.24);
+  padding: 3px 5px;
+  color: #5a5248;
+  background: #fffaf0;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.trackerRestoreAll:hover { border-color: var(--orange); color: var(--ink); background: var(--sun); }
+
 .trackerZone p {
   margin: 12px 0 0;
   color: #928a7f;

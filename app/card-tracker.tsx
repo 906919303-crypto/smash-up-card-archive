@@ -69,6 +69,7 @@ const COPY = {
     allCards: "本局全部卡牌",
     clickToDiscard: "点击卡牌：标记弃牌",
     restore: "回到牌库",
+    restoreAll: "全部返回",
     moveToHand: "移至手牌",
     inHand: "在手牌中",
     discarded: "已弃牌",
@@ -109,6 +110,7 @@ const COPY = {
     allCards: "All cards in this match",
     clickToDiscard: "Click a card to mark it discarded",
     restore: "Return to deck",
+    restoreAll: "Return all",
     moveToHand: "Move to hand",
     inHand: "In hand",
     discarded: "Discarded",
@@ -272,6 +274,17 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
     setZone(instanceId, currentZone === "discard" ? "deck" : "discard");
   }
 
+  function restoreDiscard(side: Side) {
+    setMatch((current) => {
+      if (!current) return current;
+      const zones = { ...current.zones };
+      for (const [instanceId, zone] of Object.entries(zones)) {
+        if (instanceId.startsWith(side + "::") && zone === "discard") delete zones[instanceId];
+      }
+      return { ...current, zones };
+    });
+  }
+
   function resetZones() {
     setMatch((current) => current ? { ...current, zones: {} } : current);
   }
@@ -389,6 +402,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
           const sideCards = trackedCards.filter((entry) => entry.side === side);
           const handCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") === "hand");
           const discardCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") === "discard");
+          const libraryCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") !== "discard");
           const deckCount = sideCards.length - handCards.length - discardCards.length;
           const sideFactions = match.factions[side]
             .map((slug) => factions.find((faction) => faction.slug === slug))
@@ -426,7 +440,13 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
                   ) : <p>{ui.noHand}</p>}
                 </section>
                 <section className="trackerZone discardZone">
-                  <div className="trackerZoneHeading"><span>{ui.discard}</span><b>{discardCards.length}</b></div>
+                  <div className="trackerZoneHeading">
+                    <span>{ui.discard}</span>
+                    <span className="trackerZoneTools">
+                      <b>{discardCards.length}</b>
+                      {discardCards.length > 0 && <button className="trackerRestoreAll" type="button" onClick={() => restoreDiscard(side)}>{ui.restoreAll}</button>}
+                    </span>
+                  </div>
                   {discardCards.length ? (
                     <div className="trackerMiniCards">
                       {discardCards.map((entry) => (
@@ -441,10 +461,10 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
 
               <div className="trackerLibraryHeading">
                 <span>{ui.allCards}</span>
-                <small>{sideCards.length} {ui.cards}</small>
+                <small>{libraryCards.length} / {sideCards.length} {ui.cards}</small>
               </div>
               <div className="trackerCardGrid">
-                {sideCards.map((entry) => {
+                {libraryCards.map((entry) => {
                   const zone = match.zones[entry.instanceId] ?? "deck";
                   return (
                     <article className={"trackerCard " + zone} key={entry.instanceId}>
