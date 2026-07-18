@@ -1180,6 +1180,25 @@ footer p:not(.eyebrow) {
 
 .trackerToolbar { justify-content: flex-end; }
 
+.trackerSideTabs {
+  display: none;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+}
+
+.trackerSideTabs button {
+  min-width: 66px;
+  border: 0;
+  padding: 9px 11px;
+  color: #5a5248;
+  background: var(--cream);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.trackerSideTabs button + button { border-left: 1px solid var(--ink); }
+.trackerSideTabs button.active { color: var(--ink); background: var(--acid); }
+
 .trackerSides {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1506,6 +1525,8 @@ footer p:not(.eyebrow) {
 @media (max-width: 860px) {
   .trackerSides, .trackerSetup { grid-template-columns: 1fr; }
   .trackerShell { margin-bottom: 0; }
+  .trackerSideTabs { display: inline-flex; }
+  .trackerSide.inactiveSide { display: none; }
   .trackerDetailContent { grid-template-columns: 1fr; }
   .trackerDetailArtwork { min-height: 0; max-height: 48vh; }
   .trackerDetailArtwork img { max-height: 43vh; }

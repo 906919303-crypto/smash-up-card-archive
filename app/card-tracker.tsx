@@ -194,6 +194,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
   const [hydrated, setHydrated] = useState(false);
   const [restored, setRestored] = useState(false);
   const [detailCard, setDetailCard] = useState<TrackedCard | null>(null);
+  const [activeSide, setActiveSide] = useState<Side>("self");
 
   const factionsBySet = useMemo(() => {
     const groups = new Map<string, TrackerFaction[]>();
@@ -258,6 +259,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
   function startMatch() {
     if (!isSetupComplete(setup)) return;
     setMatch({ factions: { self: [...setup.self] as SideFactions, opponent: [...setup.opponent] as SideFactions }, zones: {} });
+    setActiveSide("self");
     setRestored(false);
   }
 
@@ -278,6 +280,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
     setMatch(null);
     setRestored(false);
     setDetailCard(null);
+    setActiveSide("self");
     window.localStorage.removeItem(STORAGE_KEY);
   }
 
@@ -358,6 +361,24 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
           <p>{ui.clickToDiscard}</p>
         </div>
         <div className="trackerToolbar">
+          <div className="trackerSideTabs" role="group" aria-label={ui.title}>
+            <button
+              className={activeSide === "self" ? "active" : ""}
+              type="button"
+              aria-pressed={activeSide === "self"}
+              onClick={() => setActiveSide("self")}
+            >
+              {ui.self}
+            </button>
+            <button
+              className={activeSide === "opponent" ? "active" : ""}
+              type="button"
+              aria-pressed={activeSide === "opponent"}
+              onClick={() => setActiveSide("opponent")}
+            >
+              {ui.opponent}
+            </button>
+          </div>
           <button className="trackerSecondary" type="button" onClick={resetZones}>{ui.reset}</button>
           <button className="trackerSecondary" type="button" onClick={clearMatch}>{ui.change}</button>
         </div>
@@ -374,7 +395,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
             .filter((faction): faction is TrackerFaction => Boolean(faction));
 
           return (
-            <section className={"trackerSide " + side} key={side}>
+            <section className={"trackerSide " + side + (activeSide === side ? " activeSide" : " inactiveSide")} key={side}>
               <header className="trackerSideHeader">
                 <div>
                   <p className="eyebrow">{side === "self" ? "01 / YOUR DECK" : "02 / OPPONENT DECK"}</p>
