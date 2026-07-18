@@ -432,9 +432,14 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
                   {handCards.length ? (
                     <div className="trackerMiniCards">
                       {handCards.map((entry) => (
-                        <button key={entry.instanceId} type="button" onClick={() => setZone(entry.instanceId, "deck")} title={ui.restore}>
-                          {cardLabel(entry.card, language)} <small>#{entry.copy}</small>
-                        </button>
+                        <div className="trackerMiniCard" key={entry.instanceId}>
+                          <button className="trackerMiniCardDetails" type="button" onClick={() => setDetailCard(entry)} title={ui.details}>
+                            {cardLabel(entry.card, language)} <small>#{entry.copy}</small>
+                          </button>
+                          <button className="trackerMiniCardRestore" type="button" onClick={() => setZone(entry.instanceId, "deck")} title={ui.restore}>
+                            {ui.restore}
+                          </button>
+                        </div>
                       ))}
                     </div>
                   ) : <p>{ui.noHand}</p>}
@@ -450,9 +455,14 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
                   {discardCards.length ? (
                     <div className="trackerMiniCards">
                       {discardCards.map((entry) => (
-                        <button key={entry.instanceId} type="button" onClick={() => setZone(entry.instanceId, "deck")} title={ui.restore}>
-                          {cardLabel(entry.card, language)} <small>#{entry.copy}</small>
-                        </button>
+                        <div className="trackerMiniCard" key={entry.instanceId}>
+                          <button className="trackerMiniCardDetails" type="button" onClick={() => setDetailCard(entry)} title={ui.details}>
+                            {cardLabel(entry.card, language)} <small>#{entry.copy}</small>
+                          </button>
+                          <button className="trackerMiniCardRestore" type="button" onClick={() => setZone(entry.instanceId, "deck")} title={ui.restore}>
+                            {ui.restore}
+                          </button>
+                        </div>
                       ))}
                     </div>
                   ) : <p>{ui.noDiscard}</p>}

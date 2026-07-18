@@ -1320,22 +1320,46 @@ footer p:not(.eyebrow) {
   font-size: 11px;
 }
 
-.trackerMiniCards { margin-top: 9px; }
+.trackerMiniCards {
+  display: grid;
+  gap: 6px;
+  margin-top: 9px;
+}
 
-.trackerMiniCards button {
-  max-width: 100%;
-  overflow: hidden;
+.trackerMiniCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   border: 1px solid rgba(21,20,17,0.14);
-  padding: 5px 6px;
-  color: #4d463d;
   background: #fffaf0;
-  font-size: 10px;
+}
+
+.trackerMiniCard button {
+  min-width: 0;
+  max-width: none;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  padding: 8px 9px;
+  color: #4d463d;
+  background: transparent;
+  font: inherit;
+  font-size: 11px;
   font-weight: 750;
+  line-height: 1.25;
   text-overflow: ellipsis;
+  text-align: left;
   white-space: nowrap;
 }
 
-.trackerMiniCards button:hover { border-color: var(--orange); background: var(--sun); }
+.trackerMiniCardDetails:hover { background: rgba(255,207,64,0.28); }
+
+.trackerMiniCardRestore {
+  border-left: 1px solid rgba(21,20,17,0.14) !important;
+  color: #675f54 !important;
+  font-size: 10px !important;
+}
+
+.trackerMiniCardRestore:hover { color: var(--ink) !important; background: var(--sun) !important; }
 .trackerMiniCards small { color: #887f72; }
 
 .trackerLibraryHeading {
