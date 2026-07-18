@@ -1587,3 +1587,203 @@ footer p:not(.eyebrow) {
   .trackerDetailModal { max-height: calc(100vh - 24px); }
   .trackerDetailRules { padding: 28px 20px 24px; }
 }
+
+/* Shared Madness deck for the match tracker */
+.trackerModeToggle {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto;
+  flex: 1 1 520px;
+  gap: 10px;
+  align-items: center;
+  min-width: min(100%, 430px);
+  border: 1px solid rgba(21,20,17,0.22);
+  padding: 11px 13px;
+  color: #4f473d;
+  background: rgba(255,250,240,0.75);
+  cursor: pointer;
+}
+
+.trackerModeToggle.active {
+  border-color: #5b2028;
+  color: #fff8e8;
+  background: linear-gradient(135deg, #33151a, #702735);
+}
+
+.trackerModeToggle input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--acid);
+}
+
+.trackerModeToggle span { display: grid; gap: 3px; }
+.trackerModeToggle b { font-size: 12px; font-weight: 900; }
+.trackerModeToggle small { color: #776e61; font-size: 10px; font-weight: 650; line-height: 1.45; }
+.trackerModeToggle.active small { color: rgba(255,248,232,0.76); }
+.trackerModeToggle em {
+  border: 1px solid currentColor;
+  padding: 4px 6px;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.trackerMadnessBoard {
+  display: grid;
+  grid-template-columns: minmax(90px, 122px) minmax(0, 1fr) minmax(230px, 0.78fr);
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 24px;
+  overflow: hidden;
+  border: 2px solid #3d1c21;
+  color: #fff8e8;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(228,102,63,0.43), transparent 34%),
+    linear-gradient(135deg, #29151a, #672431 62%, #33151a);
+  box-shadow: 8px 8px 0 rgba(112,39,53,0.18);
+}
+
+.trackerMadnessArtwork {
+  display: grid;
+  min-height: 178px;
+  margin: 0;
+  padding: 10px;
+  place-items: center;
+  background: rgba(17,12,13,0.34);
+}
+
+.trackerMadnessArtwork img {
+  display: block;
+  width: 100%;
+  max-height: 195px;
+  border: 1px solid rgba(255,248,232,0.5);
+  object-fit: contain;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.26);
+}
+
+.trackerMadnessLead {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 20px 0;
+}
+
+.trackerMadnessLead .eyebrow { color: #ffb878; }
+.trackerMadnessLead h3 { margin: 0; font-size: clamp(24px, 3.3vw, 38px); letter-spacing: -0.06em; }
+.trackerMadnessLead p:not(.eyebrow) { margin: 0; color: rgba(255,248,232,0.86); font-size: 12px; line-height: 1.6; }
+.trackerMadnessLead .trackerMadnessHint {
+  width: fit-content;
+  margin-top: 4px;
+  border: 1px solid rgba(255,184,120,0.58);
+  padding: 6px 8px;
+  color: #ffd39a;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.trackerMadnessControls {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-left: 1px solid rgba(255,248,232,0.22);
+  background: rgba(17,12,13,0.22);
+}
+
+.trackerMadnessSupply {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  color: rgba(255,248,232,0.78);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.trackerMadnessSupply b {
+  color: #fff8e8;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.07em;
+}
+
+.trackerMadnessSupply small { color: #ffcf95; font-size: 11px; font-weight: 800; }
+
+.trackerMadnessActions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.trackerMadnessActions button {
+  border: 1px solid rgba(255,248,232,0.64);
+  padding: 8px 7px;
+  color: #fff8e8;
+  background: rgba(255,248,232,0.08);
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.trackerMadnessActions button:hover:not(:disabled) { color: #321319; background: #ffbf79; }
+.trackerMadnessActions button:disabled { cursor: not-allowed; opacity: 0.42; }
+
+.trackerMadnessBreakdown {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.trackerMadnessBreakdown div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  border-top: 1px solid rgba(255,248,232,0.22);
+  padding-top: 8px;
+}
+
+.trackerMadnessBreakdown span { color: #ffcf95; font-size: 9px; font-weight: 900; }
+.trackerMadnessBreakdown b { color: #fff8e8; font-size: 11px; }
+.trackerMadnessBreakdown small { color: rgba(255,248,232,0.74); font-size: 9px; line-height: 1.35; }
+
+.trackerMadnessChip {
+  border-color: rgba(112,39,53,0.72) !important;
+  color: #5c1e27 !important;
+  background: #ffd6bc !important;
+}
+
+.trackerCard.madness {
+  border-color: rgba(112,39,53,0.72);
+  background: #fff0df;
+  box-shadow: inset 3px 0 0 #8a3040;
+}
+
+.trackerCard.madness .trackerCardTop,
+.trackerCard.madness .trackerCardMeta { color: #7c3541; }
+
+.trackerMiniCard { grid-template-columns: minmax(0, 1fr) auto auto; }
+.trackerMiniCardDiscard {
+  border-left: 1px solid rgba(21,20,17,0.14) !important;
+  color: #7c3541 !important;
+  font-size: 10px !important;
+}
+
+.trackerMiniCard.madness { border-color: rgba(112,39,53,0.42); }
+.trackerMiniCard.madness .trackerMiniCardRestore { color: #7c3541 !important; }
+
+@media (max-width: 860px) {
+  .trackerMadnessBoard { grid-template-columns: 94px minmax(0, 1fr); }
+  .trackerMadnessControls { grid-column: 1 / -1; grid-template-columns: auto 1fr; border-top: 1px solid rgba(255,248,232,0.22); border-left: 0; }
+  .trackerMadnessBreakdown { grid-column: 1 / -1; }
+}
+
+@media (max-width: 520px) {
+  .trackerModeToggle { flex-basis: 100%; }
+  .trackerMadnessBoard { grid-template-columns: 76px minmax(0, 1fr); gap: 12px; }
+  .trackerMadnessArtwork { min-height: 144px; padding: 7px; }
+  .trackerMadnessArtwork img { max-height: 158px; }
+  .trackerMadnessLead { padding: 14px 12px 14px 0; }
+  .trackerMadnessLead h3 { font-size: 26px; }
+  .trackerMadnessControls { gap: 9px; padding: 12px; grid-template-columns: 1fr; }
+  .trackerMadnessActions, .trackerMadnessBreakdown { grid-template-columns: 1fr 1fr; }
+  .trackerMiniCard button { padding: 7px 6px; }
+}

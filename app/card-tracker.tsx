@@ -36,6 +36,8 @@ type Setup = Record<Side, SideFactions>;
 type Match = {
   factions: Setup;
   zones: Record<string, Zone>;
+  madnessEnabled?: boolean;
+  madnessOwners?: Record<string, Side>;
 };
 
 type TrackedCard = {
@@ -44,9 +46,36 @@ type TrackedCard = {
   faction: TrackerFaction;
   card: TrackerCard;
   copy: number;
+  isMadness?: boolean;
 };
 
 const STORAGE_KEY = "smash-up-card-tracker-v1";
+const MADNESS_CARD_COUNT = 30;
+
+const MADNESS_CARD: TrackerCard = {
+  id: "madness",
+  name: "Madness",
+  nameZh: "疯狂",
+  type: "action",
+  quantity: 1,
+  power: null,
+  breakpoint: null,
+  vp: null,
+  text: "Draw two cards OR return this card to the Madness deck.",
+  textZh: "抓两张牌，或将此牌归还至疯狂牌堆。",
+  imageUrl: "card-art/special/madness.webp",
+  imageAlt: "Madness card · Smash Up",
+  imageKind: "card",
+};
+
+const MADNESS_FACTION: TrackerFaction = {
+  slug: "madness-deck",
+  name: "Madness Deck",
+  nameZh: "疯狂牌堆",
+  set: "The Obligatory Cthulhu Set",
+  setZh: "克苏鲁必须套装",
+  cards: [MADNESS_CARD],
+};
 
 const COPY = {
   zh: {
@@ -66,7 +95,7 @@ const COPY = {
     deck: "牌库",
     hand: "手牌",
     discard: "弃牌堆",
-    allCards: "本局全部卡牌",
+    allCards: "本方全部卡牌",
     clickToDiscard: "点击卡牌：标记弃牌",
     restore: "回到牌库",
     restoreAll: "全部返回",
@@ -88,6 +117,20 @@ const COPY = {
     power: "力量",
     breakpoint: "临界点",
     vp: "胜利点",
+    madnessMode: "疯狂牌模式",
+    madnessModeHint: "启用 30 张共享疯狂牌；抽取后会归入对应玩家的手牌、牌库或弃牌堆。",
+    madnessOn: "已启用",
+    madnessOff: "未启用",
+    madnessDeck: "疯狂牌堆",
+    madnessDescription: "30 张相同的公共战术牌。抽取后归入对应方；点「归还」才会回到公共牌堆。",
+    madnessAvailable: "剩余",
+    madnessOwned: "持有",
+    madnessPenalty: "终局扣分",
+    madnessPenaltyHint: "每拥有 2 张疯狂牌，终局失去 1 胜利点。",
+    drawForSelf: "我方抽取",
+    drawForOpponent: "对方抽取",
+    returnMadness: "归还疯狂牌堆",
+    madnessShort: "疯狂牌",
     type: { minion: "随从", character: "角色", action: "战术", titan: "泰坦", other: "其他" },
   },
   en: {
@@ -107,7 +150,7 @@ const COPY = {
     deck: "Deck",
     hand: "Hand",
     discard: "Discard pile",
-    allCards: "All cards in this match",
+    allCards: "All cards on this side",
     clickToDiscard: "Click a card to mark it discarded",
     restore: "Return to deck",
     restoreAll: "Return all",
@@ -129,6 +172,20 @@ const COPY = {
     power: "Power",
     breakpoint: "Breakpoint",
     vp: "Victory points",
+    madnessMode: "Madness mode",
+    madnessModeHint: "Enable a shared 30-card Madness deck. Drawn cards join that side’s hand, deck, or discard pile.",
+    madnessOn: "Enabled",
+    madnessOff: "Off",
+    madnessDeck: "Madness deck",
+    madnessDescription: "Thirty identical shared action cards. A card only returns to the common deck when you use Return.",
+    madnessAvailable: "Available",
+    madnessOwned: "Owned",
+    madnessPenalty: "Final penalty",
+    madnessPenaltyHint: "Every 2 Madness cards costs 1 VP when the game ends.",
+    drawForSelf: "Draw for you",
+    drawForOpponent: "Draw for opponent",
+    returnMadness: "Return to Madness deck",
+    madnessShort: "Madness",
     type: { minion: "Minion", character: "Character", action: "Action", titan: "Titan", other: "Other" },
   },
 } as const;
@@ -149,10 +206,14 @@ function makeInstanceId(side: Side, faction: TrackerFaction, card: TrackerCard, 
   return [side, faction.slug, card.id, copy].join("::");
 }
 
+function madnessInstanceId(copy: number) {
+  return ["madness", copy].join("::");
+}
+
 function createTrackedCards(factions: TrackerFaction[], match: Match | null): TrackedCard[] {
   if (!match) return [];
   const bySlug = new Map(factions.map((faction) => [faction.slug, faction]));
-  return (["self", "opponent"] as Side[]).flatMap((side) =>
+  const factionCards = (["self", "opponent"] as Side[]).flatMap((side) =>
     match.factions[side].flatMap((slug) => {
       const faction = bySlug.get(slug);
       if (!faction) return [];
@@ -167,6 +228,25 @@ function createTrackedCards(factions: TrackerFaction[], match: Match | null): Tr
       );
     }),
   );
+
+  if (!match.madnessEnabled) return factionCards;
+
+  const madnessCards = Array.from({ length: MADNESS_CARD_COUNT }, (_, index) => {
+    const copy = index + 1;
+    const instanceId = madnessInstanceId(copy);
+    const side = match.madnessOwners?.[instanceId];
+    if (!side) return null;
+    return {
+      instanceId,
+      side,
+      faction: MADNESS_FACTION,
+      card: MADNESS_CARD,
+      copy,
+      isMadness: true,
+    } satisfies TrackedCard;
+  }).filter((entry): entry is TrackedCard => Boolean(entry));
+
+  return [...factionCards, ...madnessCards];
 }
 
 function isSetupComplete(setup: Setup) {
@@ -178,6 +258,9 @@ function isSetupComplete(setup: Setup) {
 function isSavedMatch(value: unknown): value is Match {
   if (!value || typeof value !== "object") return false;
   const candidate = value as Match;
+  const validMadness =
+    (candidate.madnessEnabled === undefined || typeof candidate.madnessEnabled === "boolean") &&
+    (candidate.madnessOwners === undefined || typeof candidate.madnessOwners === "object");
   return Boolean(
     candidate.factions &&
       Array.isArray(candidate.factions.self) &&
@@ -185,13 +268,15 @@ function isSavedMatch(value: unknown): value is Match {
       candidate.factions.self.length === 2 &&
       candidate.factions.opponent.length === 2 &&
       candidate.zones &&
-      typeof candidate.zones === "object",
+      typeof candidate.zones === "object" &&
+      validMadness,
   );
 }
 
 export function CardTracker({ factions, language }: { factions: TrackerFaction[]; language: Language }) {
   const ui = COPY[language];
   const [setup, setSetup] = useState<Setup>({ self: ["", ""], opponent: ["", ""] });
+  const [madnessMode, setMadnessMode] = useState(false);
   const [match, setMatch] = useState<Match | null>(null);
   const [hydrated, setHydrated] = useState(false);
   const [restored, setRestored] = useState(false);
@@ -208,11 +293,25 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
     return [...groups.entries()].map(([set, items]) => ({
       set,
       label: language === "zh" ? items[0]?.setZh || set : set,
-      factions: items.sort((left, right) => factionLabel(left, language).localeCompare(factionLabel(right, language), language === "zh" ? "zh-CN" : "en")),
+      factions: items.sort((left, right) =>
+        factionLabel(left, language).localeCompare(factionLabel(right, language), language === "zh" ? "zh-CN" : "en"),
+      ),
     }));
   }, [factions, language]);
 
   const trackedCards = useMemo(() => createTrackedCards(factions, match), [factions, match]);
+
+  const madnessCounts = useMemo(
+    () => ({
+      self: trackedCards.filter((entry) => entry.isMadness && entry.side === "self").length,
+      opponent: trackedCards.filter((entry) => entry.isMadness && entry.side === "opponent").length,
+    }),
+    [trackedCards],
+  );
+
+  const madnessAvailable = match?.madnessEnabled
+    ? MADNESS_CARD_COUNT - madnessCounts.self - madnessCounts.opponent
+    : MADNESS_CARD_COUNT;
 
   useEffect(() => {
     try {
@@ -222,6 +321,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
         if (isSavedMatch(parsed) && isSetupComplete(parsed.factions)) {
           setMatch(parsed);
           setSetup(parsed.factions);
+          setMadnessMode(Boolean(parsed.madnessEnabled));
           setRestored(true);
         }
       }
@@ -260,7 +360,12 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
 
   function startMatch() {
     if (!isSetupComplete(setup)) return;
-    setMatch({ factions: { self: [...setup.self] as SideFactions, opponent: [...setup.opponent] as SideFactions }, zones: {} });
+    setMatch({
+      factions: { self: [...setup.self] as SideFactions, opponent: [...setup.opponent] as SideFactions },
+      zones: {},
+      madnessEnabled: madnessMode,
+      madnessOwners: {},
+    });
     setActiveSide("self");
     setRestored(false);
   }
@@ -274,12 +379,42 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
     setZone(instanceId, currentZone === "discard" ? "deck" : "discard");
   }
 
+  function drawMadness(side: Side) {
+    setMatch((current) => {
+      if (!current?.madnessEnabled) return current;
+      const owners = { ...(current.madnessOwners ?? {}) };
+      const instanceId = Array.from({ length: MADNESS_CARD_COUNT }, (_, index) => madnessInstanceId(index + 1))
+        .find((id) => !owners[id]);
+      if (!instanceId) return current;
+      owners[instanceId] = side;
+      return {
+        ...current,
+        madnessOwners: owners,
+        zones: { ...current.zones, [instanceId]: "hand" },
+      };
+    });
+  }
+
+  function returnMadness(instanceId: string) {
+    setMatch((current) => {
+      if (!current?.madnessEnabled || !current.madnessOwners?.[instanceId]) return current;
+      const owners = { ...current.madnessOwners };
+      const zones = { ...current.zones };
+      delete owners[instanceId];
+      delete zones[instanceId];
+      return { ...current, madnessOwners: owners, zones };
+    });
+  }
+
   function restoreDiscard(side: Side) {
     setMatch((current) => {
       if (!current) return current;
       const zones = { ...current.zones };
       for (const [instanceId, zone] of Object.entries(zones)) {
-        if (instanceId.startsWith(side + "::") && zone === "discard") delete zones[instanceId];
+        const belongsToSide =
+          instanceId.startsWith(side + "::") ||
+          (current.madnessEnabled && current.madnessOwners?.[instanceId] === side);
+        if (belongsToSide && zone === "discard") delete zones[instanceId];
       }
       return { ...current, zones };
     });
@@ -291,6 +426,7 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
 
   function clearMatch() {
     setMatch(null);
+    setMadnessMode(false);
     setRestored(false);
     setDetailCard(null);
     setActiveSide("self");
@@ -320,6 +456,30 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
           ))}
         </select>
       </label>
+    );
+  }
+
+  function miniCard(entry: TrackedCard, zone: "hand" | "discard") {
+    return (
+      <div className={"trackerMiniCard" + (entry.isMadness ? " madness" : "")} key={entry.instanceId}>
+        <button className="trackerMiniCardDetails" type="button" onClick={() => setDetailCard(entry)} title={ui.details}>
+          {cardLabel(entry.card, language)} <small>#{entry.copy}</small>
+        </button>
+        {zone === "hand" && (
+          <button className="trackerMiniCardDiscard" type="button" onClick={() => setZone(entry.instanceId, "discard")} title={ui.discard}>
+            {ui.discard}
+          </button>
+        )}
+        {entry.isMadness ? (
+          <button className="trackerMiniCardRestore" type="button" onClick={() => returnMadness(entry.instanceId)} title={ui.returnMadness}>
+            {ui.returnMadness}
+          </button>
+        ) : (
+          <button className="trackerMiniCardRestore" type="button" onClick={() => setZone(entry.instanceId, "deck")} title={ui.restore}>
+            {ui.restore}
+          </button>
+        )}
+      </div>
     );
   }
 
@@ -353,6 +513,14 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
         </div>
 
         <div className="trackerStart">
+          <label className={"trackerModeToggle" + (madnessMode ? " active" : "")}>
+            <input type="checkbox" checked={madnessMode} onChange={(event) => setMadnessMode(event.target.checked)} />
+            <span>
+              <b>{ui.madnessMode}</b>
+              <small>{ui.madnessModeHint}</small>
+            </span>
+            <em>{madnessMode ? ui.madnessOn : ui.madnessOff}</em>
+          </label>
           {!isSetupComplete(setup) && <p>{ui.selectBoth}</p>}
           {restored && <p>{ui.restored}</p>}
           <button className="trackerPrimary" type="button" disabled={!isSetupComplete(setup)} onClick={startMatch}>
@@ -367,148 +535,162 @@ export function CardTracker({ factions, language }: { factions: TrackerFaction[]
   return (
     <>
       <section className="trackerShell" id="tracker" aria-label={ui.title}>
-      <div className="trackerIntro">
-        <div>
-          <p className="eyebrow">{ui.eyebrow}</p>
-          <h2>{ui.title}</h2>
-          <p>{ui.clickToDiscard}</p>
-        </div>
-        <div className="trackerToolbar">
-          <div className="trackerSideTabs" role="group" aria-label={ui.title}>
-            <button
-              className={activeSide === "self" ? "active" : ""}
-              type="button"
-              aria-pressed={activeSide === "self"}
-              onClick={() => setActiveSide("self")}
-            >
-              {ui.self}
-            </button>
-            <button
-              className={activeSide === "opponent" ? "active" : ""}
-              type="button"
-              aria-pressed={activeSide === "opponent"}
-              onClick={() => setActiveSide("opponent")}
-            >
-              {ui.opponent}
-            </button>
+        <div className="trackerIntro">
+          <div>
+            <p className="eyebrow">{ui.eyebrow}</p>
+            <h2>{ui.title}</h2>
+            <p>{ui.clickToDiscard}</p>
           </div>
-          <button className="trackerSecondary" type="button" onClick={resetZones}>{ui.reset}</button>
-          <button className="trackerSecondary" type="button" onClick={clearMatch}>{ui.change}</button>
+          <div className="trackerToolbar">
+            <div className="trackerSideTabs" role="group" aria-label={ui.title}>
+              <button
+                className={activeSide === "self" ? "active" : ""}
+                type="button"
+                aria-pressed={activeSide === "self"}
+                onClick={() => setActiveSide("self")}
+              >
+                {ui.self}
+              </button>
+              <button
+                className={activeSide === "opponent" ? "active" : ""}
+                type="button"
+                aria-pressed={activeSide === "opponent"}
+                onClick={() => setActiveSide("opponent")}
+              >
+                {ui.opponent}
+              </button>
+            </div>
+            <button className="trackerSecondary" type="button" onClick={resetZones}>{ui.reset}</button>
+            <button className="trackerSecondary" type="button" onClick={clearMatch}>{ui.change}</button>
+          </div>
         </div>
-      </div>
 
-      <div className="trackerSides">
-        {(["self", "opponent"] as Side[]).map((side) => {
-          const sideCards = trackedCards.filter((entry) => entry.side === side);
-          const handCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") === "hand");
-          const discardCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") === "discard");
-          const libraryCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") !== "discard");
-          const deckCount = sideCards.length - handCards.length - discardCards.length;
-          const sideFactions = match.factions[side]
-            .map((slug) => factions.find((faction) => faction.slug === slug))
-            .filter((faction): faction is TrackerFaction => Boolean(faction));
-
-          return (
-            <section className={"trackerSide " + side + (activeSide === side ? " activeSide" : " inactiveSide")} key={side}>
-              <header className="trackerSideHeader">
-                <div>
-                  <p className="eyebrow">{side === "self" ? "01 / YOUR DECK" : "02 / OPPONENT DECK"}</p>
-                  <h3>{side === "self" ? ui.self : ui.opponent}</h3>
-                </div>
-                <div className="trackerFactionChips">
-                  {sideFactions.map((faction) => <span key={faction.slug}>{factionLabel(faction, language)}</span>)}
-                </div>
-              </header>
-
-              <div className="trackerCounts" aria-label={side === "self" ? ui.self : ui.opponent}>
-                <div><span>{ui.deck}</span><b>{deckCount}</b></div>
-                <div><span>{ui.hand}</span><b>{handCards.length}</b></div>
-                <div><span>{ui.discard}</span><b>{discardCards.length}</b></div>
+        {match.madnessEnabled && (
+          <section className="trackerMadnessBoard" aria-label={ui.madnessDeck}>
+            <figure className="trackerMadnessArtwork">
+              <img src={MADNESS_CARD.imageUrl} alt={MADNESS_CARD.imageAlt} loading="eager" decoding="async" />
+            </figure>
+            <div className="trackerMadnessLead">
+              <p className="eyebrow">04 / MADNESS DECK</p>
+              <h3>{ui.madnessDeck}</h3>
+              <p>{ui.madnessDescription}</p>
+              <p className="trackerMadnessHint">{ui.madnessPenaltyHint}</p>
+            </div>
+            <div className="trackerMadnessControls">
+              <div className="trackerMadnessSupply">
+                <span>{ui.madnessAvailable}</span>
+                <b>{madnessAvailable}</b>
+                <small>/ {MADNESS_CARD_COUNT}</small>
               </div>
-
-              <div className="trackerZones">
-                <section className="trackerZone handZone">
-                  <div className="trackerZoneHeading"><span>{ui.hand}</span><b>{handCards.length}</b></div>
-                  {handCards.length ? (
-                    <div className="trackerMiniCards">
-                      {handCards.map((entry) => (
-                        <div className="trackerMiniCard" key={entry.instanceId}>
-                          <button className="trackerMiniCardDetails" type="button" onClick={() => setDetailCard(entry)} title={ui.details}>
-                            {cardLabel(entry.card, language)} <small>#{entry.copy}</small>
-                          </button>
-                          <button className="trackerMiniCardRestore" type="button" onClick={() => setZone(entry.instanceId, "deck")} title={ui.restore}>
-                            {ui.restore}
-                          </button>
-                        </div>
-                      ))}
-                    </div>
-                  ) : <p>{ui.noHand}</p>}
-                </section>
-                <section className="trackerZone discardZone">
-                  <div className="trackerZoneHeading">
-                    <span>{ui.discard}</span>
-                    <span className="trackerZoneTools">
-                      <b>{discardCards.length}</b>
-                      {discardCards.length > 0 && <button className="trackerRestoreAll" type="button" onClick={() => restoreDiscard(side)}>{ui.restoreAll}</button>}
-                    </span>
-                  </div>
-                  {discardCards.length ? (
-                    <div className="trackerMiniCards">
-                      {discardCards.map((entry) => (
-                        <div className="trackerMiniCard" key={entry.instanceId}>
-                          <button className="trackerMiniCardDetails" type="button" onClick={() => setDetailCard(entry)} title={ui.details}>
-                            {cardLabel(entry.card, language)} <small>#{entry.copy}</small>
-                          </button>
-                          <button className="trackerMiniCardRestore" type="button" onClick={() => setZone(entry.instanceId, "deck")} title={ui.restore}>
-                            {ui.restore}
-                          </button>
-                        </div>
-                      ))}
-                    </div>
-                  ) : <p>{ui.noDiscard}</p>}
-                </section>
+              <div className="trackerMadnessActions">
+                <button type="button" disabled={madnessAvailable === 0} onClick={() => drawMadness("self")}>{ui.drawForSelf}</button>
+                <button type="button" disabled={madnessAvailable === 0} onClick={() => drawMadness("opponent")}>{ui.drawForOpponent}</button>
               </div>
-
-              <div className="trackerLibraryHeading">
-                <span>{ui.allCards}</span>
-                <small>{libraryCards.length} / {sideCards.length} {ui.cards}</small>
-              </div>
-              <div className="trackerCardGrid">
-                {libraryCards.map((entry) => {
-                  const zone = match.zones[entry.instanceId] ?? "deck";
+              <div className="trackerMadnessBreakdown">
+                {(["self", "opponent"] as Side[]).map((side) => {
+                  const count = madnessCounts[side];
                   return (
-                    <article className={"trackerCard " + zone} key={entry.instanceId}>
-                      <button
-                        className="trackerCardPrimary"
-                        type="button"
-                        onClick={() => toggleDiscard(entry.instanceId)}
-                        aria-pressed={zone === "discard"}
-                        aria-label={cardLabel(entry.card, language) + (zone === "discard" ? " — " + ui.restore : " — " + ui.discard)}
-                      >
-                        <span className="trackerCardTop">
-                          <i>{ui.type[entry.card.type] ?? ui.type.other}</i>
-                          <em>#{entry.copy}</em>
-                        </span>
-                        <strong>{cardLabel(entry.card, language)}</strong>
-                        <small>{factionLabel(entry.faction, language)}</small>
-                        <span className="trackerCardMeta">
-                          {entry.card.power !== null ? (language === "zh" ? "力量 " : "Power ") + entry.card.power : ui.copy}
-                        </span>
-                        {zone !== "deck" && <b>{zone === "hand" ? ui.inHand : ui.discarded}</b>}
-                      </button>
-                      <div className="trackerCardActions">
-                        <button type="button" onClick={() => setDetailCard(entry)}>{ui.details}</button>
-                        {zone !== "hand" && <button type="button" onClick={() => setZone(entry.instanceId, "hand")}>{ui.moveToHand}</button>}
-                        {zone !== "deck" && <button type="button" onClick={() => setZone(entry.instanceId, "deck")}>{ui.restore}</button>}
-                      </div>
-                    </article>
+                    <div key={side}>
+                      <span>{side === "self" ? ui.self : ui.opponent}</span>
+                      <b>{count} {ui.madnessOwned}</b>
+                      <small>{ui.madnessPenalty} −{Math.floor(count / 2)} VP</small>
+                    </div>
                   );
                 })}
               </div>
-            </section>
-          );
-        })}
-      </div>
+            </div>
+          </section>
+        )}
+
+        <div className="trackerSides">
+          {(["self", "opponent"] as Side[]).map((side) => {
+            const sideCards = trackedCards.filter((entry) => entry.side === side);
+            const handCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") === "hand");
+            const discardCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") === "discard");
+            const libraryCards = sideCards.filter((entry) => (match.zones[entry.instanceId] ?? "deck") !== "discard");
+            const deckCount = sideCards.length - handCards.length - discardCards.length;
+            const sideMadness = madnessCounts[side];
+            const sideFactions = match.factions[side]
+              .map((slug) => factions.find((faction) => faction.slug === slug))
+              .filter((faction): faction is TrackerFaction => Boolean(faction));
+
+            return (
+              <section className={"trackerSide " + side + (activeSide === side ? " activeSide" : " inactiveSide")} key={side}>
+                <header className="trackerSideHeader">
+                  <div>
+                    <p className="eyebrow">{side === "self" ? "01 / YOUR DECK" : "02 / OPPONENT DECK"}</p>
+                    <h3>{side === "self" ? ui.self : ui.opponent}</h3>
+                  </div>
+                  <div className="trackerFactionChips">
+                    {sideFactions.map((faction) => <span key={faction.slug}>{factionLabel(faction, language)}</span>)}
+                    {match.madnessEnabled && <span className="trackerMadnessChip">{ui.madnessShort} ×{sideMadness}</span>}
+                  </div>
+                </header>
+
+                <div className="trackerCounts" aria-label={side === "self" ? ui.self : ui.opponent}>
+                  <div><span>{ui.deck}</span><b>{deckCount}</b></div>
+                  <div><span>{ui.hand}</span><b>{handCards.length}</b></div>
+                  <div><span>{ui.discard}</span><b>{discardCards.length}</b></div>
+                </div>
+
+                <div className="trackerZones">
+                  <section className="trackerZone handZone">
+                    <div className="trackerZoneHeading"><span>{ui.hand}</span><b>{handCards.length}</b></div>
+                    {handCards.length ? <div className="trackerMiniCards">{handCards.map((entry) => miniCard(entry, "hand"))}</div> : <p>{ui.noHand}</p>}
+                  </section>
+                  <section className="trackerZone discardZone">
+                    <div className="trackerZoneHeading">
+                      <span>{ui.discard}</span>
+                      <span className="trackerZoneTools">
+                        <b>{discardCards.length}</b>
+                        {discardCards.length > 0 && <button className="trackerRestoreAll" type="button" onClick={() => restoreDiscard(side)}>{ui.restoreAll}</button>}
+                      </span>
+                    </div>
+                    {discardCards.length ? <div className="trackerMiniCards">{discardCards.map((entry) => miniCard(entry, "discard"))}</div> : <p>{ui.noDiscard}</p>}
+                  </section>
+                </div>
+
+                <div className="trackerLibraryHeading">
+                  <span>{ui.allCards}</span>
+                  <small>{libraryCards.length} / {sideCards.length} {ui.cards}</small>
+                </div>
+                <div className="trackerCardGrid">
+                  {libraryCards.map((entry) => {
+                    const zone = match.zones[entry.instanceId] ?? "deck";
+                    return (
+                      <article className={"trackerCard " + zone + (entry.isMadness ? " madness" : "")} key={entry.instanceId}>
+                        <button
+                          className="trackerCardPrimary"
+                          type="button"
+                          onClick={() => toggleDiscard(entry.instanceId)}
+                          aria-pressed={zone === "discard"}
+                          aria-label={cardLabel(entry.card, language) + (zone === "discard" ? " — " + ui.restore : " — " + ui.discard)}
+                        >
+                          <span className="trackerCardTop">
+                            <i>{ui.type[entry.card.type] ?? ui.type.other}</i>
+                            <em>#{entry.copy}</em>
+                          </span>
+                          <strong>{cardLabel(entry.card, language)}</strong>
+                          <small>{factionLabel(entry.faction, language)}</small>
+                          <span className="trackerCardMeta">
+                            {entry.card.power !== null ? (language === "zh" ? "力量 " : "Power ") + entry.card.power : ui.copy}
+                          </span>
+                          {zone !== "deck" && <b>{zone === "hand" ? ui.inHand : ui.discarded}</b>}
+                        </button>
+                        <div className="trackerCardActions">
+                          <button type="button" onClick={() => setDetailCard(entry)}>{ui.details}</button>
+                          {zone !== "hand" && <button type="button" onClick={() => setZone(entry.instanceId, "hand")}>{ui.moveToHand}</button>}
+                          {zone !== "deck" && <button type="button" onClick={() => setZone(entry.instanceId, "deck")}>{ui.restore}</button>}
+                          {entry.isMadness && <button type="button" onClick={() => returnMadness(entry.instanceId)}>{ui.returnMadness}</button>}
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+              </section>
+            );
+          })}
+        </div>
       </section>
 
       {detailCard && (
