@@ -275,6 +275,7 @@ export default function Home() {
   const [selectedCard, setSelectedCard] = useState(DEFAULT_FACTION.cards[0]?.id ?? "");
   const [selectedCopy, setSelectedCopy] = useState(1);
   const [imageState, setImageState] = useState<"loading" | "ready" | "error">("loading");
+  const [imageRetry, setImageRetry] = useState(0);
   const [isImageZoomOpen, setImageZoomOpen] = useState(false);
   const shouldJumpToCards = useRef(false);
   const cardStageRef = useRef<HTMLElement>(null);
@@ -331,6 +332,9 @@ export default function Home() {
   const currentPhysicalCard = selectedPhysicalCard ?? physicalCards[0];
   const currentCard = currentPhysicalCard?.card;
   const currentCopy = currentPhysicalCard?.copy ?? 1;
+  const currentImageUrl = currentCard?.imageUrl
+    ? `${currentCard.imageUrl}${imageRetry ? `${currentCard.imageUrl.includes("?") ? "&" : "?"}retry=${imageRetry}` : ""}`
+    : undefined;
   const cardIndex = currentPhysicalCard
     ? physicalCards.findIndex((entry) => entry.card.id === currentPhysicalCard.card.id && entry.copy === currentPhysicalCard.copy)
     : -1;
@@ -364,6 +368,7 @@ export default function Home() {
 
   useEffect(() => {
     setImageState(currentCard?.imageUrl ? "loading" : "error");
+    setImageRetry(0);
     setImageZoomOpen(false);
   }, [currentCard?.id, currentCard?.imageUrl]);
 
@@ -613,15 +618,22 @@ export default function Home() {
                             disabled={imageState !== "ready"}
                           >
                             <img
-                              key={currentCard.imageUrl}
-                              src={currentCard.imageUrl}
+                              key={currentImageUrl}
+                              src={currentImageUrl}
                               alt={currentCard.imageAlt || cardLabel(currentCard, language)}
                               loading="eager"
                               fetchPriority="high"
                               decoding="async"
                               referrerPolicy="no-referrer"
                               onLoad={() => setImageState("ready")}
-                              onError={() => setImageState("error")}
+                              onError={() => {
+                                if (imageRetry === 0) {
+                                  setImageRetry(1);
+                                  setImageState("loading");
+                                  return;
+                                }
+                                setImageState("error");
+                              }}
                             />
                             <span className="imageZoomHint">{ui.zoomImage}</span>
                           </button>
