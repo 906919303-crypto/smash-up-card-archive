@@ -2751,7 +2751,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Hulk Smash card art from Smash Up: Marvel",
           "nameZh": "浩克粉碎",
-          "textZh": "选择一个基地。摧毁其上任意数量的基础修饰符。如果绿巨人在那里，你可以摧毁基地及其所有修饰符，并用基地牌组顶牌替换它；所有角色都留在新基地。",
+          "textZh": "选择一个基地。摧毁其上任意数量的基地战术。如果绿巨人在那里，你可以摧毁基地及其所有修饰符，并用基地牌组顶牌替换它；所有角色都留在新基地。",
           "clarificationsZh": []
         },
         {
@@ -2771,7 +2771,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "J.A.R.V.I.S. card art from Smash Up: Marvel",
           "nameZh": "贾维斯",
-          "textZh": "基础修饰符。天赋：抽一张牌。丢弃一张卡。",
+          "textZh": "基地战术。天赋：抽一张牌。丢弃一张卡。",
           "clarificationsZh": []
         },
         {
@@ -3627,7 +3627,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Be Our Guest card art from Smash Up: Disney Edition",
           "nameZh": "成为我们的客人",
-          "textZh": "基础修饰符。天赋：如果你本回合已弃掉一张手牌，则抓一张牌。",
+          "textZh": "基地战术。天赋：如果你本回合已弃掉一张手牌，则抓一张牌。",
           "clarificationsZh": []
         },
         {
@@ -3707,7 +3707,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Gaston card art from Smash Up: Disney Edition",
           "nameZh": "加斯顿",
-          "textZh": "基础修饰符。持续能力：该基地的断点增加5点。在每个玩家的回合中，该玩家可以弃掉两张牌来破坏这张牌。",
+          "textZh": "基地战术。持续能力：该基地的断点增加5点。在每个玩家的回合中，该玩家可以弃掉两张牌来破坏这张牌。",
           "clarificationsZh": []
         },
         {
@@ -3727,7 +3727,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Petals of the Rose card art from Smash Up: Disney Edition",
           "nameZh": "玫瑰花瓣",
-          "textZh": "基础修饰符。持续能力：当你从手牌中弃掉一张或多张牌后，你可以查看你牌组顶的两张牌。以任意顺序将它们放在牌组的顶部和/或底部。",
+          "textZh": "基地战术。持续能力：当你从手牌中弃掉一张或多张牌后，你可以查看你牌组顶的两张牌。以任意顺序将它们放在牌组的顶部和/或底部。",
           "clarificationsZh": []
         },
         {
@@ -3841,7 +3841,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Honey Lemon card art from Smash Up: Disney Edition",
           "nameZh": "蜂蜜柠檬",
-          "textZh": "力量 3 - 天赋：在这里摧毁一个基地或随从修正战术，或者如果这个角色有任何力量指示物，你可以执行一个额外的战术。",
+          "textZh": "力量 3 - 天赋：在这里摧毁一个基地战术或随从修正战术，或者如果这个角色有任何力量指示物，你可以执行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -3861,7 +3861,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Hiro Hamada card art from Smash Up: Disney Edition",
           "nameZh": "滨田宏",
-          "textZh": "力量 3 - 天赋：在此处的角色上放置一个 +1 力量指示物，或者将任意数量的力量指示物从一个角色移动到另一个角色。",
+          "textZh": "力量 3 - 天赋：在此处的一个角色上放置一个 +1 力量指示物，或者将任意数量的力量指示物从你的一个角色移动到另一个角色。",
           "clarificationsZh": []
         },
         {
@@ -3941,7 +3941,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Control the Swarm card art from Smash Up: Disney Edition",
           "nameZh": "控制蜂群",
-          "textZh": "在每个没有力量指示物的角色上放置一个+1力量指示物，或者在角色之间移动任意数量的力量指示物。",
+          "textZh": "在你的每个没有力量指示物的角色上放置一个 +1 力量指示物，或者在你的角色之间移动任意数量的力量指示物。",
           "clarificationsZh": []
         },
         {
@@ -3961,7 +3961,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Microbot Maker card art from Smash Up: Disney Edition",
           "nameZh": "微型机器人制造商",
-          "textZh": "基础修饰符。在此处为每个角色放置一个 +1 能量指示物。天赋：在你的一个角色上放置一个+1力量指示物。",
+          "textZh": "基地战术。在此处为每个角色放置一个 +1 能量指示物。天赋：在你的一个角色上放置一个+1力量指示物。",
           "clarificationsZh": []
         },
         {
@@ -4001,7 +4001,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Team Effort card art from Smash Up: Disney Edition",
           "nameZh": "团队努力",
-          "textZh": "选择一个基地。为每个角色抽一张带有能量指示物的卡片。",
+          "textZh": "选择一个基地。该基地上你的每个带有力量指示物的角色各抓一张牌。",
           "clarificationsZh": []
         },
         {
@@ -4041,7 +4041,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Version 2.0 card art from Smash Up: Disney Edition",
           "nameZh": "2.0版本",
-          "textZh": "选择一个基地。当前拥有力量指示物的每个角色都会获得 +2 力量，直到回合结束。",
+          "textZh": "选择一个基地。该基地上你的每个带有力量指示物的角色获得 +2 力量，直到回合结束。",
           "clarificationsZh": []
         },
         {
@@ -4061,7 +4061,7 @@
           "imageSource": "SmashUp Wiki faction photo — cropped to this card",
           "imageAlt": "Yokai card art from Smash Up: Disney Edition",
           "nameZh": "妖怪",
-          "textZh": "基础修饰符。持续能力：此处没有能量指示物的角色的能量为-1。特殊能力：在此基地计分后，您可以将+1能量指示物从这里的每个角色移动到其他角色。",
+          "textZh": "基地战术。持续能力：此处没有能量指示物的角色的能量为-1。特殊能力：在此基地计分后，您可以将+1能量指示物从这里的每个角色移动到其他角色。",
           "clarificationsZh": []
         }
       ],
@@ -8361,7 +8361,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Frozen Port card art from Smash Up: Disney Edition",
           "nameZh": "冷冻港",
-          "textZh": "基础修饰符。持续能力：如果其他玩家可以在另一个基地上玩他们的第一个角色，则他们不能在每个回合中打出他们的第一个角色。",
+          "textZh": "基地战术。持续能力：如果其他玩家可以在另一个基地上玩他们的第一个角色，则他们不能在每个回合中打出他们的第一个角色。",
           "clarificationsZh": []
         },
         {
@@ -8421,7 +8421,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Lock the Gates card art from Smash Up: Disney Edition",
           "nameZh": "锁上大门",
-          "textZh": "基础修饰符。持续能力：你的角色不能被其他玩家的卡牌摧毁。天赋：查看你牌库顶牌。丢弃它或退回它。",
+          "textZh": "基地战术。持续能力：你的角色不能被其他玩家的卡牌摧毁。天赋：查看你牌库顶牌。丢弃它或退回它。",
           "clarificationsZh": []
         },
         {
@@ -10919,7 +10919,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "狂热的奉献",
-          "textZh": "基础修饰符。持续能力：如果本回合你的一个或多个角色在这里被摧毁，那么你这里的每个角色都有+2力量。",
+          "textZh": "基地战术。持续能力：如果本回合你的一个或多个角色在这里被摧毁，那么你这里的每个角色都有+2力量。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/hydra-6.webp",
           "imageKind": "card",
@@ -15133,7 +15133,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "A Portent of Doom card art from Smash Up: Marvel",
           "nameZh": "厄运的预兆",
-          "textZh": "基础修饰符。在没有玩家角色的基地上玩。特殊能力：当此基地计分时，如果你在这里拥有 1 或更多力量，则获得 1 VP。",
+          "textZh": "基地战术。在没有玩家角色的基地上玩。特殊能力：当此基地计分时，如果你在这里拥有 1 或更多力量，则获得 1 VP。",
           "clarificationsZh": []
         },
         {
@@ -15153,7 +15153,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Acceptable Losses card art from Smash Up: Marvel",
           "nameZh": "可接受的损失",
-          "textZh": "消灭一名力量为 4 或以上的角色即可获得 1 VP。",
+          "textZh": "消灭你的一名力量为 4 或以上的角色，即可获得 1 VP。",
           "clarificationsZh": []
         },
         {
@@ -15233,7 +15233,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Indestructible Form card art from Smash Up: Marvel",
           "nameZh": "坚不可摧的形态",
-          "textZh": "基础修饰符。持续能力：你的角色不能被其他玩家的卡牌摧毁。",
+          "textZh": "基地战术。持续能力：你的角色不能被其他玩家的卡牌摧毁。",
           "clarificationsZh": []
         },
         {
@@ -15273,7 +15273,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "World Domination card art from Smash Up: Marvel",
           "nameZh": "统治世界",
-          "textZh": "基础修饰符。天赋：你的一个角色在回合结束前获得+2力量。持续能力：在此基地计分后，将此战术移至另一个基地。",
+          "textZh": "基地战术。天赋：你的一个角色在回合结束前获得+2力量。持续能力：在此基地计分后，将此战术移至另一个基地。",
           "clarificationsZh": []
         }
       ],
@@ -16945,7 +16945,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Be a Man card art from Smash Up: Disney Edition",
           "nameZh": "做一个男人",
-          "textZh": "基础修饰符。天赋：在此处最多为两个角色放置一个+1力量指示物。",
+          "textZh": "基地战术。天赋：在此处最多为两个角色放置一个+1力量指示物。",
           "clarificationsZh": []
         },
         {
@@ -21391,7 +21391,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "任务汇报",
-          "textZh": "选择一个基地。为每个角色抽一张卡。",
+          "textZh": "选择一个基地。该基地上你的每个角色各抓一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--6.webp",
           "imageKind": "card",
@@ -21411,7 +21411,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "试验场",
-          "textZh": "基础修饰符。天赋：在这里打出一个力量为3或更少的角色作为额外角色。",
+          "textZh": "基地战术。天赋：在这里打出一个力量为3或更少的角色作为额外角色。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--7.webp",
           "imageKind": "card",
@@ -21431,7 +21431,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "重新分配",
-          "textZh": "选择一个基地。将最多两个角色从其他基地移动到那里。",
+          "textZh": "选择一个基地。将你的角色中至多两个从其他基地移动到该基地。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--8.webp",
           "imageKind": "card",
@@ -21451,7 +21451,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "救援任务",
-          "textZh": "特殊能力：在基地计分后，将所有角色洗入其所有者的牌库中并抽一张牌。",
+          "textZh": "特殊能力：在基地计分后，将该基地上你的所有角色洗入其拥有者的牌库中并抓一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--9.webp",
           "imageKind": "card",
@@ -21471,7 +21471,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "超强火力",
-          "textZh": "消灭一个基础修正值或一个力量为 3 或以下的角色。",
+          "textZh": "消灭一个基地战术或一个力量为 3 或以下的角色。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--10.webp",
           "imageKind": "card",
@@ -21511,7 +21511,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "一起工作",
-          "textZh": "当前在场的每个角色都会获得 +1 力量，直到回合结束。",
+          "textZh": "你当前在场的每个角色获得 +1 力量，直到回合结束。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--12.webp",
           "imageKind": "card",
@@ -22729,7 +22729,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "神秘客",
-          "textZh": "力量 4 - 天赋：在这里发挥基本修正作为额外战术或抓一张牌。",
+          "textZh": "力量 4 - 天赋：在这里打出一个基地战术作为额外战术或抓一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-2.webp",
           "imageKind": "card",
@@ -22769,7 +22769,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "秃鹫",
-          "textZh": "力量 3 - 您可以将弃牌堆中的基础修饰符放在牌组顶部。",
+          "textZh": "力量 3 - 您可以将弃牌堆中的基地战术放在牌组顶部。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-4.webp",
           "imageKind": "card",
@@ -22849,7 +22849,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "覆盖出口",
-          "textZh": "基础修饰符。持续能力：你的角色拥有+1力量。在此基地计分后，如果其断点为 19 或更少，则将最多两个角色洗入其所有者的套牌中。",
+          "textZh": "基地战术。持续能力：你的角色拥有+1力量。在此基地计分后，如果其断点为 19 或更少，则将最多两个角色洗入其所有者的套牌中。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-8.webp",
           "imageKind": "card",
@@ -22869,7 +22869,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "煽动恐慌",
-          "textZh": "基础修饰符。持续能力：这里的其他玩家角色的力量为-1。如果此处的断点为 19 或更少，则在该基地计分时其他玩家无法使用特殊能力。",
+          "textZh": "基地战术。持续能力：这里的其他玩家角色的力量为-1。如果此处的断点为 19 或更少，则在该基地计分时其他玩家无法使用特殊能力。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-9.webp",
           "imageKind": "card",
@@ -22909,7 +22909,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "我的总体规划",
-          "textZh": "基础修饰符。天赋：如果这里的断点是19或更少，抓一张牌。",
+          "textZh": "基地战术。天赋：如果这里的断点是19或更少，抓一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-11.webp",
           "imageKind": "card",
@@ -22929,7 +22929,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "来自各方的压力",
-          "textZh": "基础修饰符。天赋：每有一个角色，该基地的断点就会减少1点，直到回合结束。",
+          "textZh": "基地战术。天赋：每有一个角色，该基地的断点就会减少1点，直到回合结束。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-12.webp",
           "imageKind": "card",
@@ -22949,7 +22949,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "重新布线电源",
-          "textZh": "基础修饰符。天赋：如果这里的断点是19或更少，则给你的一个角色+3力量，直到你的下一回合开始。",
+          "textZh": "基地战术。天赋：如果这里的断点是19或更少，则给你的一个角色+3力量，直到你的下一回合开始。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-13.webp",
           "imageKind": "card",
@@ -22969,7 +22969,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "见证我们的优势",
-          "textZh": "基础修饰符。持续能力：该基地的能力被取消。",
+          "textZh": "基地战术。持续能力：该基地的能力被取消。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-14.webp",
           "imageKind": "card",
@@ -26495,7 +26495,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Circle of Life card art from Smash Up: Disney Edition",
           "nameZh": "生命圈",
-          "textZh": "随从修正战术。打出你的角色。特殊能力：在该角色进入弃牌堆后，你可以从你的手牌或弃牌堆中使用另一个力量为3或更少的角色作为额外角色。",
+          "textZh": "随从修正战术。打出到你的角色上。特殊能力：在该角色从游戏中进入弃牌堆后，你可以从你的手牌或弃牌堆中打出另一个力量为 3 或以下的角色作为额外角色。",
           "clarificationsZh": []
         },
         {
@@ -26535,7 +26535,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "He Lives In You card art from Smash Up: Disney Edition",
           "nameZh": "他住在你里面",
-          "textZh": "基础修饰符。持续能力：这里的每个角色都有 +1 力量。如果木法沙在你的弃牌堆中，则它们的力量为 +2。",
+          "textZh": "基地战术。持续能力：这里的每个角色都有 +1 力量。如果木法沙在你的弃牌堆中，则它们的力量为 +2。",
           "clarificationsZh": []
         },
         {
@@ -26555,7 +26555,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Hyenas’ Den card art from Smash Up: Disney Edition",
           "nameZh": "鬣狗巢穴",
-          "textZh": "基础修饰符。天赋：你的一个角色在回合结束前获得+2力量。特殊能力：在一个基地计分后，如果木法沙在你的弃牌堆中，你可以将这张卡移动到另一个基地。",
+          "textZh": "基地战术。天赋：你的一个角色在回合结束前获得+2力量。特殊能力：在一个基地计分后，如果木法沙在你的弃牌堆中，你可以将这张卡移动到另一个基地。",
           "clarificationsZh": []
         },
         {
@@ -28499,7 +28499,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Aid from Allies card art from Smash Up: Marvel",
           "nameZh": "来自盟友的援助",
-          "textZh": "基础修饰符。画一张卡片。持续能力：将一个或多个角色移至此处后，抓一张牌。",
+          "textZh": "基地战术。画一张卡片。持续能力：将一个或多个角色移至此处后，抓一张牌。",
           "clarificationsZh": []
         },
         {
@@ -28515,7 +28515,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "协同攻击",
-          "textZh": "选择一个基地。将最多三个角色从其他基地移动到那里。他们各自获得+1力量直到回合结束。",
+          "textZh": "选择一个基地。将你的角色中至多三个从其他基地移动到该基地。他们各自获得 +1 力量直到回合结束。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/ultimates-6.webp",
           "imageKind": "card",
@@ -28575,7 +28575,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "英勇登陆",
-          "textZh": "将任意数量的角色移动到其他基地。",
+          "textZh": "将任意数量的你的角色移动到其他基地。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/ultimates-9.webp",
           "imageKind": "card",
@@ -31275,7 +31275,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Fix-It Felix Jr. card art from Smash Up: Disney Edition",
           "nameZh": "修复小菲利克斯",
-          "textZh": "power 4 - 将你的弃牌堆中的一个基本修正值放入你的手上。天赋：将一个基础修饰符放置在其拥有者的牌组顶部。",
+          "textZh": "power 4 - 将你的弃牌堆中的一个基地战术放入你的手上。天赋：将一个基地战术放置在其拥有者的牌组顶部。",
           "clarificationsZh": []
         },
         {
@@ -31355,7 +31355,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Cy-Bug Infestation card art from Smash Up: Disney Edition",
           "nameZh": "Cy-Bug 感染",
-          "textZh": "基础修饰符。天赋：摧毁这张卡和这个基地。从你左边的玩家开始，每个玩家选择一个基地并将他们所有的牌从这里移动到那里。正常更换底座。",
+          "textZh": "基地战术。天赋：摧毁这张卡和这个基地。从你左边的玩家开始，每个玩家选择一个基地并将他们所有的牌从这里移动到那里。正常更换底座。",
           "clarificationsZh": []
         },
         {
@@ -31395,7 +31395,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "I’m Gonna Wreck It! card art from Smash Up: Disney Edition",
           "nameZh": "我要毁了它！",
-          "textZh": "基础修饰符。持续能力：该基地的断点减少 3 个。 天赋：该基地的能力被取消，直到你的下一回合开始。",
+          "textZh": "基地战术。持续能力：该基地的断点减少 3 个。 天赋：该基地的能力被取消，直到你的下一回合开始。",
           "clarificationsZh": []
         },
         {
@@ -31415,7 +31415,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Kart Bakery card art from Smash Up: Disney Edition",
           "nameZh": "卡丁车面包店",
-          "textZh": "基础修饰符。天赋：如果你这里有角色，抓一张牌。",
+          "textZh": "基地战术。天赋：如果你这里有角色，抓一张牌。",
           "clarificationsZh": []
         },
         {
@@ -31435,7 +31435,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "King Candy card art from Smash Up: Disney Edition",
           "nameZh": "糖果王",
-          "textZh": "基础修饰符。天赋：你可以将这张卡移动到另一个基地。选择这张卡底部的一个角色。在你的下一个回合开始之前，其随从修正战术的能力将被取消，其力量指示物也不会增加其力量。",
+          "textZh": "基地战术。天赋：你可以将这张卡移动到另一个基地。选择这张卡底部的一个角色。在你的下一个回合开始之前，其随从修正战术的能力将被取消，其力量指示物也不会增加其力量。",
           "clarificationsZh": []
         },
         {
@@ -31475,7 +31475,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Research Lab Beacon card art from Smash Up: Disney Edition",
           "nameZh": "研究实验室信标",
-          "textZh": "基础修饰符。持续能力：如果这里有四个或更多角色，则破坏这张卡。天赋：命名一个派系。将该派系的所有角色移至此处。",
+          "textZh": "基地战术。持续能力：如果这里有四个或更多角色，则破坏这张卡。天赋：命名一个派系。将该派系的所有角色移至此处。",
           "clarificationsZh": []
         },
         {
@@ -31495,7 +31495,7 @@
           "imageSource": "SmashUp Wiki faction photo — cropped to this card",
           "imageAlt": "Sugar Rush card art from Smash Up: Disney Edition",
           "nameZh": "糖热",
-          "textZh": "基础修饰符。天赋：将最多两个角色从这里移动到另一个基地或从另一个基地移动到这里。他们各自获得+1力量直到回合结束。",
+          "textZh": "基地战术。天赋：将你的角色中至多两个从这里移动到另一个基地，或从另一个基地移动到这里；它们各自获得 +1 力量直到回合结束。",
           "clarificationsZh": []
         }
       ],
