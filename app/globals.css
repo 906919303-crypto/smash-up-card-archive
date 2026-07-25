@@ -242,6 +242,15 @@ h1 em {
   padding-right: 3px;
 }
 
+.searchResultList {
+  display: grid;
+  align-content: start;
+  gap: 3px;
+  max-height: 600px;
+  overflow: auto;
+  padding-right: 3px;
+}
+
 .factionGroup {
   padding-top: 10px;
   border-top: 1px solid rgba(21, 20, 17, 0.12);
@@ -428,7 +437,7 @@ h1 em {
   font-size: 14px;
 }
 
-.cardRow {
+.cardRow, .searchResultRow {
   display: grid;
   grid-template-columns: 48px minmax(0, 1fr) auto;
   align-items: center;
@@ -443,9 +452,9 @@ h1 em {
   font-size: 12px;
 }
 
-.cardRow:hover, .cardRow.active { color: var(--ink); background: rgba(255, 255, 255, 0.75); }
+.cardRow:hover, .cardRow.active, .searchResultRow:hover, .searchResultRow.active { color: var(--ink); background: rgba(255, 255, 255, 0.75); }
 
-.cardRow.active { box-shadow: inset 3px 0 0 var(--orange); }
+.cardRow.active, .searchResultRow.active { box-shadow: inset 3px 0 0 var(--orange); }
 
 .typeMark {
   color: #857d71;
@@ -454,9 +463,28 @@ h1 em {
 
 .cardRowName { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-.cardRow strong {
+.cardRow strong, .searchResultRow strong {
   color: #857d71;
   font-size: 11px;
+}
+
+.searchResultText {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.searchResultText b, .searchResultText small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searchResultText b { font-size: 13px; }
+
+.searchResultText small {
+  color: #857d71;
+  font-size: 10px;
 }
 
 .cardStage {
@@ -696,6 +724,7 @@ footer p:not(.eyebrow) {
   .heroGrid, .catalogShell, .browserLayout { grid-template-columns: 1fr; }
   .statStack { grid-template-columns: repeat(3, 1fr); }
   .factionPanel { min-height: 0; max-height: 390px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .searchResultList { max-height: 240px; }
   .factionGroupItems { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .factionButton { border-bottom: 1px solid rgba(21,20,17,0.09); }
   .contentPanel { padding: 28px 20px 36px; }

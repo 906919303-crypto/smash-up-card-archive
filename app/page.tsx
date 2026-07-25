@@ -33,6 +33,11 @@ type PhysicalCard = {
   copy: number;
 };
 
+type SearchResult = {
+  faction: Faction;
+  card: Card;
+};
+
 type Faction = {
   slug: string;
   name: string;
@@ -87,6 +92,8 @@ const COPY = {
     choose: "\u9009\u62e9\u79cd\u65cf",
     searchLabel: "\u641c\u7d22\u79cd\u65cf\u3001\u5361\u540d\u6216\u89c4\u5219",
     searchPlaceholder: "\u641c\u7d22\u79cd\u65cf\u3001\u5361\u540d\u6216\u89c4\u5219\u2026",
+    searchResults: "\u641c\u7d22\u7ed3\u679c",
+    noSearchResults: "\u6ca1\u6709\u627e\u5230\u5305\u542b\u8be5\u8bcd\u6761\u7684\u5361\u724c\u3002",
     factionFile: "\u79cd\u65cf\u6863\u6848",
     source: "\u67e5\u770b\u6765\u6e90",
     difficulty: "\u96be\u5ea6",
@@ -136,6 +143,8 @@ const COPY = {
     choose: "Choose a faction",
     searchLabel: "Search factions, card names, or rules",
     searchPlaceholder: "Search factions, cards, or rules\u2026",
+    searchResults: "Search results",
+    noSearchResults: "No cards contain this search term.",
     factionFile: "Faction file",
     source: "View source",
     difficulty: "Complexity",
@@ -233,22 +242,6 @@ function cardNotes(card: Card, language: Language) {
   return language === "zh" ? card.clarificationsZh || card.clarifications : card.clarifications;
 }
 
-function factionMatches(faction: Faction, term: string) {
-  return [
-    faction.name,
-    faction.nameZh,
-    faction.set,
-    faction.setZh,
-    faction.complexity,
-    ...faction.mechanics,
-    ...(faction.mechanicsZh ?? []),
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase()
-    .includes(term);
-}
-
 function cardMatches(card: Card, term: string) {
   return [
     card.name,
@@ -282,14 +275,23 @@ export default function Home() {
 
   const ui = COPY[language];
   const term = query.trim().toLowerCase();
+  const isSearching = term.length > 0;
 
   const visibleFactions = useMemo(
-    () =>
-      catalog.factions.filter((faction) => {
-        if (!term) return true;
-        return factionMatches(faction, term) || faction.cards.some((card) => cardMatches(card, term));
-      }),
-    [term],
+    () => (isSearching ? [] : catalog.factions),
+    [isSearching],
+  );
+
+  const searchResults = useMemo<SearchResult[]>(
+    () => {
+      if (!isSearching) return [];
+      return catalog.factions.flatMap((faction) =>
+        faction.cards
+          .filter((card) => (type === "all" || card.type === type) && cardMatches(card, term))
+          .map((card) => ({ faction, card })),
+      );
+    },
+    [isSearching, term, type],
   );
 
   const groupedFactions = useMemo(() => {
@@ -311,15 +313,14 @@ export default function Home() {
 
   const activeFaction =
     catalog.factions.find((faction) => faction.slug === selectedFaction) ??
-    visibleFactions[0] ??
     catalog.factions[0];
 
   const visibleCards = useMemo(
     () =>
       activeFaction.cards.filter(
-        (card) => (type === "all" || card.type === type) && (!term || cardMatches(card, term)),
+        (card) => (type === "all" || card.type === type) && (!isSearching || cardMatches(card, term)),
       ),
-    [activeFaction, term, type],
+    [activeFaction, isSearching, term, type],
   );
 
   const physicalCards = useMemo<PhysicalCard[]>(
@@ -345,12 +346,26 @@ export default function Home() {
   }).format(new Date(catalog.source.retrievedAt));
 
   useEffect(() => {
+    if (isSearching) return;
     if (visibleFactions.length > 0 && !visibleFactions.some((faction) => faction.slug === selectedFaction)) {
       setSelectedFaction(visibleFactions[0].slug);
       setSelectedCard(visibleFactions[0].cards[0]?.id ?? "");
       setSelectedCopy(1);
     }
-  }, [selectedFaction, visibleFactions]);
+  }, [isSearching, selectedFaction, visibleFactions]);
+
+  useEffect(() => {
+    if (!isSearching || !searchResults.length) return;
+    const hasSelectedResult = searchResults.some(
+      ({ faction, card }) => faction.slug === selectedFaction && card.id === selectedCard,
+    );
+    if (!hasSelectedResult) {
+      const firstResult = searchResults[0];
+      setSelectedFaction(firstResult.faction.slug);
+      setSelectedCard(firstResult.card.id);
+      setSelectedCopy(1);
+    }
+  }, [isSearching, searchResults, selectedCard, selectedFaction]);
 
   useEffect(() => {
     if (visibleCards.length > 0 && !visibleCards.some((card) => card.id === selectedCard)) {
@@ -417,6 +432,15 @@ export default function Home() {
 
   function chooseCard(card: Card) {
     setSelectedCard(card.id);
+    setSelectedCopy(1);
+    if (window.matchMedia("(max-width: 860px)").matches) {
+      requestAnimationFrame(() => cardStageRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    }
+  }
+
+  function chooseSearchResult(result: SearchResult) {
+    setSelectedFaction(result.faction.slug);
+    setSelectedCard(result.card.id);
     setSelectedCopy(1);
     if (window.matchMedia("(max-width: 860px)").matches) {
       requestAnimationFrame(() => cardStageRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
@@ -492,10 +516,10 @@ export default function Home() {
         <aside className="factionPanel">
           <div className="panelHeading">
             <div>
-              <p className="eyebrow">01 / CHOOSE A FACTION</p>
-              <h2>{ui.choose}</h2>
+              <p className="eyebrow">{isSearching ? "01 / SEARCH RESULTS" : "01 / CHOOSE A FACTION"}</p>
+              <h2>{isSearching ? ui.searchResults : ui.choose}</h2>
             </div>
-            <span>{visibleFactions.length}</span>
+            <span>{isSearching ? searchResults.length : visibleFactions.length}</span>
           </div>
 
           <label className="searchBox">
@@ -509,6 +533,30 @@ export default function Home() {
             <b>{"\u2315"}</b>
           </label>
 
+          {isSearching ? (
+            <div className="searchResultList" role="list" aria-label={ui.searchResults}>
+              {searchResults.map((result) => {
+                const { faction, card } = result;
+                const isActive = faction.slug === activeFaction.slug && card.id === currentCard?.id;
+                return (
+                  <button
+                    className={isActive ? "searchResultRow active" : "searchResultRow"}
+                    key={`${faction.slug}-${card.id}`}
+                    onClick={() => chooseSearchResult(result)}
+                    aria-pressed={isActive}
+                  >
+                    <span className="typeMark">{ui.type[card.type] ?? ui.type.other}</span>
+                    <span className="searchResultText">
+                      <b>{cardLabel(card, language)}</b>
+                      <small>{factionLabel(faction, language)}</small>
+                    </span>
+                    <strong>{"\u00d7"}{card.quantity}</strong>
+                  </button>
+                );
+              })}
+              {!searchResults.length && <p className="emptyList">{ui.noSearchResults}</p>}
+            </div>
+          ) : (
           <div className="factionList" role="list">
             {groupedFactions.map(({ set, factions }) => (
               <section className="factionGroup" key={set} aria-label={expansionLabel(set, language)}>
@@ -536,6 +584,7 @@ export default function Home() {
             ))}
             {!visibleFactions.length && <p className="emptyList">{ui.noFactions}</p>}
           </div>
+          )}
         </aside>
 
         <section className="contentPanel">
