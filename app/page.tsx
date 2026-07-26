@@ -87,6 +87,7 @@ type BaseCard = {
   text: string;
   textZh?: string;
   errata: string;
+  errataZh?: string;
   clarifications: string[];
   clarificationsZh?: string[];
   imageUrl?: string | null;
@@ -284,6 +285,10 @@ function baseText(base: BaseCard, language: Language) {
 
 function baseFactionLabel(base: BaseCard, language: Language) {
   return language === "zh" ? base.sourceFactionZh || base.sourceFaction : base.sourceFaction;
+}
+
+function baseErrata(base: BaseCard, language: Language) {
+  return language === "zh" ? base.errataZh || base.errata : base.errata;
 }
 
 function cardMatches(card: Card, term: string) {
@@ -1058,7 +1063,7 @@ function BaseArchive({ bases, language }: { bases: BaseCard[]; language: Languag
               <div className="cardNotes">
                 <div className="errataNote">
                   <span>{ui.errata}</span>
-                  <b>{currentBase.errata}</b>
+                  <b>{baseErrata(currentBase, language)}</b>
                 </div>
               </div>
             </>

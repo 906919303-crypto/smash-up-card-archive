@@ -26,7 +26,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Mermaid Pool · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mermaids",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "美人鱼池",
+      "textZh": "在你的回合中，如果你这里有一个随从，你可以将另一个玩家的随从移动到这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-mermaids-2",
@@ -49,7 +52,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Mermaid Reef · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mermaids",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "美人鱼礁",
+      "textZh": "在你的回合中，其他玩家的随从为其控制器的总力量减少 1 点。",
+      "errataZh": "无"
     },
     {
       "id": "base-sheep-1",
@@ -72,7 +78,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Sheep Shrine · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Sheep",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "羊神社",
+      "textZh": "此基地牌打出后，每名玩家可以将其一个随从移动到此处。若在设置期间打出此基地牌，将其替换并洗回基地牌组。",
+      "errataZh": "无"
     },
     {
       "id": "base-sheep-2",
@@ -95,7 +104,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Pasture · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Sheep",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "牧场",
+      "textZh": "每回合第一次将一个随从移动到此基地后，将另一个随从从那里移动到这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-skeletons-1",
@@ -118,7 +130,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Boneyard · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Skeletons",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "墓地",
+      "textZh": "在你的回合中，当你拥有3或以下力量的随从从另一个基地进入弃牌堆后，你可以将其埋在这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-skeletons-2",
@@ -141,7 +156,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ossuary · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Skeletons",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "骨库",
+      "textZh": "在你的回合中，你可以从你的弃牌堆中埋葬一个力量为 3 或更少的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-world-champs-1",
@@ -156,15 +174,18 @@
         3,
         1
       ],
-      "text": "After the first time you play a minion here during your turn, you may play an extra action or draw a card. Errata? No",
-      "errata": "Not stated",
+      "text": "After the first time you play a minion here during your turn, you may play an extra action or draw a card.",
+      "errata": "No",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-world-champs-1.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Arena · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/World_Champs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "竞技场",
+      "textZh": "在你的回合中首次在此处打出随从后，你可以打出一张额外战术，或抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-world-champs-2",
@@ -179,15 +200,18 @@
         2,
         1
       ],
-      "text": "After the first time you play a minion here during your turn, it gains +2 power until the end of the turn. Errata? No",
-      "errata": "Not stated",
+      "text": "After the first time you play a minion here during your turn, it gains +2 power until the end of the turn.",
+      "errata": "No",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-world-champs-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Hall of Fame · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/World_Champs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "名人堂",
+      "textZh": "在你的回合中第一次在这里打出随从后，它会获得+2力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-bear-cavalry-1",
@@ -210,7 +234,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Field of Honor · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Bear_Cavalry",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "荣誉领域",
+      "textZh": "每回合第一次消灭其他玩家的随从后，获得 1 VP。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-bear-cavalry-2",
@@ -233,7 +260,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Tsar's Palace · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Bear_Cavalry",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "沙皇宫殿",
+      "textZh": "如果你在这里没有比其他玩家更多的力量，你就不能在这里打出力量为 2 或更少的随从。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-ghosts-1",
@@ -256,7 +286,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Haunted House · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ghosts",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "鬼屋",
+      "textZh": "当玩家在这里打出一个随从后，该玩家必须弃掉一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-ghosts-2",
@@ -279,7 +312,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Dread Gazebo · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ghosts",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "可怕的凉亭",
+      "textZh": "玩家不能在此基地打出战术。",
+      "errataZh": "无"
     },
     {
       "id": "base-killer-plants-1",
@@ -302,7 +338,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Secret Grove · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Killer_Plants",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "秘密树林",
+      "textZh": "在你的回合中，你可以在这里额外打出一个力量为 2 或更少的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-killer-plants-2",
@@ -325,7 +364,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Greenhouse · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Killer_Plants",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "温室",
+      "textZh": "在此基地计分并被替换后，获胜者可以在自己的牌组中搜索一个随从并在替换基地上使用它。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-steampunks-1",
@@ -348,7 +390,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Inventor's Salon · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Steampunks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "发明家沙龙",
+      "textZh": "在此基地计分后，获胜者可以将其弃牌堆中的一张战术加入手上。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-steampunks-2",
@@ -363,15 +408,18 @@
         2,
         1
       ],
-      "text": "After the first time each turn you play an action on this base, you may play an extra action. Errata? Yes (Functional - capped at once per turn)",
-      "errata": "Not stated",
+      "text": "After the first time each turn you play an action on this base, you may play an extra action.",
+      "errata": "Yes (Functional - capped at once per turn)",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-steampunks-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Workshop · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Steampunks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "车间",
+      "textZh": "每回合你第一次在此基地上打出一张战术后，你可以打出一张额外战术。",
+      "errataZh": "有（功能性：每回合限一次）"
     },
     {
       "id": "base-itty-critters-1",
@@ -394,7 +442,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Critter Combat Club · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Itty_Critters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "小动物战斗俱乐部",
+      "textZh": "在你的回合中，你可以额外打出一个力量为 2 或更少的随从。如果你在回合结束时控制了它，则将它放置到你的牌库底部。",
+      "errataZh": "无"
     },
     {
       "id": "base-itty-critters-2",
@@ -417,7 +468,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Itty City · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Itty_Critters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "伊蒂城",
+      "textZh": "每回合你第一次在这里打出一个随从后，你可以将一个随机随从从你的弃牌堆洗入你的牌库。",
+      "errataZh": "无"
     },
     {
       "id": "base-kaiju-1",
@@ -440,7 +494,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Kaiju Island · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Kaiju",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "怪兽岛",
+      "textZh": "这里的泰坦不会让其他泰坦离开。这里的每个泰坦都会为其控制器的力量添加 +3 力量。",
+      "errataZh": "无"
     },
     {
       "id": "base-kaiju-2",
@@ -463,7 +520,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Tokyo · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Kaiju",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "东京",
+      "textZh": "当你在此基地上打出一张战术后，你在这里获得+3力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-magical-girls-1",
@@ -486,7 +546,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Akihabara High · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Magical_Girls",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "秋叶原高中",
+      "textZh": "当你在这里打出一个随从后，你在这里的其他随从获得+1力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-magical-girls-2",
@@ -509,7 +572,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Q Point · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Magical_Girls",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "Q点",
+      "textZh": "在此基地计分前，每名玩家消灭其在此基地上的所有随从和战术，但各保留其中一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-mega-troopers-1",
@@ -532,7 +598,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Juice Bar · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mega_Troopers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "果汁吧",
+      "textZh": "在此基地计分前，每个拥有随从的玩家都可以在这里打出额外的随从（从当前玩家开始）。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-mega-troopers-2",
@@ -555,7 +624,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Moon Dumpster · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mega_Troopers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "月球垃圾箱",
+      "textZh": "一旦轮到你，你可以在这里打出一个力量为 3 或更少的随从。你不可以将你的随从从此基地移走。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-astroknights-1",
@@ -578,7 +650,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Hive of Scum and Villainy · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Astroknights",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "败类与邪恶的巢穴",
+      "textZh": "在你每回合第一次执行直接增加你的一个随从力量的战术后，抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-astroknights-2",
@@ -601,7 +676,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "No-Moon · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Astroknights",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "无月",
+      "textZh": "在此基地计分前，随机摧毁一个其他基地（正常替换）。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-changerbots-1",
@@ -624,7 +702,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Changing Room · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Changerbots",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "更衣室",
+      "textZh": "这里的随从使用天赋后，它会获得+1力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-changerbots-2",
@@ -647,7 +728,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Unicrave · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Changerbots",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "尤尼克拉夫",
+      "textZh": "在此基地计分前，将其替换为基地牌库的顶牌。保留所有牌，丢弃这张牌，然后继续得分。",
+      "errataZh": "无"
     },
     {
       "id": "base-ignobles-1",
@@ -670,7 +754,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Spikey Chair Room · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ignobles",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "尖刺椅室",
+      "textZh": "在玩家在这里至少使用了一个随从的任何回合结束时，他们可以消灭自己拥有的一个随从来抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-ignobles-2",
@@ -693,7 +780,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Wintersquashed · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ignobles",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "冬季压垮",
+      "textZh": "当你在这里打出一个随从后，你可以将其控制权交给另一个玩家。",
+      "errataZh": "无"
     },
     {
       "id": "base-star-roamers-2",
@@ -716,7 +806,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Neutral Space · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Star_Roamers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "中立空间",
+      "textZh": "这里的随从不会受到其他玩家的随从的影响。",
+      "errataZh": "无"
     },
     {
       "id": "base-star-roamers-1",
@@ -739,7 +832,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "USS Undertaking · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Star_Roamers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "承诺号",
+      "textZh": "在你的回合开始时，你可以将你的一个随从移动到这里，或者从这里移动到另一个基地。",
+      "errataZh": "无"
     },
     {
       "id": "base-aliens-1",
@@ -762,7 +858,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Homeworld · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Aliens",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "家园",
+      "textZh": "每回合一次，当你在这里打出一个随从后，你可以额外打出一个力量为 2 或更少的随从。",
+      "errataZh": "有（功能性：改为每回合一次）"
     },
     {
       "id": "base-aliens-2",
@@ -785,7 +884,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Mothership · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Aliens",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "母舰",
+      "textZh": "在此基地计分后，获胜者可以将其一名力量为 3 或以下的随从从此处移回其拥有者的手上。",
+      "errataZh": "无"
     },
     {
       "id": "base-dinosaurs-1",
@@ -808,7 +910,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Jungle Oasis · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Dinosaurs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "丛林绿洲",
+      "textZh": "（无能力）",
+      "errataZh": "无"
     },
     {
       "id": "base-dinosaurs-2",
@@ -831,7 +936,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Tar Pits · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Dinosaurs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "焦油坑",
+      "textZh": "当这里的随从每回合第一次被消灭时，请将其放在其拥有者牌组的底部。",
+      "errataZh": "有（功能性：现为每回合一次）"
     },
     {
       "id": "base-ninjas-1",
@@ -854,7 +962,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ninja Dojo · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ninjas",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "忍者道场",
+      "textZh": "（无能力）",
+      "errataZh": "无"
     },
     {
       "id": "base-ninjas-2",
@@ -877,7 +988,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Temple of Goju · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ninjas",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "刚柔寺",
+      "textZh": "每次在这里消灭一个随从后，将其放置在其拥有者牌组的底部",
+      "errataZh": "无"
     },
     {
       "id": "base-pirates-1",
@@ -900,7 +1014,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Grey Opal · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Pirates",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "灰色蛋白石",
+      "textZh": "在此基地计分后，除获胜者之外的所有玩家都可以将随从从这里移动到另一个基地，而不是丢弃堆",
+      "errataZh": "无"
     },
     {
       "id": "base-pirates-2",
@@ -923,7 +1040,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Tortuga · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Pirates",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "托尔图加",
+      "textZh": "在此基地计分并被替换后，亚军可以将另一个基地的一名随从移至替换基地。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-robots-1",
@@ -946,7 +1066,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Factory 436-1337 · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Robots",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "工厂 436-1337",
+      "textZh": "当此基地计分时，获胜者每拥有 5 点力量即可获得 1 VP。",
+      "errataZh": "无"
     },
     {
       "id": "base-robots-2",
@@ -969,7 +1092,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Central Brain · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Robots",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "中枢大脑",
+      "textZh": "这里的每个随从都有+1力量。",
+      "errataZh": "无"
     },
     {
       "id": "base-tricksters-1",
@@ -992,7 +1118,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Cave of Shinies · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Tricksters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "闪亮洞穴",
+      "textZh": "每回合一次，当你拥有的随从被消灭后，获得 1 点 VP。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-tricksters-2",
@@ -1015,7 +1144,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Mushroom Kingdom · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Tricksters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "蘑菇王国",
+      "textZh": "在你的回合开始时，如果你手上的牌多于任何其他玩家，你可以将一个随从移入或移出此基地。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-wizards-1",
@@ -1038,7 +1170,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "School of Wizardry · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Wizards",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "魔法学校",
+      "textZh": "在此基地计分后，获胜者查看基地牌库顶部的三张牌，选择一张替换此基地牌，并按任意顺序返回其他牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-wizards-2",
@@ -1061,7 +1196,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Great Library · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Wizards",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "大图书馆",
+      "textZh": "在此基地计分后，所有拥有随从的玩家都可以抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-zombies-1",
@@ -1084,7 +1222,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Evans City Cemetery · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Zombies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "埃文斯市公墓",
+      "textZh": "在此基地计分后，获胜者弃掉其所有手牌并抽五张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-zombies-2",
@@ -1107,7 +1248,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Rhodes Plaza Mall · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Zombies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "罗德广场购物中心",
+      "textZh": "当此基地计分时，每名玩家在此处每有一名随从便获得 1 VP。",
+      "errataZh": "无"
     },
     {
       "id": "base-action-heroes-1",
@@ -1130,7 +1274,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Building Rooftop · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Action_Heroes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "建筑屋顶",
+      "textZh": "在你的回合开始时，如果你这里只有一个随从，你可以将此基地的临界点减少该随从的力量，直到回合结束。当此基地计分时，每个拥有一个随从的玩家都会获得 1 VP。",
+      "errataZh": "无"
     },
     {
       "id": "base-action-heroes-2",
@@ -1153,7 +1300,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Jungle Camp · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Action_Heroes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "丛林营地",
+      "textZh": "在此基地计分后，获胜者可以将他们的一个随从移回手牌。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-backtimers-1",
@@ -1176,7 +1326,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Alternate Present · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Backtimers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "交替现在时",
+      "textZh": "在你每回合第一次在这里打出随从后，你可以在你手上的一张牌上放置两个停滞标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-backtimers-2",
@@ -1199,7 +1352,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Time-Traveling Car · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Backtimers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "时光旅行车",
+      "textZh": "在此基地计分后，获胜者可以在其位于此处的一名随从或一张战术上放置两个停滞标记。",
+      "errataZh": "有（功能性：微调时机，并明确为“随从或战术”）"
     },
     {
       "id": "base-extramorphs-1",
@@ -1222,7 +1378,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ancient Crashed Ship · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Extramorphs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "古代失事船",
+      "textZh": "当你从手牌以外的任何地方打出一个随从后，在它上面放置一个+1战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-extramorphs-2",
@@ -1245,7 +1404,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Brood Hive · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Extramorphs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "巢巢",
+      "textZh": "在此基地计分前，从当前玩家左边的玩家开始，这里有一个随从的每个玩家都可以在他们的牌组顶部打出一个额外的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-wraithrustlers-1",
@@ -1268,7 +1430,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Rooftop Portal · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Wraithrustlers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "屋顶门户",
+      "textZh": "每回合一次，你破坏此处的一张卡后，抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-wraithrustlers-2",
@@ -1283,15 +1448,18 @@
         2,
         1
       ],
-      "text": "The winner, on their next turn, may play an extra action or an extra minion. Errata? Yes, Wording",
-      "errata": "Not stated",
+      "text": "The winner, on their next turn, may play an extra action or an extra minion.",
+      "errata": "Yes, Wording",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-wraithrustlers-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Wraithrustlers HQ · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Wraithrustlers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "幽灵盗贼总部",
+      "textZh": "获胜者在其下个回合可以打出一张额外战术或一个额外随从。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-adolescent-epic-geckos-1",
@@ -1314,7 +1482,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Sewer Hideout · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Adolescent_Epic_Geckos",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "下水道藏身处",
+      "textZh": "当你在一个回合中打出第二张战术后，你可以在此处的一名随从上放置一个 +1 战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-adolescent-epic-geckos-2",
@@ -1337,7 +1508,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Technoball · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Adolescent_Epic_Geckos",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "科技球",
+      "textZh": "每回合首次在此处打出随从后，你可以打出一张额外战术。",
+      "errataZh": "无"
     },
     {
       "id": "base-g-i-gerald-2",
@@ -1360,7 +1534,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "G.I. Gerald's Base · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/G.I._Gerald",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "特种兵杰拉德的基地",
+      "textZh": "每回合一次，当你在这里打出一个随从后，你可以抽一张牌并将一张牌从你的手牌放在你的牌组底部",
+      "errataZh": "无"
     },
     {
       "id": "base-g-i-gerald-1",
@@ -1383,7 +1560,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "USS Banner · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/G.I._Gerald",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "旗帜号航空母舰",
+      "textZh": "在你的回合中，你可以在这里额外打出一个力量为 2 或更少的随从。如果你在回合结束时控制了它，则将其置于你的牌库顶。",
+      "errataZh": "无"
     },
     {
       "id": "base-pearl-and-the-images-2",
@@ -1406,7 +1586,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Concert Venue · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Pearl_and_the_Images",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "演唱会场地",
+      "textZh": "每回合你第一次在这里打出随从后，你可以在它上面放置一个+1战斗力标记",
+      "errataZh": "无"
     },
     {
       "id": "base-pearl-and-the-images-1",
@@ -1429,7 +1612,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Recording Studio · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Pearl_and_the_Images",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "录音室",
+      "textZh": "每回合开始时，所有玩家的随从获得+1力量，直到回合结束",
+      "errataZh": "无"
     },
     {
       "id": "base-rulers-of-the-cosmos-2",
@@ -1452,7 +1638,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Power Castle · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Rulers_of_the_Cosmos",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "权力城堡",
+      "textZh": "每回合一次，当一张战术被打出到或转移到此处的一名随从上后，你可以在该随从上放置一个 +1 战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-rulers-of-the-cosmos-1",
@@ -1475,7 +1664,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Slime Pool · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Rulers_of_the_Cosmos",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "史莱姆池",
+      "textZh": "你可以不进行常规战术打出，改为从你的牌组顶打出一张“打出到随从上”的战术，并将其打出到此处的一名随从上。",
+      "errataZh": "无"
     },
     {
       "id": "base-dragons-1",
@@ -1498,7 +1690,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Dragon's Lair · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Dragons",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "龙穴",
+      "textZh": "当此基地计分时，获胜者抽3张牌。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-dragons-2",
@@ -1521,7 +1716,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Wyrm's Desolation · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Dragons",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "巨龙的荒凉",
+      "textZh": "这里的每个随从都有-1力量。",
+      "errataZh": "无"
     },
     {
       "id": "base-mythic-greeks-1",
@@ -1544,7 +1742,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Oracle at Delphi · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mythic_Greeks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "德尔福的甲骨文",
+      "textZh": "当你在这里打出一个随从后，展示你牌组顶牌。如果是战术，就画出来；否则退回。",
+      "errataZh": "无"
     },
     {
       "id": "base-mythic-greeks-2",
@@ -1567,7 +1768,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Wooden Horse · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mythic_Greeks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "木马",
+      "textZh": "任何玩家打出一张战术后，他或她可以给这里的一个随从+2力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-sharks-1",
@@ -1590,7 +1794,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Shark Reef · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Sharks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "鲨鱼礁",
+      "textZh": "当一个随从在这里被摧毁后，摧毁它的玩家可以在他们的一个随从上放置一个+1战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-sharks-2",
@@ -1613,7 +1820,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Deep · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Sharks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "深渊",
+      "textZh": "当你在这里打出一个随从后，如果它的力量为4或更多，你可以在这里消灭一个力量较小的随从。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-super-heroes-1",
@@ -1636,7 +1846,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Converted Cave · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Super_Heroes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "改造后的洞穴",
+      "textZh": "力量为 2 或以下的随从无法在此被消灭，除非被其操控者摧毁。",
+      "errataZh": "无"
     },
     {
       "id": "base-super-heroes-2",
@@ -1659,7 +1872,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Crystal Fortress · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Super_Heroes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "水晶堡垒",
+      "textZh": "当你在这里打出一个随从后，你可以将你的弃牌堆中的一个随从放到你牌库的底部。",
+      "errataZh": "无"
     },
     {
       "id": "base-tornados-1",
@@ -1682,7 +1898,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Tornado Alley · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Tornados",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "龙卷风巷",
+      "textZh": "每回合你第一次在这里打出一个随从后，你可以从另一个基地移动另一个随从到这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-tornados-2",
@@ -1705,7 +1924,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Trailer Park · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Tornados",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "拖车公园",
+      "textZh": "将一个随从移动到此处后，在其上放置一个+1战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-giant-ants-2",
@@ -1728,7 +1950,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Egg Chamber · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Giant_Ants",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "蛋室",
+      "textZh": "这里拥有 +1 战斗力标记的随从无法被消灭。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-giant-ants-1",
@@ -1751,7 +1976,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Hill · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Giant_Ants",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "山丘",
+      "textZh": "在你的回合开始时，你可以将你的一个随从移动到此基地。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-mad-scientists-1",
@@ -1774,7 +2002,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Golem Schloß · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mad_Scientists",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "傀儡城堡",
+      "textZh": "在此基地计分后，获胜者在他们的每个随从上放置一个+1战斗力标记。",
+      "errataZh": "有（措辞：时机）"
     },
     {
       "id": "base-mad-scientists-2",
@@ -1797,7 +2028,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Laboratorium · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mad_Scientists",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "实验室",
+      "textZh": "每回合第一次打出随从后，其控制者会在其上放置一个 +1 战斗力标记。",
+      "errataZh": "有（措辞：时机）"
     },
     {
       "id": "base-vampires-1",
@@ -1820,7 +2054,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Castle Blood · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Vampires",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "城堡之血",
+      "textZh": "每回合一次，当你消灭另一个基地的随从后，你可以将它埋在这里。每埋入一张牌，此基地的临界点就会减少 2。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-vampires-2",
@@ -1835,15 +2072,18 @@
         2,
         2
       ],
-      "text": "After you destroy one or more minions, you may place a +1 power counter on one of your minions here. Errata? Yes/No",
-      "errata": "Not stated",
+      "text": "After you destroy one or more minions, you may place a +1 power counter on one of your minions here.",
+      "errata": "Yes/No",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-vampires-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Crypt · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Vampires",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "地穴",
+      "textZh": "当你消灭一个或多个随从后，你可以在你的一个随从身上放置一个+1战斗力标记。",
+      "errataZh": "待确认"
     },
     {
       "id": "base-werewolves-1",
@@ -1866,7 +2106,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Moot Site · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Werewolves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "模拟场地",
+      "textZh": "每回合第一次在这里打出随从后，它会获得+2力量，直到回合结束。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-werewolves-2",
@@ -1889,7 +2132,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Standing Stones · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Werewolves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "立石",
+      "textZh": "在你的回合中，你的一个随从可以使用其天赋两次。",
+      "errataZh": "无"
     },
     {
       "id": "base-ancient-egyptians-1",
@@ -1912,7 +2158,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Pyramids · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ancient_Egyptians",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "金字塔",
+      "textZh": "轮到你的时候，你可以将手上的一张牌埋在这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-ancient-egyptians-2",
@@ -1935,7 +2184,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Star Portal · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ancient_Egyptians",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "星之传送门",
+      "textZh": "当一张牌被埋在这里或在此基地上打出一张战术后，其控制者会抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-cowboys-1",
@@ -1958,7 +2210,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Saloon · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Cowboys",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "沙龙",
+      "textZh": "当这里的随从被消灭后，这里有随从的每个玩家都可以抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-cowboys-2",
@@ -1981,7 +2236,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "So-so Corral · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Cowboys",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "马马虎虎的畜栏",
+      "textZh": "当你在这里打出一个随从后，它可能会在这里与另一个玩家的随从决斗。消灭失败的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-samurai-1",
@@ -2004,7 +2262,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Sakura Garden · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Samurai",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "樱花园",
+      "textZh": "每回合，当你的一个随从第一次进入弃牌堆时，抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-samurai-2",
@@ -2027,7 +2288,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Shogun's Palace · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Samurai",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "幕府将军的宫殿",
+      "textZh": "每回合一次，当你在这里打出一个随从后，它可能会在这里与另一个玩家的随从决斗。获胜随从的操控者抽两张牌。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-vikings-1",
@@ -2050,7 +2314,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Drakkar · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Vikings",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "德拉卡",
+      "textZh": "每回合首次在此处打出随从后，你可以展示另一名玩家牌组顶牌。若它是一张战术或力量为 3 或以下的随从，将其加入你的手上；否则放回原处。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-vikings-2",
@@ -2073,7 +2340,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Longhouse · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Vikings",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "长屋",
+      "textZh": "在你的回合中，你可以将一张手牌放在你的牌库顶，让你的一个随从获得 +2 力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-fairies-2",
@@ -2096,7 +2366,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Enchanted Glen · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Fairies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "魔法峡谷",
+      "textZh": "当你将一张战术打出到此处的一名随从上后，抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-fairies-1",
@@ -2119,7 +2392,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Fairy Circle · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Fairies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "仙女圈",
+      "textZh": "每回合第一次在这里打出随从后，您可以在这里额外打出一个随从或打出一张额外战术。",
+      "errataZh": "无"
     },
     {
       "id": "base-kitty-cats-2",
@@ -2142,7 +2418,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Cool Cats' Alley · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Kitty_Cats",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "酷猫巷",
+      "textZh": "一旦轮到你，你可以消灭这里的一个随从来抽一张牌。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-kitty-cats-1",
@@ -2165,7 +2444,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The House of Nine Lives · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Kitty_Cats",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "九命屋",
+      "textZh": "如果另一个基地的随从将被摧毁，它的主人可以将其移动到这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-mythic-horses-1",
@@ -2188,7 +2470,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Equaria · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mythic_Horses",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "艾奎利亚",
+      "textZh": "当你在这里打出一个随从后，你可以将你的一个随从从另一个基地移动到这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-mythic-horses-2",
@@ -2211,7 +2496,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Pony Land · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mythic_Horses",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "小马乐园",
+      "textZh": "如果你在这里有两个或更多随从，你在这里的随从就不会被消灭。",
+      "errataZh": "无"
     },
     {
       "id": "base-princesses-1",
@@ -2234,7 +2522,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Beautiful Castle · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Princesses",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "美丽的城堡",
+      "textZh": "这里印有 5 或更高力量的随从不会受到对手卡牌的影响。",
+      "errataZh": "有（功能性：现仅检查印制力量）"
     },
     {
       "id": "base-princesses-2",
@@ -2257,7 +2548,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ice Castle · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Princesses",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "冰雪城堡",
+      "textZh": "这里不能玩随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-cyborg-apes-1",
@@ -2280,7 +2574,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Monkey Lab · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Cyborg_Apes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "猴子实验室",
+      "textZh": "这里的随从对他们进行的每个战术都会获得 +1 力量。",
+      "errataZh": "无"
     },
     {
       "id": "base-cyborg-apes-2",
@@ -2303,7 +2600,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Primate Park · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Cyborg_Apes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "灵长类动物公园",
+      "textZh": "在此基地计分后，获胜者可以将任意数量打出到此处随从上的战术移回其手上。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-shapeshifters-1",
@@ -2326,7 +2626,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Faceless City · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Shapeshifters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "无面之城",
+      "textZh": "每回合一次，当你在此处打出随从后，你可以从牌组中搜索该随从的一张副本，展示并加入你的手上，然后洗牌。",
+      "errataZh": "有（措辞：明确为可选）"
     },
     {
       "id": "base-shapeshifters-2",
@@ -2349,7 +2652,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Vats · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Shapeshifters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "缸",
+      "textZh": "你不能在这里打出与另一个随从同名的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-super-spies-1",
@@ -2364,15 +2670,18 @@
         2,
         1
       ],
-      "text": "After the first time you play a minion here each turn, you may look at cards from any player's deck equal to its printed power. Return them in any order. Errata? Yes/No",
-      "errata": "Not stated",
+      "text": "After the first time you play a minion here each turn, you may look at cards from any player's deck equal to its printed power. Return them in any order.",
+      "errata": "Yes/No",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-super-spies-1.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "ISI's Swingin' Pad · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Super_Spies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "ISI 的 Swingin' Pad",
+      "textZh": "当你每回合第一次在这里打出随从后，你可以从任何玩家的牌组中查看等于其打印力量的牌。以任何顺序返回它们。",
+      "errataZh": "待确认"
     },
     {
       "id": "base-super-spies-2",
@@ -2395,7 +2704,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Secret Volcano Headquarters · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Super_Spies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "秘密火山总部",
+      "textZh": "在此基地计分前，如果你这里有一个随从，展示你牌组顶牌，如果它是一个随从，就在这里打出它。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-time-travelers-1",
@@ -2418,7 +2730,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Portal Room · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Time_Travelers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "传送门室",
+      "textZh": "当前回合结束后，获胜者获得额外回合",
+      "errataZh": "无"
     },
     {
       "id": "base-time-travelers-2",
@@ -2441,7 +2756,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Nexus · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Time_Travelers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "枢纽",
+      "textZh": "在此基地计分后（替换前），获胜者可以将基地弃牌堆中的一张基地牌放到基地牌组顶。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-clowns-1",
@@ -2464,7 +2782,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Clown College · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Clowns",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "小丑学院",
+      "textZh": "每回合首次在此处打出随从后，你可以将弃牌堆中的一张随机战术加入你的手上。",
+      "errataZh": "无"
     },
     {
       "id": "base-clowns-2",
@@ -2487,7 +2808,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Big Top · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Clowns",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "大顶",
+      "textZh": "当你在这里打出一个随从后，展示你牌组顶牌。如果它是一个战术，你可以丢弃它，否则返回它。",
+      "errataZh": "无"
     },
     {
       "id": "base-goblins-1",
@@ -2510,7 +2834,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Goblin Caves · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Goblins",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "哥布林洞穴",
+      "textZh": "在此基地计分后，每个拥有随从的玩家都可以掷硬币。如果正面，他们将获得 1 VP。如果出现反面，他们会丢弃两张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-goblins-2",
@@ -2533,7 +2860,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Goblin Town · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Goblins",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "妖精镇",
+      "textZh": "当你在这里打出一个随从后，掷硬币。如果正面，则在该随从上放置一个+1战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-knights-of-the-round-table-1",
@@ -2556,7 +2886,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Camelot · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Knights_of_the_Round_Table",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "卡米洛特",
+      "textZh": "这里的印制力量为 4 或以上的随从不会受到其他玩家卡牌的影响。轮到你的时候，你可以将你的一个随从从这里移动到另一个基地。",
+      "errataZh": "有（功能性：将“力量”改为“印制力量”）"
     },
     {
       "id": "base-knights-of-the-round-table-2",
@@ -2579,7 +2912,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Round Table · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Knights_of_the_Round_Table",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "圆桌会议",
+      "textZh": "你这里的每个随从与你这里的另一个随从具有相同的印刷力量，都有+1力量。",
+      "errataZh": "无"
     },
     {
       "id": "base-clerics-1",
@@ -2602,7 +2938,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Hotel of Holiness · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Clerics",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "圣洁酒店",
+      "textZh": "2 个不死怪兽。每回合首次在此处打出随从后，选择“随从”或“战术”；将你弃牌堆中该类型的一张随机牌洗入你的牌组。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-clerics-2",
@@ -2625,7 +2964,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Whack-a-Ghoul · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Clerics",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "猛击食尸鬼",
+      "textZh": "每名玩家 1 个不死怪兽。如果你在这里有一个随从，你可以使用你的常规战术来摧毁这里的不死怪兽。你可以通过摧毁宝藏来打出它作为额外的卡牌。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-dwarves-1",
@@ -2648,7 +2990,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Mines · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Dwarves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "矿山",
+      "textZh": "2 怪兽。每回合一次，当你在这里打出一个随从后，你可以从宝藏牌组中查看与其力量相等的牌，并将它们以任意顺序放置在该牌组的顶部和/或底部。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-dwarves-2",
@@ -2671,7 +3016,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Treasure Bath · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Dwarves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "宝浴",
+      "textZh": "1 怪兽。在你第一次在这里打出随从的每个回合后，抽一张宝藏卡。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-elves-1",
@@ -2686,15 +3034,18 @@
         2,
         1
       ],
-      "text": "2 Monsters. During each player’s turn, other players’ minions here have +1 power. Errata? No",
-      "errata": "Not stated",
+      "text": "2 Monsters. During each player’s turn, other players’ minions here have +1 power.",
+      "errata": "No",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-elves-1.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Helper's Hollow · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Elves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "助手之谷",
+      "textZh": "2 怪兽。在每个玩家的回合中，其他玩家的随从拥有+1力量。",
+      "errataZh": "无"
     },
     {
       "id": "base-elves-2",
@@ -2709,15 +3060,18 @@
         1,
         1
       ],
-      "text": "2 Monsters. When this base scores, the runner-up draws a card for each minion the winner has here. Errata? Yes, Functional",
-      "errata": "Not stated",
+      "text": "2 Monsters. When this base scores, the runner-up draws a card for each minion the winner has here.",
+      "errata": "Yes, Functional",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-elves-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Treehouse · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Elves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "树屋",
+      "textZh": "2 怪兽。当此基地计分时，亚军为获胜者在这里拥有的每个随从抽一张牌。",
+      "errataZh": "有（功能性）"
     },
     {
       "id": "base-halflings-1",
@@ -2732,15 +3086,18 @@
         2,
         1
       ],
-      "text": "1 Monster. After you play a minion on another base, if you do not have a minion here, you must discard a card. Errata? Yes, functional",
-      "errata": "Not stated",
+      "text": "1 Monster. After you play a minion on another base, if you do not have a minion here, you must discard a card.",
+      "errata": "Yes, functional",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-halflings-1.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Birthday Party · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Halflings",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "生日聚会",
+      "textZh": "1 怪兽。当你在另一个基地打出随从后，如果你这里没有随从，你必须弃掉一张牌。",
+      "errataZh": "有（功能性）"
     },
     {
       "id": "base-halflings-2",
@@ -2755,15 +3112,18 @@
         3,
         2
       ],
-      "text": "1 Monster. On your turn, if you have no minions on this base, you may play an extra minion here. Errata? No",
-      "errata": "Not stated",
+      "text": "1 Monster. On your turn, if you have no minions on this base, you may play an extra minion here.",
+      "errata": "No",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-halflings-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Subterranean Lair · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Halflings",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "地下巢穴",
+      "textZh": "1 怪兽。在你的回合中，如果你在此基地上没有随从，你可以在这里打出一个额外的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-mages-1",
@@ -2786,7 +3146,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Dimension Doors · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mages",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "维度门",
+      "textZh": "1 怪兽。每回合一次，当你在这里打出一个随从后，你可以弃掉一张牌来在这里打出一个额外的随从。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-mages-2",
@@ -2809,7 +3172,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Mage's Tower · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mages",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "法师之塔",
+      "textZh": "1 怪兽。每回合你第一次在这里打出随从后，你必须弃掉一张牌并抽两张牌。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-orcs-1",
@@ -2832,7 +3198,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Garrison · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Orcs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "加里森",
+      "textZh": "1 怪兽。在此基地计分后，获胜者可以从牌组顶部为每个随从查看一张牌，并打出或抽出其中一张牌，然后以任意顺序返回其余牌。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-orcs-2",
@@ -2855,7 +3224,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Pits · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Orcs",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "坑",
+      "textZh": "3个怪兽。每回合一次，当你用一张标准战术直接影响这里的一个随从时，你可以选择这里的一个怪兽以同样的方式受到影响。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-thieves-1",
@@ -2878,7 +3250,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Coffers · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Thieves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "金库",
+      "textZh": "3 个怪兽。在此基地计分后，此处的玩家可以抽一张宝藏牌，或从手上弃掉价值等于其 VP 奖励的宝藏以获得 1 VP。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-thieves-2",
@@ -2901,7 +3276,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Thieves' Guild · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Thieves",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "盗贼公会",
+      "textZh": "1 个怪兽。在此基地计分前，此处的每名玩家亮出其手牌。亮出战术最多的玩家各可以消灭此处的一名随从。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-warriors-2",
@@ -2916,15 +3294,18 @@
         2,
         1
       ],
-      "text": "3 Monsters. After you destroy a monster here, you may play a monster here. Errata? Yes, functional",
-      "errata": "Not stated",
+      "text": "3 Monsters. After you destroy a monster here, you may play a monster here.",
+      "errata": "Yes, functional",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-warriors-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Gauntlet · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Warriors",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "挑战",
+      "textZh": "3个怪兽。当你在这里消灭了一个怪兽之后，你可以在这里打出一个怪兽。",
+      "errataZh": "有（功能性）"
     },
     {
       "id": "base-penguins-1",
@@ -2947,7 +3328,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ice Floe · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Penguins",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "浮冰",
+      "textZh": "在你的回合开始时，你可以将你的一个随从放置在其拥有者牌组的底部，以将你牌组顶部的一个随从作为额外的随从。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-penguins-2",
@@ -2970,7 +3354,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Colony · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Penguins",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "殖民地",
+      "textZh": "当你第一次在你的回合中在这里打出一个随从后，你可以在你的牌组顶部打出一个随从作为额外的随从。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-slashers-2",
@@ -2993,7 +3380,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Base · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Slashers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "基地",
+      "textZh": "在此基地计分前，以最小的力量消灭这里的随从。如果被绑住，消灭所有被绑住的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-slashers-1",
@@ -3016,7 +3406,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Camp Clear Lake · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Slashers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "清湖营地",
+      "textZh": "当你消灭这里的一个随从后，将其力量赋予这里的一个随从，直到回合结束。每回合一次，当你在这里打出一张卡牌后，你可以消灭这里的一个力量小于或等于你在这里的卡牌数量的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-teens-1",
@@ -3039,7 +3432,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Cabin in the Woods · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Teens",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "树林中的小屋",
+      "textZh": "如果你这里至少有两个随从，那么你这里的每个随从都有+2力量。",
+      "errataZh": "无"
     },
     {
       "id": "base-teens-2",
@@ -3062,7 +3458,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Montridge High · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Teens",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "蒙特里奇高中",
+      "textZh": "当你在这里打出一个随从后，在你的一个不同名字的随从上放置一个+1标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-disco-dancers-1",
@@ -3085,7 +3484,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Boogie Wonderland · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Disco_Dancers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "布吉仙境",
+      "textZh": "当玩家执行一个影响其一个或多个随从的标准战术后，他们会抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-disco-dancers-2",
@@ -3108,7 +3510,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Funky Town · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Disco_Dancers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "时髦小镇",
+      "textZh": "每回合一次，当你的标准战术直接影响这里的一个或多个随从时，你可以让它以同样的方式影响这里的另一个随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-kung-fu-fighters-1",
@@ -3131,7 +3536,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ancient Dojo · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Kung_Fu_Fighters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "古代道场",
+      "textZh": "当你在这里打出一个随从后，在你的每个随从身上放置一个+1战斗力标记，其力量比该随从小。",
+      "errataZh": "无"
     },
     {
       "id": "base-kung-fu-fighters-2",
@@ -3154,7 +3562,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Tournament Site · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Kung_Fu_Fighters",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "比赛场地",
+      "textZh": "当此基地计分时，获胜者为每个没有力量的玩家获得 1VP。",
+      "errataZh": "无"
     },
     {
       "id": "base-truckers-1",
@@ -3177,7 +3588,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Greasy Spoon · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Truckers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "油腻的勺子",
+      "textZh": "当在此基地上打出的战术将进入弃牌堆时，请将其洗入其所有者的牌库中。",
+      "errataZh": "无"
     },
     {
       "id": "base-truckers-2",
@@ -3200,7 +3614,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Truck Stop · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Truckers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "卡车站",
+      "textZh": "在你的回合开始时，你可以将在另一个基地进行的战术转移到这里，或从这里转移到另一个基地。",
+      "errataZh": "无"
     },
     {
       "id": "base-vigilantes-1",
@@ -3223,7 +3640,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Back Alley · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Vigilantes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "后巷",
+      "textZh": "你在这里的随从不会受到其他玩家卡牌的影响。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-vigilantes-2",
@@ -3246,7 +3666,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Mean Streets · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Vigilantes",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "穷街陋巷",
+      "textZh": "在此基地计分前，消灭这里力量最大的随从。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-geeks-1",
@@ -3269,7 +3692,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "TableTop · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Geeks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "桌面式",
+      "textZh": "获胜者抽3张牌，然后弃掉 2 张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-geeks-2",
@@ -3292,7 +3718,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Con · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Geeks",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "骗局",
+      "textZh": "当一个随从在这里打出时，该派系的其他随从获得+1力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-smash-up-all-stars-1",
@@ -3315,7 +3744,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Locker Room · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Smash_Up_All_Stars",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "更衣室",
+      "textZh": "在你的回合开始时，如果你这里有随从，则抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-smash-up-all-stars-2",
@@ -3338,7 +3770,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Stadium · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Smash_Up_All_Stars",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "体育场",
+      "textZh": "当此处的随从被消灭后，其操控者抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-elder-things-1",
@@ -3361,7 +3796,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Antarctic Base · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Elder_Things",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "南极基地",
+      "textZh": "每回合你只能在这里打出一个随从。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-elder-things-2",
@@ -3376,15 +3814,18 @@
         2,
         1
       ],
-      "text": "After the first time you play a minion here each turn, you may play an extra minion here with the same name. Errata? Yes/No",
-      "errata": "Not stated",
+      "text": "After the first time you play a minion here each turn, you may play an extra minion here with the same name.",
+      "errata": "Yes/No",
       "clarifications": [],
       "imageUrl": "card-art/bases/base-elder-things-2.webp",
       "imageKind": "card",
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Plateau of Leng · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Elder_Things",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "冷高原",
+      "textZh": "每回合你第一次在这里打出一个随从后，你可以在这里额外打出一个同名的随从。",
+      "errataZh": "待确认"
     },
     {
       "id": "base-innsmouth-1",
@@ -3407,7 +3848,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Innsmouth · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Innsmouth",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "因斯茅斯",
+      "textZh": "每次在这里打出一个随从后，它的拥有者可以将任何玩家的弃牌堆中的一张牌放在他们的牌组底部。",
+      "errataZh": "无"
     },
     {
       "id": "base-innsmouth-2",
@@ -3430,7 +3874,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ritual Site · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Innsmouth",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "仪式现场",
+      "textZh": "在此基地计分后，其上的所有随从都会被洗入其所有者的牌组中。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-minions-of-cthulhu-1",
@@ -3453,7 +3900,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Mountains of Madness · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Minions_of_Cthulhu",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "疯狂山脉",
+      "textZh": "每次在这里打出一个随从后，它的主人都会抽一张疯狂卡。",
+      "errataZh": "无"
     },
     {
       "id": "base-minions-of-cthulhu-2",
@@ -3476,7 +3926,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "R'lyeh · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Minions_of_Cthulhu",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "拉莱赫",
+      "textZh": "在每个玩家的回合开始时，该玩家可以在这里消灭他们的一个随从。如果他们这样做，他们将获得 1 VP。",
+      "errataZh": "无"
     },
     {
       "id": "base-miskatonic-university-1",
@@ -3499,7 +3952,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Arkham University · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Miskatonic_University",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "阿卡姆大学",
+      "textZh": "每回合一次，在你于此处打出随从后，你可以抽两张疯狂牌；或从手上弃掉一张疯狂牌，以打出一张额外战术。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-miskatonic-university-2",
@@ -3522,7 +3978,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Asylum · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Miskatonic_University",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "庇护",
+      "textZh": "当你在这里打出一个随从后，你可以将一张手牌放入盒子中，在你的一个随从上放置一个+1战斗力标记。",
+      "errataZh": "未注明"
     },
     {
       "id": "base-explorers-1",
@@ -3545,7 +4004,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ancient Temple · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Explorers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "古庙",
+      "textZh": "在你的回合开始时，如果你这里只有一个随从，那么它在此期间获得+5力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-explorers-2",
@@ -3568,7 +4030,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "City of Gold · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Explorers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "黄金之城",
+      "textZh": "在你的回合开始时，如果你这里有随从，则获得 1VP。",
+      "errataZh": "无"
     },
     {
       "id": "base-grannies-1",
@@ -3591,7 +4056,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Grandma's House · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Grannies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "奶奶家",
+      "textZh": "当你在这里打出一个随从后，查看你牌组顶牌。将其放在牌组的顶部或底部。",
+      "errataZh": "无"
     },
     {
       "id": "base-grannies-2",
@@ -3614,7 +4082,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Retirement Community · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Grannies",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "退休社区",
+      "textZh": "在此基地计分后，每个玩家都可以将他们的一个随从放在他们牌组的顶部或底部，而不是放在弃牌堆上。",
+      "errataZh": "无"
     },
     {
       "id": "base-rock-stars-1",
@@ -3637,7 +4108,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Lake Minnetonka · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Rock_Stars",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "明尼通卡湖",
+      "textZh": "当你使用或移动一个随从到这里后，它会获得+1力量直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-rock-stars-2",
@@ -3660,7 +4134,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Palooza · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Rock_Stars",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "帕卢萨",
+      "textZh": "在这个在此基地计分前，每个玩家都可以将他们的一个随从移到这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-teddy-bears-1",
@@ -3683,7 +4160,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Out in the Woods · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Teddy_Bears",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "在树林里",
+      "textZh": "在此基地计分前，这里的每个随从都会获得+1力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-teddy-bears-2",
@@ -3706,7 +4186,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Under the Bed · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Teddy_Bears",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "床底下",
+      "textZh": "如果您本回合在其他基地使用了一个或多个随从，则在您的回合中，您可以在此额外打出一个力量为 2 或更少的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-anansi-tales-1",
@@ -3729,7 +4212,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Anansi's Web · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Anansi_Tales",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "阿纳西的网",
+      "textZh": "如果你这里有一个随从，在你每回合第一次打出一张标准战术后，你可以将其放入另一个玩家的手上而不是弃牌堆中以抽两张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-anansi-tales-2",
@@ -3752,7 +4238,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Storyteller's Hut · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Anansi_Tales",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "说书人的小屋",
+      "textZh": "在你的回合中，你可以打出一张额外战术，在此基地牌上放置一个标记。此基地的临界点每有一个此标记便减少 2。",
+      "errataZh": "无"
     },
     {
       "id": "base-ancient-incas-1",
@@ -3775,7 +4264,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Cuzcu · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ancient_Incas",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "库兹库",
+      "textZh": "此基地上的每张战术使其临界点减少 3。",
+      "errataZh": "无"
     },
     {
       "id": "base-ancient-incas-2",
@@ -3798,7 +4290,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Machu Picchu · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Ancient_Incas",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "马丘比丘",
+      "textZh": "当你在此基地上打出一张战术后，抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-grimms-fairy-tales-1",
@@ -3821,7 +4316,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Gingerbread House · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Grimms'_Fairy_Tales",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "姜饼屋",
+      "textZh": "在此基地计分前，每名玩家可以选择此处两名力量相同的随从；它们获得 +2 力量直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-grimms-fairy-tales-2",
@@ -3844,7 +4342,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Woodland Cottage · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Grimms'_Fairy_Tales",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "林地小屋",
+      "textZh": "每回合一次，当你在此处打出随从后，你可以从牌组中搜索一名力量为 3 或以下的随从，并加入你的手上。",
+      "errataZh": "有（功能性）"
     },
     {
       "id": "base-polynesian-voyagers-1",
@@ -3867,7 +4368,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Island Chain · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Polynesian_Voyagers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "岛链",
+      "textZh": "在此基地计分后，打出基地牌库的顶牌作为额外的基地牌。",
+      "errataZh": "有（措辞）"
     },
     {
       "id": "base-polynesian-voyagers-2",
@@ -3890,7 +4394,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Island Peak · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Polynesian_Voyagers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "岛峰",
+      "textZh": "在你的回合开始时，如果你这里只有一个随从，则在其上放置一个+1战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-polynesian-voyagers-3",
@@ -3913,7 +4420,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Tropical Paradise · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Polynesian_Voyagers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "热带天堂",
+      "textZh": "如果每个玩家在此基地上有一个或多个随从，则其起始临界点为 0。",
+      "errataZh": "无"
     },
     {
       "id": "base-russian-fairy-tales-1",
@@ -3936,7 +4446,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Giant Turnip · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Russian_Fairy_Tales",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "巨型萝卜",
+      "textZh": "每有一个随从，此基地的临界点就会减少 1。",
+      "errataZh": "无"
     },
     {
       "id": "base-russian-fairy-tales-2",
@@ -3959,7 +4472,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Transformation Spring · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Russian_Fairy_Tales",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "转型之春",
+      "textZh": "在你的回合中，当你在这里打出一个随从后，你可以将它放在其拥有者牌组的底部，然后从你的牌组顶部打出一个随从作为额外的随从。",
+      "errataZh": "无"
     },
     {
       "id": "base-luchadors-1",
@@ -3982,7 +4498,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Ringside · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Luchadors",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "场边",
+      "textZh": "当你在这里进行一个直接影响其他玩家随从的战术后，抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-luchadors-2",
@@ -4005,7 +4524,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Squared Circle · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Luchadors",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "方圆",
+      "textZh": "每回合首次在此处打出随从后，你可以将弃牌堆中的一张随机战术加入你的手上。",
+      "errataZh": "无"
     },
     {
       "id": "base-mounties-1",
@@ -4028,7 +4550,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Great White North, Eh? · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mounties",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "大白北，嗯？",
+      "textZh": "在此基地计分前，每个玩家可以将他们的一个随从从这里移动到另一个基地，并给予它+1力量，直到回合结束。",
+      "errataZh": "无"
     },
     {
       "id": "base-mounties-2",
@@ -4051,7 +4576,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Strategic Syrup Reserve · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Mounties",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "战略糖浆储备",
+      "textZh": "当你在这里打出一个随从后，你可以将另一个玩家的随从从你拥有随从的基地移动到这里。",
+      "errataZh": "无"
     },
     {
       "id": "base-musketeers-1",
@@ -4074,7 +4602,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Bastion Saint-Gervais · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Musketeers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "圣热尔韦堡垒",
+      "textZh": "每回合一次，在你执行一个直接影响你的一个随从的战术后，你可以打出一张额外战术。",
+      "errataZh": "无"
     },
     {
       "id": "base-musketeers-2",
@@ -4097,7 +4628,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Golden Lily · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Musketeers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "金百合",
+      "textZh": "在你的回合结束时，如果你这里有随从，则抽一张牌。",
+      "errataZh": "无"
     },
     {
       "id": "base-sumo-wrestlers-1",
@@ -4120,7 +4654,10 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "Heya Training Stable · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Sumo_Wrestlers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "喜雅训练马厩",
+      "textZh": "在你的回合开始时，你可以弃掉一张牌，在你的一个随从身上放置一个+1战斗力标记。",
+      "errataZh": "无"
     },
     {
       "id": "base-sumo-wrestlers-2",
@@ -4143,12 +4680,20 @@
       "imageSource": "AEG Official Rulebook Wiki",
       "imageAlt": "The Dohyo · Smash Up",
       "sourceUrl": "https://smashup-rulebook.alderac.com/wiki/Sumo_Wrestlers",
-      "sourceProvider": "官方规则维基"
+      "sourceProvider": "官方规则维基",
+      "nameZh": "土肥",
+      "textZh": "当你第一次在你的回合中在这里打出一个随从后，你可以将另一个玩家的随从从这里移动到另一个基地。",
+      "errataZh": "无"
     }
   ],
   "extraction": {
     "sourceFactions": 90,
     "baseCards": 180,
+    "failures": []
+  },
+  "translation": {
+    "language": "zh-CN",
+    "translatedAt": "2026-07-26T07:06:27.714Z",
     "failures": []
   }
 }
