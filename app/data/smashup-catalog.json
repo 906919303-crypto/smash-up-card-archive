@@ -3820,7 +3820,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Go Go Tomago card art from Smash Up: Disney Edition",
-          "nameZh": "去吧托马戈",
+          "nameZh": "歌歌",
           "textZh": "力量 3 - 天赋：将该角色移动到另一个基地，如果该角色有任何力量指示物，您还可以将另一个角色从这里移动到那里。",
           "clarificationsZh": []
         },
@@ -3840,7 +3840,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Honey Lemon card art from Smash Up: Disney Edition",
-          "nameZh": "蜂蜜柠檬",
+          "nameZh": "哈妮柠檬",
           "textZh": "力量 3 - 天赋：在这里摧毁一个基地战术或随从修正战术，或者如果这个角色有任何力量指示物，你可以打出一个额外的战术。",
           "clarificationsZh": []
         },
@@ -3860,7 +3860,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Hiro Hamada card art from Smash Up: Disney Edition",
-          "nameZh": "滨田宏",
+          "nameZh": "小宏",
           "textZh": "力量 3 - 天赋：在此处的一个角色上放置一个 +1 力量指示物，或者将任意数量的力量指示物从你的一个角色移动到另一个角色。",
           "clarificationsZh": []
         },
@@ -3880,7 +3880,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Wasabi card art from Smash Up: Disney Edition",
-          "nameZh": "芥末",
+          "nameZh": "芥末无疆",
           "textZh": "力量3 - 天赋：直到回合结束，该角色获得+1力量，或者其上每有一个+1力量指示物+1力量，最多+5力量。",
           "clarificationsZh": []
         },
@@ -4066,7 +4066,7 @@
         }
       ],
       "sourceProvider": "SmashUp Wiki",
-      "nameZh": "大英雄6",
+      "nameZh": "超能陆战队",
       "setZh": "迪士尼版",
       "mechanicsZh": []
     },
@@ -5261,7 +5261,7 @@
         }
       ],
       "sourceProvider": "官方规则维基",
-      "nameZh": "牛仔队",
+      "nameZh": "牛仔",
       "setZh": "哎呀，你又来了！",
       "mechanicsZh": [
         "决斗",
@@ -8160,7 +8160,7 @@
           "imageKind": "card",
           "imageSource": "SmashUp Wiki faction deck photograph",
           "imageAlt": "Elsa card art from Smash Up: Disney Edition",
-          "nameZh": "艾尔莎",
+          "nameZh": "艾莎",
           "textZh": "力量 5 - 天赋：从你的手牌或弃牌堆中打出奥拉夫或雪人作为额外角色，或者将棉花糖从你的弃牌堆放入你的手牌。",
           "clarificationsZh": []
         },
@@ -8200,7 +8200,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Kristoff card art from Smash Up: Disney Edition",
-          "nameZh": "克里斯托夫",
+          "nameZh": "克斯托夫",
           "textZh": "力量 4 - 持续能力：如果安娜和/或斯文在这里，则该角色拥有 +2 力量。天赋：在你的牌库和/或弃牌堆中搜索安娜或斯文，展示它并抽出它。如果你搜索了你的牌组，则将其洗牌。",
           "clarificationsZh": []
         },
@@ -8240,7 +8240,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Olaf card art from Smash Up: Disney Edition",
-          "nameZh": "奥拉夫",
+          "nameZh": "雪宝",
           "textZh": "力量 3 - 天赋：查看你牌组顶的两张牌。您可以将任意数量的它们放入您的弃牌堆中。以任意顺序返回其余部分。",
           "clarificationsZh": []
         },
@@ -8260,7 +8260,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Sven card art from Smash Up: Disney Edition",
-          "nameZh": "斯文",
+          "nameZh": "斯特",
           "textZh": "力量 3 - 天赋：将你的一个角色移动到这个基地，或者在你的牌组和/或弃牌堆中搜索克里斯托夫，展示它，抽出它，如果你搜索到它，然后洗牌你的牌组。",
           "clarificationsZh": []
         },
@@ -8280,7 +8280,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Snowgie card art from Smash Up: Disney Edition",
-          "nameZh": "斯诺吉",
+          "nameZh": "小雪人",
           "textZh": "力量 2 - 如果你的其中一个角色拥有 5 或更多力量，请在该角色上放置一个 +1 力量指示物。",
           "clarificationsZh": []
         },
@@ -8400,7 +8400,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Let It Go card art from Smash Up: Disney Edition",
-          "nameZh": "放手吧",
+          "nameZh": "随它吧",
           "textZh": "查看你牌组顶部的三张牌。抽一张，然后将其余的放入你的弃牌堆中和/或以任何顺序放在你的牌组顶部。",
           "clarificationsZh": []
         },
@@ -8446,7 +8446,7 @@
         }
       ],
       "sourceProvider": "SmashUp Wiki",
-      "nameZh": "冷冻",
+      "nameZh": "冰雪奇缘",
       "setZh": "迪士尼版",
       "mechanicsZh": []
     },
@@ -16784,7 +16784,7 @@
           "imageKind": "card",
           "imageSource": "SmashUp Wiki faction deck photograph",
           "imageAlt": "Mulan card art from Smash Up: Disney Edition",
-          "nameZh": "木兰",
+          "nameZh": "花木兰",
           "textZh": "力量 5 - 天赋：如果你本回合在此角色上放置了 +1 力量指示物，则打出一次额外战术，或者抽一张牌。",
           "clarificationsZh": []
         },
@@ -16804,7 +16804,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Chien Po card art from Smash Up: Disney Edition",
-          "nameZh": "建波",
+          "nameZh": "金宝",
           "textZh": "力量 3 - 直到你的下一个回合开始，这张卡基地上的你的角色不会受到其他玩家卡牌的影响。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抽一张牌。",
           "clarificationsZh": []
         },
@@ -16824,7 +16824,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Ling card art from Smash Up: Disney Edition",
-          "nameZh": "凌",
+          "nameZh": "阿宁",
           "textZh": "力量 3 - 您可以在这里打出力量 2 或以下的额外角色。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抽一张牌。",
           "clarificationsZh": []
         },
@@ -16844,7 +16844,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Yao card art from Smash Up: Disney Edition",
-          "nameZh": "姚",
+          "nameZh": "阿姚",
           "textZh": "力量 3 - 你可以在这里消灭力量为 2 或以下的角色。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抽一张牌。",
           "clarificationsZh": []
         },
@@ -16864,7 +16864,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Cri-Kee card art from Smash Up: Disney Edition",
-          "nameZh": "克里基",
+          "nameZh": "蟋蟀",
           "textZh": "力量 2 - 如果您这里有另一个角色，您可以打出力量 3 或更少的额外角色。",
           "clarificationsZh": []
         },
@@ -16884,7 +16884,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Li Shang card art from Smash Up: Disney Edition",
-          "nameZh": "李尚",
+          "nameZh": "李翔",
           "textZh": "力量 4 - 天赋：在此处的另一个角色上放置一个 +1 力量指示物。",
           "clarificationsZh": []
         },
@@ -16944,7 +16944,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Be a Man card art from Smash Up: Disney Edition",
-          "nameZh": "做一个男人",
+          "nameZh": "男子汉",
           "textZh": "基地战术。天赋：在此处最多为两个角色放置一个+1力量指示物。",
           "clarificationsZh": []
         },
@@ -17070,7 +17070,7 @@
         }
       ],
       "sourceProvider": "SmashUp Wiki",
-      "nameZh": "木兰",
+      "nameZh": "花木兰",
       "setZh": "迪士尼版",
       "mechanicsZh": []
     },
@@ -21350,7 +21350,7 @@
           "errata": "See source",
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
-          "nameZh": "盾。代理",
+          "nameZh": "神盾局特工",
           "textZh": "力量 2 - 持续能力：如果你的另一个角色在这里，则该角色拥有 +1 力量。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--4.webp",
@@ -21520,7 +21520,7 @@
         }
       ],
       "sourceProvider": "SmashUp Wiki",
-      "nameZh": "盾。",
+      "nameZh": "神盾局",
       "setZh": "漫威",
       "mechanicsZh": []
     },
@@ -22788,7 +22788,7 @@
           "errata": "See source",
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
-          "nameZh": "电子",
+          "nameZh": "电光人",
           "textZh": "power 2 - 持续能力：该基地的断点减少 2。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-5.webp",
@@ -22808,7 +22808,7 @@
           "errata": "See source",
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
-          "nameZh": "桑德曼",
+          "nameZh": "沙人",
           "textZh": "力量 2 - 持续能力：如果此处的断点为 19 或更少，则该角色的力量为 +2。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-6.webp",
@@ -22978,7 +22978,7 @@
         }
       ],
       "sourceProvider": "SmashUp Wiki",
-      "nameZh": "险恶六人组",
+      "nameZh": "邪恶六人组",
       "setZh": "漫威",
       "mechanicsZh": []
     },
@@ -26668,7 +26668,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Jack Skellington card art from Smash Up: Disney Edition",
-          "nameZh": "杰克·斯凯林顿",
+          "nameZh": "骷髅杰克",
           "textZh": "力量 5 - 将你弃牌堆中的一张随从修正战术移回你的手上。持续能力：在你打出一张随从修正战术后，你可以在一个随从上放置一个 +1 力量指示物，或抽一张牌。",
           "clarificationsZh": []
         },
@@ -26728,7 +26728,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Lock, Shock & Barrel card art from Smash Up: Disney Edition",
-          "nameZh": "锁、减震器和枪管",
+          "nameZh": "洛克、休克和桶",
           "textZh": "力量 3 - 特殊能力：在此基地计分前，你可以将一张随从修正战术打出到此处的一个随从上，作为额外战术。",
           "clarificationsZh": []
         },
@@ -26768,7 +26768,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Zero card art from Smash Up: Disney Edition",
-          "nameZh": "零",
+          "nameZh": "零零",
           "textZh": "力量 0 - 持续能力：若你控制此处任意一张随从修正战术，该随从有 +3 力量。特殊能力：在此基地计分后，将该随从移回你的手上而不是弃牌堆；你可以将它作为额外随从打出到另一个基地上。",
           "clarificationsZh": []
         },
@@ -26888,7 +26888,7 @@
           "imageKind": "card",
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Oogie Boogie card art from Smash Up: Disney Edition",
-          "nameZh": "奥吉·布吉",
+          "nameZh": "乌基布基",
           "textZh": "随从修正战术。你可以将该随从移到另一个基地。持续能力：该随从力量为 0，且其能力被取消。若此处有另一个力量为 5 或更多的随从，摧毁此卡。",
           "clarificationsZh": []
         },
@@ -26954,7 +26954,7 @@
         }
       ],
       "sourceProvider": "SmashUp Wiki",
-      "nameZh": "圣诞节前的噩梦",
+      "nameZh": "圣诞夜惊魂",
       "setZh": "迪士尼版",
       "mechanicsZh": []
     },
@@ -28097,7 +28097,7 @@
         }
       ],
       "sourceProvider": "官方规则维基",
-      "nameZh": "小精灵",
+      "nameZh": "小妖精",
       "setZh": "基础游戏",
       "mechanicsZh": [
         "制造危险",
@@ -28474,7 +28474,7 @@
           "errata": "See source",
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
-          "nameZh": "蓝色奇迹",
+          "nameZh": "蓝色惊奇",
           "textZh": "力量 2 - 持续能力：该角色移动到另一个基地后，其力量获得 +1 直到回合结束。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/ultimates-4.webp",
@@ -28644,7 +28644,7 @@
         }
       ],
       "sourceProvider": "SmashUp Wiki",
-      "nameZh": "终极技能",
+      "nameZh": "终极战队",
       "setZh": "漫威",
       "mechanicsZh": []
     },
