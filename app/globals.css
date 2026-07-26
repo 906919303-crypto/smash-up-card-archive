@@ -547,6 +547,26 @@ h1 em {
     linear-gradient(145deg, #ffd960 0%, #fff6d1 74%);
 }
 
+.cardFace.base {
+  background:
+    radial-gradient(circle at 82% 13%, rgba(143, 219, 239, 0.62) 0 13%, transparent 13.3%),
+    linear-gradient(145deg, #8fc9db 0%, #edf8f3 76%);
+}
+
+.baseCatalogShell .factionButton {
+  align-items: start;
+}
+
+.baseCatalogShell .factionButton small {
+  max-width: 112px;
+  text-align: right;
+  white-space: normal;
+}
+
+.baseMetaRow span:last-child {
+  margin-left: auto;
+}
+
 .cardFace.character, .cardFace.minion {
   background:
     radial-gradient(circle at 80% 11%, rgba(201,247,102,0.5) 0 13%, transparent 13.3%),

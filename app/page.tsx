@@ -2,10 +2,11 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import catalogJson from "./data/smashup-catalog.json";
+import basesJson from "./data/smashup-bases.json";
 import { CardTracker } from "./card-tracker";
 
 type Language = "zh" | "en";
-type CardType = "minion" | "character" | "action" | "titan" | "other";
+type CardType = "minion" | "character" | "action" | "titan" | "other" | "base";
 
 type Card = {
   id: string;
@@ -72,7 +73,35 @@ type Catalog = {
   };
 };
 
+type BaseCard = {
+  id: string;
+  name: string;
+  nameZh?: string;
+  sourceFaction: string;
+  sourceFactionZh?: string;
+  set: string;
+  setZh?: string;
+  breakpoint: number;
+  vp: number[];
+  text: string;
+  textZh?: string;
+  errata: string;
+  clarifications: string[];
+  clarificationsZh?: string[];
+  imageUrl?: string | null;
+  imageKind?: "card";
+  imageSource?: string;
+  imageAlt?: string;
+  sourceUrl: string;
+  sourceProvider?: string;
+};
+
+type BaseCatalog = {
+  bases: BaseCard[];
+};
+
 const catalog = catalogJson as unknown as Catalog;
+const baseCatalog = basesJson as unknown as BaseCatalog;
 const DEFAULT_FACTION = catalog.factions.find((faction) => faction.name === "Aliens") ?? catalog.factions[0];
 
 const COPY = {
@@ -86,6 +115,7 @@ const COPY = {
     heroText: "\u6309\u79cd\u65cf\u9010\u5f20\u7ffb\u9605\u5361\u724c\uff0c\u67e5\u770b\u5b8c\u6574\u5361\u56fe\u3001\u6570\u91cf\u3001\u89c4\u5219\u6587\u5b57\u4e0e\u52d8\u8bef\u72b6\u6001\u3002\u6e38\u620f\u684c\u65c1\u4e5f\u80fd\u5feb\u901f\u786e\u8ba4\u3002",
     factions: "\u79cd\u65cf",
     factionCards: "\u79cd\u65cf\u724c",
+    bases: "\u57fa\u5730\u724c",
     titans: "\u6cf0\u5766",
     updated: "\u6570\u636e\u66f4\u65b0\u4e8e",
     entries: "\u4e2a\u72ec\u7acb\u5361\u724c\u6761\u76ee",
@@ -119,13 +149,13 @@ const COPY = {
     closeImage: "\u5173\u95ed\u5927\u56fe",
     copiesInDeck: "\u672c\u5361\u7ec4\u5185\u526f\u672c",
     translationNote: "\u4e2d\u6587\u540d\u79f0\u4e0e\u89c4\u5219\u4e3a\u81ea\u52a8\u8bd1\u6587\uff1b\u8bf7\u4ee5\u82f1\u6587\u539f\u6587\u3001\u5b9e\u4f53\u5361\u724c\u548c\u94fe\u63a5\u51fa\u5904\u4e3a\u51c6\u3002",
-    scope: "\u672c\u7ad9\u6536\u5f55\u79cd\u65cf\u5361\u7ec4\uff0820 \u5f20\u724c\uff09\u4e0e\u5173\u8054\u6cf0\u5766\uff1b\u57fa\u5730\u724c\u4e0d\u5728\u672c\u76ee\u5f55\u4e2d\u3002",
+    scope: "\u672c\u7ad9\u6536\u5f55\u79cd\u65cf\u5361\u7ec4\uff0820 \u5f20\u724c\uff09\u3001\u5173\u8054\u6cf0\u5766\u4e0e\u72ec\u7acb\u7684\u57fa\u5730\u724c\u76ee\u5f55\u3002",
     language: "\u4e2d\u6587",
     languageAlt: "English",
     viewEnglish: "\u5207\u6362\u82f1\u6587",
     viewChinese: "\u5207\u6362\u4e2d\u6587",
     sourceText: "\u8d44\u6599\u6765\u6e90",
-    type: { all: "\u5168\u90e8", minion: "\u968f\u4ece", character: "\u89d2\u8272", action: "\u6218\u672f", titan: "\u6cf0\u5766", other: "\u5176\u4ed6" },
+    type: { all: "\u5168\u90e8", minion: "\u968f\u4ece", character: "\u89d2\u8272", action: "\u6218\u672f", titan: "\u6cf0\u5766", base: "\u57fa\u5730", other: "\u5176\u4ed6" },
   },
   en: {
     archive: "SMASH UP \u00b7 CARD ARCHIVE",
@@ -137,6 +167,7 @@ const COPY = {
     heroText: "Browse faction decks card by card with reference artwork, quantities, rules text, and errata status.",
     factions: "factions",
     factionCards: "faction cards",
+    bases: "base cards",
     titans: "titans",
     updated: "Data updated",
     entries: "unique card entries",
@@ -170,13 +201,13 @@ const COPY = {
     closeImage: "Close full-size image",
     copiesInDeck: "Copies in this deck",
     translationNote: "Chinese names and rules are automated translations. Use the English text, physical cards, and linked sources as the authority.",
-    scope: "This archive covers 20-card faction decks and their Titans; base cards are outside the catalog.",
+    scope: "This archive covers faction decks, their Titans, and a dedicated catalog of base cards.",
     language: "English",
     languageAlt: "\u4e2d\u6587",
     viewEnglish: "Switch to English",
     viewChinese: "\u5207\u6362\u4e2d\u6587",
     sourceText: "Sources",
-    type: { all: "All", minion: "Minion", character: "Character", action: "Action", titan: "Titan", other: "Other" },
+    type: { all: "All", minion: "Minion", character: "Character", action: "Action", titan: "Titan", base: "Base", other: "Other" },
   },
 } as const;
 
@@ -242,6 +273,18 @@ function cardNotes(card: Card, language: Language) {
   return language === "zh" ? card.clarificationsZh || card.clarifications : card.clarifications;
 }
 
+function baseLabel(base: BaseCard, language: Language) {
+  return language === "zh" ? base.nameZh || base.name : base.name;
+}
+
+function baseText(base: BaseCard, language: Language) {
+  return language === "zh" ? base.textZh || base.text : base.text;
+}
+
+function baseFactionLabel(base: BaseCard, language: Language) {
+  return language === "zh" ? base.sourceFactionZh || base.sourceFaction : base.sourceFaction;
+}
+
 function cardMatches(card: Card, term: string) {
   return [
     card.name,
@@ -261,7 +304,7 @@ function cardMatches(card: Card, term: string) {
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("zh");
-  const [view, setView] = useState<"archive" | "tracker">("archive");
+  const [view, setView] = useState<"archive" | "bases" | "tracker">("archive");
   const [query, setQuery] = useState("");
   const [type, setType] = useState("all");
   const [selectedFaction, setSelectedFaction] = useState(DEFAULT_FACTION.slug);
@@ -483,6 +526,14 @@ export default function Home() {
                 {language === "zh" ? "\u6863\u6848" : "Archive"}
               </button>
               <button
+                className={view === "bases" ? "active" : ""}
+                type="button"
+                onClick={() => setView("bases")}
+                aria-pressed={view === "bases"}
+              >
+                {language === "zh" ? "\u57fa\u5730\u724c" : "Bases"}
+              </button>
+              <button
                 className={view === "tracker" ? "active" : ""}
                 type="button"
                 onClick={() => setView("tracker")}
@@ -510,6 +561,8 @@ export default function Home() {
 
       {view === "tracker" ? (
         <CardTracker factions={catalog.factions} language={language} />
+      ) : view === "bases" ? (
+        <BaseArchive bases={baseCatalog.bases} language={language} />
       ) : (
         <>
       <section className="catalogShell" id="catalog" aria-label="Smash Up card catalog">
@@ -794,5 +847,220 @@ export default function Home() {
         </div>
       )}
     </main>
+  );
+}
+
+function BaseArchive({ bases, language }: { bases: BaseCard[]; language: Language }) {
+  const ui = COPY[language];
+  const [query, setQuery] = useState("");
+  const [selectedId, setSelectedId] = useState(bases[0]?.id ?? "");
+  const [imageState, setImageState] = useState<"loading" | "ready" | "error">("loading");
+  const [isZoomOpen, setZoomOpen] = useState(false);
+  const term = query.trim().toLowerCase();
+
+  const visibleBases = useMemo(
+    () => bases.filter((base) => [
+      base.name,
+      base.nameZh,
+      base.sourceFaction,
+      base.sourceFactionZh,
+      base.set,
+      base.setZh,
+      base.text,
+      base.textZh,
+    ].filter(Boolean).join(" ").toLowerCase().includes(term)),
+    [bases, term],
+  );
+
+  const currentBase = visibleBases.find((base) => base.id === selectedId) ?? visibleBases[0];
+  const groupedBases = useMemo(() => {
+    const groups = new Map<string, BaseCard[]>();
+    for (const base of visibleBases) {
+      const list = groups.get(base.set) ?? [];
+      list.push(base);
+      groups.set(base.set, list);
+    }
+    return [...groups.entries()]
+      .sort(([left], [right]) => (EXPANSION_RANK.get(left) ?? Number.MAX_SAFE_INTEGER) - (EXPANSION_RANK.get(right) ?? Number.MAX_SAFE_INTEGER) || left.localeCompare(right))
+      .map(([set, cards]) => ({
+        set,
+        cards: cards.sort((left, right) => baseLabel(left, language).localeCompare(baseLabel(right, language), language === "zh" ? "zh-CN" : "en")),
+      }));
+  }, [language, visibleBases]);
+
+  useEffect(() => {
+    if (currentBase && currentBase.id !== selectedId) setSelectedId(currentBase.id);
+  }, [currentBase, selectedId]);
+
+  useEffect(() => {
+    setImageState(currentBase?.imageUrl ? "loading" : "error");
+    setZoomOpen(false);
+  }, [currentBase?.id, currentBase?.imageUrl]);
+
+  useEffect(() => {
+    if (!isZoomOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setZoomOpen(false);
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [isZoomOpen]);
+
+  return (
+    <>
+      <section className="catalogShell baseCatalogShell" aria-label={ui.bases}>
+        <aside className="factionPanel">
+          <div className="panelHeading">
+            <div>
+              <p className="eyebrow">01 / BASE CARD FILE</p>
+              <h2>{language === "zh" ? "选择基地牌" : "Choose a base"}</h2>
+            </div>
+            <span>{visibleBases.length}</span>
+          </div>
+
+          <label className="searchBox">
+            <span className="srOnly">{language === "zh" ? "搜索基地牌" : "Search base cards"}</span>
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder={language === "zh" ? "搜索基地、来源种族或效果…" : "Search bases, factions, or rules…"}
+            />
+            <b>{"⌕"}</b>
+          </label>
+
+          <div className="factionList" role="list">
+            {groupedBases.map(({ set, cards }) => (
+              <section className="factionGroup" key={set} aria-label={expansionLabel(set, language)}>
+                <div className="factionGroupHeading">
+                  <span>{expansionLabel(set, language)}</span>
+                  <small>{cards.length}</small>
+                </div>
+                <div className="factionGroupItems" role="list">
+                  {cards.map((base) => (
+                    <button
+                      className={base.id === currentBase?.id ? "factionButton active" : "factionButton"}
+                      key={base.id}
+                      onClick={() => setSelectedId(base.id)}
+                      aria-pressed={base.id === currentBase?.id}
+                    >
+                      <span>{baseLabel(base, language)}</span>
+                      <small>{baseFactionLabel(base, language)}</small>
+                    </button>
+                  ))}
+                </div>
+              </section>
+            ))}
+            {!visibleBases.length && <p className="emptyList">{ui.noCards}</p>}
+          </div>
+        </aside>
+
+        <section className="contentPanel">
+          {currentBase ? (
+            <>
+              <div className="factionSummary">
+                <div>
+                  <p className="eyebrow">02 / BASE CARD</p>
+                  <h2>{baseLabel(currentBase, language)}</h2>
+                  <p className="setName">{baseFactionLabel(currentBase, language)} · {expansionLabel(currentBase.set, language)}</p>
+                </div>
+                <a className="sourceLink" href={currentBase.sourceUrl} target="_blank" rel="noreferrer">{ui.source} {"↗"}</a>
+              </div>
+
+              <div className="metaRow baseMetaRow">
+                <span><i>{ui.breakpoint}</i>{currentBase.breakpoint}</span>
+                <span><i>{ui.vp}</i>{currentBase.vp.join(" / ")}</span>
+                <span><i>{language === "zh" ? "来源种族" : "Faction source"}</i>{baseFactionLabel(currentBase, language)}</span>
+              </div>
+
+              <div className="cardViewer baseViewer">
+                <figure className={"artwork " + (imageState === "loading" ? "isLoading" : "")}>
+                  {currentBase.imageUrl && imageState !== "error" ? (
+                    <>
+                      {imageState === "loading" && <div className="imageLoading" aria-live="polite">{ui.imageLoading}</div>}
+                      <button
+                        className="imageZoomButton"
+                        type="button"
+                        onClick={() => setZoomOpen(true)}
+                        aria-label={ui.zoomImage}
+                        disabled={imageState !== "ready"}
+                      >
+                        <img
+                          src={currentBase.imageUrl}
+                          alt={currentBase.imageAlt || baseLabel(currentBase, language)}
+                          loading="eager"
+                          fetchPriority="high"
+                          decoding="async"
+                          referrerPolicy="no-referrer"
+                          onLoad={() => setImageState("ready")}
+                          onError={() => setImageState("error")}
+                        />
+                        <span className="imageZoomHint">{ui.zoomImage}</span>
+                      </button>
+                    </>
+                  ) : (
+                    <div className="imageFallback">
+                      <p>{ui.imageFallback}</p>
+                      <a href={currentBase.sourceUrl} target="_blank" rel="noreferrer">{ui.source} {"↗"}</a>
+                    </div>
+                  )}
+                  <figcaption>
+                    <span>{ui.artwork}</span>
+                    <a href={currentBase.sourceUrl} target="_blank" rel="noreferrer">{ui.source} {"↗"}</a>
+                  </figcaption>
+                </figure>
+
+                <article className="cardFace base">
+                  <div className="cardFaceTop">
+                    <span>{ui.type.base}</span>
+                    <span>{currentBase.breakpoint} / {currentBase.vp.join(" · ")}</span>
+                  </div>
+                  <div className="cardNameBlock">
+                    <h3>{baseLabel(currentBase, language)}</h3>
+                    <p>{baseFactionLabel(currentBase, language)}</p>
+                  </div>
+                  <div className="cardStats">
+                    <span><b>{currentBase.breakpoint}</b>{ui.breakpoint}</span>
+                    <span><b>{currentBase.vp.join(" / ")}</b>{ui.vp}</span>
+                  </div>
+                  <p className="cardRules">{baseText(currentBase, language)}</p>
+                  <div className="cardFaceBottom">
+                    <span>{currentBase.sourceProvider ?? ui.sourceText}</span>
+                    <span>SMASH UP</span>
+                  </div>
+                </article>
+              </div>
+
+              <div className="cardNotes">
+                <div className="errataNote">
+                  <span>{ui.errata}</span>
+                  <b>{currentBase.errata}</b>
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className="emptyStage"><p>{ui.noCards}</p></div>
+          )}
+        </section>
+      </section>
+
+      {isZoomOpen && currentBase?.imageUrl && imageState === "ready" && (
+        <div
+          className="imageLightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label={ui.zoomImage}
+          onClick={(event) => {
+            if (event.target === event.currentTarget) setZoomOpen(false);
+          }}
+        >
+          <div className="imageLightboxFrame">
+            <button className="lightboxClose" type="button" onClick={() => setZoomOpen(false)} aria-label={ui.closeImage}>{"×"}</button>
+            <img src={currentBase.imageUrl} alt={currentBase.imageAlt || baseLabel(currentBase, language)} referrerPolicy="no-referrer" />
+            <p>{baseLabel(currentBase, language)}</p>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

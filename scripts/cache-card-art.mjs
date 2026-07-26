@@ -3,8 +3,10 @@ import path from "node:path";
 import sharp from "../node_modules/.pnpm/sharp@0.34.5/node_modules/sharp/lib/index.js";
 
 const catalogPath = path.resolve("app/data/smashup-catalog.json");
+const baseCatalogPath = path.resolve("app/data/smashup-bases.json");
 const libraryRoot = path.resolve("public/card-art/library");
 const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
+const baseCatalog = JSON.parse(await readFile(baseCatalogPath, "utf8"));
 const jobs = [];
 
 for (const faction of catalog.factions) {
@@ -13,6 +15,12 @@ for (const faction of catalog.factions) {
     const relativePath = path.posix.join("card-art/library", faction.slug, `${card.id}.webp`);
     jobs.push({ card, faction, relativePath, outputPath: path.resolve("public", relativePath) });
   }
+}
+
+for (const base of baseCatalog.bases) {
+  if (!/^https?:\/\//.test(base.imageUrl || "")) continue;
+  const relativePath = path.posix.join("card-art/bases", `${base.id}.webp`);
+  jobs.push({ card: base, relativePath, outputPath: path.resolve("public", relativePath) });
 }
 
 let completed = 0;
@@ -92,6 +100,7 @@ async function worker() {
 console.log(`[card-art] preparing local library for ${jobs.length} remote card images`);
 await Promise.all(Array.from({ length: 6 }, worker));
 await writeFile(catalogPath, JSON.stringify(catalog, null, 2) + "\n", "utf8");
+await writeFile(baseCatalogPath, JSON.stringify(baseCatalog, null, 2) + "\n", "utf8");
 
 console.log(`[card-art] complete: ${completed}/${jobs.length}; new ${downloaded}; reused ${cached}; failures ${failures.length}`);
 if (failures.length) {
