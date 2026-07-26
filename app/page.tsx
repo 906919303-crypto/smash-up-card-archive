@@ -6,6 +6,7 @@ import basesJson from "./data/smashup-bases.json";
 import { CardTracker } from "./card-tracker";
 
 type Language = "zh" | "en";
+type View = "archive" | "bases" | "tracker";
 type CardType = "minion" | "character" | "action" | "titan" | "other" | "base";
 
 type Card = {
@@ -304,7 +305,7 @@ function cardMatches(card: Card, term: string) {
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("zh");
-  const [view, setView] = useState<"archive" | "bases" | "tracker">("archive");
+  const [view, setView] = useState<View>("archive");
   const [query, setQuery] = useState("");
   const [type, setType] = useState("all");
   const [selectedFaction, setSelectedFaction] = useState(DEFAULT_FACTION.slug);
@@ -315,6 +316,24 @@ export default function Home() {
   const [isImageZoomOpen, setImageZoomOpen] = useState(false);
   const shouldJumpToCards = useRef(false);
   const cardStageRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const requestedView = new URLSearchParams(window.location.search).get("view");
+    if (requestedView === "archive" || requestedView === "bases" || requestedView === "tracker") {
+      setView(requestedView);
+    }
+  }, []);
+
+  function switchView(nextView: View) {
+    setView(nextView);
+    const url = new URL(window.location.href);
+    if (nextView === "archive") {
+      url.searchParams.delete("view");
+    } else {
+      url.searchParams.set("view", nextView);
+    }
+    window.history.replaceState({}, "", url);
+  }
 
   const ui = COPY[language];
   const term = query.trim().toLowerCase();
@@ -520,7 +539,7 @@ export default function Home() {
               <button
                 className={view === "archive" ? "active" : ""}
                 type="button"
-                onClick={() => setView("archive")}
+                onClick={() => switchView("archive")}
                 aria-pressed={view === "archive"}
               >
                 {language === "zh" ? "\u6863\u6848" : "Archive"}
@@ -528,7 +547,7 @@ export default function Home() {
               <button
                 className={view === "bases" ? "active" : ""}
                 type="button"
-                onClick={() => setView("bases")}
+                onClick={() => switchView("bases")}
                 aria-pressed={view === "bases"}
               >
                 {language === "zh" ? "\u57fa\u5730\u724c" : "Bases"}
@@ -536,7 +555,7 @@ export default function Home() {
               <button
                 className={view === "tracker" ? "active" : ""}
                 type="button"
-                onClick={() => setView("tracker")}
+                onClick={() => switchView("tracker")}
                 aria-pressed={view === "tracker"}
               >
                 {language === "zh" ? "\u8bb0\u724c\u5668" : "Tracker"}
@@ -549,6 +568,11 @@ export default function Home() {
             <p className="kicker">{ui.kicker}</p>
             <h1>{ui.titleLead}<br /><em>{ui.titleAccent}</em> {ui.titleTail}</h1>
             <p className="heroText">{ui.heroText}</p>
+            {view === "archive" && (
+              <button className="baseArchiveLink" type="button" onClick={() => switchView("bases")}>
+                {language === "zh" ? `浏览基地牌档案 · ${baseCatalog.bases.length} 张 →` : `Browse base card archive · ${baseCatalog.bases.length} cards →`}
+              </button>
+            )}
           </section>
           <section className="statStack" aria-label="Catalog statistics">
             <div><strong>{catalog.extraction.extractedFactions}</strong><span>{ui.factions}</span></div>

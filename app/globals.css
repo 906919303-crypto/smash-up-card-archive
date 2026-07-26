@@ -123,6 +123,24 @@ h1 em {
   line-height: 1.7;
 }
 
+.baseArchiveLink {
+  margin-top: 22px;
+  border: 1px solid var(--acid);
+  padding: 10px 13px;
+  color: var(--ink);
+  background: var(--acid);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.baseArchiveLink:hover,
+.baseArchiveLink:focus-visible {
+  transform: translateY(-2px);
+  background: var(--sun);
+}
+
 .statStack {
   display: grid;
   grid-template-columns: repeat(3, 112px);
