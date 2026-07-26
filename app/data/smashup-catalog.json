@@ -50,7 +50,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Commandbro 璺?Smash Up",
           "nameZh": "指挥官兄弟",
-          "textZh": "力量 5 - 持续能力：在你的回合结束时，如果这是你唯一的随从，则抓一张牌",
+          "textZh": "力量 5 - 持续能力：在你的回合结束时，如果这是你唯一的随从，则抽一张牌",
           "clarificationsZh": []
         },
         {
@@ -334,7 +334,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Pushing the Limit 璺?Smash Up",
           "nameZh": "突破极限",
-          "textZh": "对于每个只有一个随从的基地，可以在该随从上放置两个 +1 能量指示物或抓一张牌。",
+          "textZh": "对于每个只有一个随从的基地，可以在该随从上放置两个 +1 能量指示物或抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -479,7 +479,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Monet 璺?Smash Up",
           "nameZh": "莫奈",
-          "textZh": "Power 4 - 抓一张牌。持续能力：任何时候你可以进行一个战术，你都可以抓一张牌并触发所有异能，就像你已经进行了一个战术一样。",
+          "textZh": "Power 4 - 抽一张牌。持续能力：任何时候你可以进行一个战术，你都可以抽一张牌并触发所有异能，就像你已经进行了一个战术一样。",
           "clarificationsZh": []
         },
         {
@@ -579,7 +579,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Flip Kick 璺?Smash Up",
           "nameZh": "翻转踢",
-          "textZh": "画一张卡片。如果这是你本回合执行的第一个战术，则执行一个额外战术；如果没有，则再抓两张牌。",
+          "textZh": "抽一张牌。如果这是你本回合执行的第一个战术，则执行一个额外战术；如果没有，则再抽两张牌。",
           "clarificationsZh": []
         },
         {
@@ -877,7 +877,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "A Friend Like Me card art from Smash Up: Disney Edition",
           "nameZh": "像我这样的朋友",
-          "textZh": "展示你牌组顶部的四张牌。绘制所有战术并将其余的洗入你的牌库。",
+          "textZh": "展示你牌组顶部的四张牌。抽取所有战术并将其余的洗入你的牌库。",
           "clarificationsZh": []
         },
         {
@@ -997,7 +997,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Wish card art from Smash Up: Disney Edition",
           "nameZh": "愿望",
-          "textZh": "如果场上有精灵，选择一个效果并将这张卡放入盒子中：• 额外打出两张非愿望卡。• 给予角色 +5 力量直至回合结束。• 抓四张卡。",
+          "textZh": "如果场上有精灵，选择一个效果并将这张卡放入盒子中：• 额外打出两张非愿望卡。• 给予角色 +5 力量直至回合结束。• 抽四张牌。",
           "clarificationsZh": []
         }
       ],
@@ -1605,7 +1605,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Pharaoh 璺?Smash Up",
           "nameZh": "法老",
-          "textZh": "力量 5 - 持续能力：在翻开另一张埋藏的牌后，抓一张牌。特殊能力：在此基地计分前，你可以在这里揭开一张埋藏的牌。",
+          "textZh": "力量 5 - 持续能力：在翻开另一张埋藏的牌后，抽一张牌。特殊能力：在此基地计分前，你可以在这里揭开一张埋藏的牌。",
           "clarificationsZh": []
         },
         {
@@ -1839,7 +1839,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "You Can Take It With You 璺?Smash Up",
           "nameZh": "您可以随身携带",
-          "textZh": "埋掉这张卡。特殊能力：当这张牌未被揭开时，抓三张牌。",
+          "textZh": "埋掉这张卡。特殊能力：当这张牌未被揭开时，抽三张牌。",
           "clarificationsZh": [
             "如果你使用这张卡的能力来掩埋自己，你可以将其展示出来并将其面朝下放在底座上。如果你发现了它，你会再次玩它，但忽略第一部分，因为未发现的卡牌不会被重新埋葬。"
           ]
@@ -2136,7 +2136,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Temple of the Sun 璺?Smash Up",
           "nameZh": "太阳神殿",
-          "textZh": "打出到基地上。画一张卡片。持续能力：当你在此基地进行另一次战术后，抓一张牌。",
+          "textZh": "打出到基地上。抽一张牌。持续能力：当你在此基地进行另一次战术后，抽一张牌。",
           "clarificationsZh": []
         }
       ],
@@ -2334,7 +2334,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Mannersbot 璺?Smash Up",
           "nameZh": "曼纳斯博特",
-          "textZh": "力量 2 - 天赋：展示你牌组顶牌。如果是一个战术，则绘制它，否则返回它。",
+          "textZh": "力量 2 - 天赋：展示你牌组顶牌。如果是一个战术，则抽取它，否则返回它。",
           "clarificationsZh": []
         },
         {
@@ -2414,7 +2414,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Hidden Base 璺?Smash Up",
           "nameZh": "隐藏基地",
-          "textZh": "打出到基地上。持续能力：在你的回合开始时，如果你这里有随从，则抓一张牌。",
+          "textZh": "打出到基地上。持续能力：在你的回合开始时，如果你这里有随从，则抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -2434,7 +2434,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "It's a Trap! 璺?Smash Up",
           "nameZh": "这是一个陷阱！",
-          "textZh": "特殊能力：在基地计分前，展示你牌组中的牌，直到你展示一个战术。您可以立即绘制或播放它。将未使用的卡牌洗入你的牌库。",
+          "textZh": "特殊能力：在基地计分前，展示你牌组中的牌，直到你展示一个战术。您可以立即抽取它或打出它。将未使用的卡牌洗入你的牌库。",
           "clarificationsZh": []
         },
         {
@@ -2611,7 +2611,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Hawkeye card art from Smash Up: Marvel",
           "nameZh": "鹰眼",
-          "textZh": "力量 5 - 抓三张牌。弃掉两张牌。",
+          "textZh": "力量 5 - 抽三张牌。弃掉两张牌。",
           "clarificationsZh": []
         },
         {
@@ -2731,7 +2731,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Hawkeye’s Arrows card art from Smash Up: Marvel",
           "nameZh": "鹰眼之箭",
-          "textZh": "展示你牌组中的牌，直到你展示两个战术。绘制战术并将其余的洗入你的套牌中。如果鹰眼在场，你可以以额外战术打出抽到的牌。",
+          "textZh": "展示你牌组中的牌，直到你展示两个战术。抽取战术并将其余的洗入你的套牌中。如果鹰眼在场，你可以以额外战术打出抽到的牌。",
           "clarificationsZh": []
         },
         {
@@ -3031,7 +3031,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "99 MPH 璺?Smash Up",
           "nameZh": "99 英里/小时",
-          "textZh": "将两个停滞指示物放置在你手上的一张牌上。画一张卡片。",
+          "textZh": "将两个停滞指示物放置在你手上的一张牌上。抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -3093,7 +3093,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Future Almanac? 璺?Smash Up",
           "nameZh": "未来年鉴？",
-          "textZh": "在这张卡上放置三个停滞指示物。特殊能力：当你从这张卡上移除一个停滞指示物后，抓一张卡。当你在停滞状态下打出这张牌时，将其弃掉。",
+          "textZh": "在这张卡上放置三个停滞指示物。特殊能力：当你从这张卡上移除一个停滞指示物后，抽一张牌。当你在停滞状态下打出这张牌时，将其弃掉。",
           "clarificationsZh": [
             "对于具有触发效果的卡牌 – 例如“X 发生后”——每次 X 发生时效果都会完成，即使多个 X 同时发生也是如此。"
           ]
@@ -3411,7 +3411,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "High Ground 璺?Smash Up",
           "nameZh": "高地",
-          "textZh": "打出到基地上。持续能力：如果你这里有一个随从，在另一个玩家的随从移动到这个基地后，你可以摧毁这个战术来摧毁那个随从或者抓一张牌并进行一个战术。",
+          "textZh": "打出到基地上。持续能力：如果你这里有一个随从，在另一个玩家的随从移动到这个基地后，你可以摧毁这个战术来摧毁那个随从或者抽一张牌并进行一个战术。",
           "clarificationsZh": []
         },
         {
@@ -3431,7 +3431,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Superiority 璺?Smash Up",
           "nameZh": "优势",
-          "textZh": "打出到基地上。天赋：如果你在这里拥有最强的力量，要么抓一张牌，要么你的随从在你的下一个回合开始之前不会受到其他玩家牌的影响。",
+          "textZh": "打出到基地上。天赋：如果你在这里拥有最强的力量，要么抽一张牌，要么你的随从在你的下一个回合开始之前不会受到其他玩家牌的影响。",
           "clarificationsZh": []
         },
         {
@@ -3507,7 +3507,7 @@
           "imageSource": "SmashUp Wiki faction deck photograph",
           "imageAlt": "Belle card art from Smash Up: Disney Edition",
           "nameZh": "贝儿",
-          "textZh": "力量 5 - 如果野兽在这里，你最多可以抓三张牌。天赋：抽一张牌，或者弃掉一张牌。",
+          "textZh": "力量 5 - 如果野兽在这里，你最多可以抽三张牌。天赋：抽一张牌，或者弃掉一张牌。",
           "clarificationsZh": []
         },
         {
@@ -3587,7 +3587,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Mrs. Potts and Chip card art from Smash Up: Disney Edition",
           "nameZh": "波茨夫人和奇普",
-          "textZh": "力量 3 - 天赋：弃掉一张牌来抓一张牌。",
+          "textZh": "力量 3 - 天赋：弃掉一张牌来抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -3627,7 +3627,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Be Our Guest card art from Smash Up: Disney Edition",
           "nameZh": "成为我们的客人",
-          "textZh": "基地战术。天赋：如果你本回合已弃掉一张手牌，则抓一张牌。",
+          "textZh": "基地战术。天赋：如果你本回合已弃掉一张手牌，则抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -3801,7 +3801,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Fred Frederickson IV card art from Smash Up: Disney Edition",
           "nameZh": "弗雷德·弗雷德里克森四世",
-          "textZh": "力量 3 - 天赋：抓一张牌，如果该角色有任何力量指示物，你也可以给这里的另一个角色 -2 力量，直到你的下回合开始。",
+          "textZh": "力量 3 - 天赋：抽一张牌，如果该角色有任何力量指示物，你也可以给这里的另一个角色 -2 力量，直到你的下回合开始。",
           "clarificationsZh": []
         },
         {
@@ -4001,7 +4001,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Team Effort card art from Smash Up: Disney Edition",
           "nameZh": "团队努力",
-          "textZh": "选择一个基地。该基地上你的每个带有力量指示物的角色各抓一张牌。",
+          "textZh": "选择一个基地。该基地上你的每个带有力量指示物的角色各抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -4462,7 +4462,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Holy Roller 璺?Smash Up",
           "nameZh": "圣滚轮",
-          "textZh": "力量 2 - 将弃牌堆中的一张牌洗入牌库，或将最多两张牌从手牌洗入牌库，并抽取相同数量的牌。澄清：如果你选择第一个 OR 能力，你就不会抓牌。",
+          "textZh": "力量 2 - 将弃牌堆中的一张牌洗入牌库，或将最多两张牌从手牌洗入牌库，并抽取相同数量的牌。澄清：如果你选择第一个 OR 能力，你就不会抽牌。",
           "clarificationsZh": [
             "如果你选择第一个 OR 能力，你就不会抓牌。"
           ]
@@ -4700,7 +4700,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Mumu Adams 璺?Smash Up",
           "nameZh": "姆姆·亚当斯",
-          "textZh": "力量 4 - 持续能力：每回合第一次执行某个战术后，抓一张牌。",
+          "textZh": "力量 4 - 持续能力：每回合第一次执行某个战术后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -4744,7 +4744,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Donald McRonald 璺?Smash Up",
           "nameZh": "唐纳德·麦克罗纳德",
-          "textZh": "Power 3 - 从你的牌组中展示卡牌，直到你展示两个战术。画一个并丢弃另一个。洗牌。",
+          "textZh": "Power 3 - 从你的牌组中展示卡牌，直到你展示两个战术。抽取其中一张并弃掉另一张。洗牌。",
           "clarificationsZh": []
         },
         {
@@ -5128,7 +5128,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Gold in Them Thar Hills 璺?Smash Up",
           "nameZh": "塔尔山的黄金",
-          "textZh": "查看你牌组顶部的三张牌。揭示并画出其中之一；你可以把它当作一张额外的牌来玩。以任意顺序返回其余部分。",
+          "textZh": "查看你牌组顶部的三张牌。揭示并抽取其中一张；你可以把它当作一张额外的牌来玩。以任意顺序返回其余部分。",
           "clarificationsZh": []
         },
         {
@@ -5148,7 +5148,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Gold Strike 璺?Smash Up",
           "nameZh": "黄金罢工",
-          "textZh": "打出到基地上。持续能力：当你在这里打出一个随从后，抓一张牌。",
+          "textZh": "打出到基地上。持续能力：当你在这里打出一个随从后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -5461,7 +5461,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Missing Uplink 璺?Smash Up",
           "nameZh": "缺少上行链路",
-          "textZh": "打出到你的一个随从上。持续能力：在你的回合结束时再抓一张牌。",
+          "textZh": "打出到你的一个随从上。持续能力：在你的回合结束时再抽一张牌。",
           "clarificationsZh": [
             "回合结束是在抽两张牌阶段之后，因此在 Missing Uplink 抽牌后您无需检查手牌大小。"
           ]
@@ -5830,7 +5830,7 @@
           "clarifications": [],
           "sourceProvider": "官方规则维基",
           "nameZh": "泰坦龙堡",
-          "textZh": "特殊能力：在你的回合中，如果你还没有使用随从，你可以消灭你的一个随从，在其基地上使用这个泰坦。在其上放置+1 力量指示物，其数值等于被摧毁的随从的力量。持续能力：每回合一次，在你执行直接影响一个或多个随从的战术后，你可以在其中一个随从和/或这个泰坦上放置一个+1力量指示物。天赋：如果该泰坦身上有四个或更多+1能量指示物，则抓一张牌。",
+          "textZh": "特殊能力：在你的回合中，如果你还没有使用随从，你可以消灭你的一个随从，在其基地上使用这个泰坦。在其上放置+1 力量指示物，其数值等于被摧毁的随从的力量。持续能力：每回合一次，在你执行直接影响一个或多个随从的战术后，你可以在其中一个随从和/或这个泰坦上放置一个+1力量指示物。天赋：如果该泰坦身上有四个或更多+1能量指示物，则抽一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/library/dinosaurs/dinosaurs-15.webp",
           "imageKind": "card",
@@ -5991,7 +5991,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Disco Inferno 璺?Smash Up",
           "nameZh": "地狱迪斯科",
-          "textZh": "每个玩家可以在他们的一个随从上放置一个+1力量指示物。对于每个受此影响的随从，抓一张牌。",
+          "textZh": "每个玩家可以在他们的一个随从上放置一个+1力量指示物。对于每个受此影响的随从，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -6256,7 +6256,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Imperial Dragon 璺?Smash Up",
           "nameZh": "御龙",
-          "textZh": "Power 3 - 持续能力：当另一位玩家在这里使用或移动一个随从后，抓一张牌",
+          "textZh": "Power 3 - 持续能力：当另一位玩家在这里使用或移动一个随从后，抽一张牌",
           "clarificationsZh": [
             "当随从移动到此处（而不是从此处移动）时会触发此操作。"
           ]
@@ -6550,7 +6550,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Gem Grabber 璺?Smash Up",
           "nameZh": "宝石掠夺者",
-          "textZh": "Power 2 - 弃掉宝藏牌堆顶部的两张牌。如果其中一个战术可以对随从执行，则将其绘制出来。",
+          "textZh": "Power 2 - 弃掉宝藏牌堆顶部的两张牌。如果其中一个战术可以对随从执行，则将其抽取。",
           "clarificationsZh": []
         },
         {
@@ -6570,7 +6570,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Anything For Money 璺?Smash Up",
           "nameZh": "为了钱什么都可以",
-          "textZh": "丢弃任意数量的卡片。每丢弃一张宝藏卡，抓一张卡。每丢弃一张其他牌，抽一张宝藏牌。",
+          "textZh": "丢弃任意数量的卡片。每丢弃一张宝藏卡，抽一张牌。每丢弃一张其他牌，抽一张宝藏牌。",
           "clarificationsZh": []
         },
         {
@@ -6776,7 +6776,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Shoggoth 璺?Smash Up",
           "nameZh": "修格斯",
-          "textZh": "力量 6 - 其他每个玩家都可以抽一张疯狂卡。对于其他不这样做的玩家，你可以在这里消灭他们的一个随从。然后，如果你的总力量少于 12，则抓两张疯狂卡。说明： *“这里的 12 总力量”包括修格斯的力量。",
+          "textZh": "力量 6 - 其他每个玩家都可以抽一张疯狂卡。对于其他不这样做的玩家，你可以在这里消灭他们的一个随从。然后，如果你的总力量少于 12，则抽两张疯狂卡。说明： *“这里的 12 总力量”包括修格斯的力量。",
           "clarificationsZh": [
             "“这里的 12 总力量”包括修格斯的力量。"
           ]
@@ -6858,7 +6858,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Dunwich Horror 璺?Smash Up",
           "nameZh": "邓威奇恐怖事件",
-          "textZh": "打出到一个随从上。持续能力：该随从拥有+5力量。特殊能力：在此基地计分前，该随从的操控者必须抓两张疯狂牌或消灭该随从。",
+          "textZh": "打出到一个随从上。持续能力：该随从拥有+5力量。特殊能力：在此基地计分前，该随从的操控者必须抽两张疯狂牌或消灭该随从。",
           "clarificationsZh": []
         },
         {
@@ -6878,7 +6878,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Insanity 璺?Smash Up",
           "nameZh": "疯狂",
-          "textZh": "其他玩家各抓两张疯狂卡。将此战术放入框中。",
+          "textZh": "其他玩家各抽两张疯狂卡。将此战术放入框中。",
           "clarificationsZh": []
         },
         {
@@ -6966,7 +6966,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Touch of Madness 璺?Smash Up",
           "nameZh": "疯狂之触",
-          "textZh": "其他玩家各抓一张疯狂卡。抽一张牌并执行一个额外战术。",
+          "textZh": "其他玩家各抽一张疯狂卡。抽一张牌并执行一个额外战术。",
           "clarificationsZh": []
         },
         {
@@ -7050,7 +7050,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Lord of the Prance 璺?Smash Up",
           "nameZh": "腾跃之主",
-          "textZh": "力量 4 - 天赋：你选择的另一位玩家抓一张牌。画一张卡片。",
+          "textZh": "力量 4 - 天赋：你选择的另一位玩家抽一张牌。抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -7110,7 +7110,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "After You 璺?Smash Up",
           "nameZh": "在你之后",
-          "textZh": "其他玩家各抓一张牌。为游戏中的每个玩家抽一张牌，包括你自己。",
+          "textZh": "其他玩家各抽一张牌。为游戏中的每个玩家抽一张牌，包括你自己。",
           "clarificationsZh": []
         },
         {
@@ -7130,7 +7130,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Dancing Root 璺?Smash Up",
           "nameZh": "舞根",
-          "textZh": "所有玩家将他们的弃牌堆洗入他们的牌库中。画一张卡片。",
+          "textZh": "所有玩家将他们的弃牌堆洗入他们的牌库中。抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -7673,7 +7673,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Close Encounters 璺?Smash Up",
           "nameZh": "近距离接触",
-          "textZh": "画一张卡片。您可以将手牌中的一张牌置于牌组顶部。进行一个额外的战术。",
+          "textZh": "抽一张牌。您可以将手牌中的一张牌置于牌组顶部。进行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -7733,7 +7733,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Five by Five 璺?Smash Up",
           "nameZh": "五乘五",
-          "textZh": "抓五张牌，然后将五张手牌按任意顺序放置到牌库顶。",
+          "textZh": "抽五张牌，然后将五张手牌按任意顺序放置到牌库顶。",
           "clarificationsZh": []
         },
         {
@@ -8517,7 +8517,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Dice Ninja 璺?Smash Up",
           "nameZh": "骰子忍者",
-          "textZh": "力量 2 - 融合 - 随从：抓一张牌。 / 战术：抽两张牌",
+          "textZh": "力量 2 - 融合 - 随从：抽一张牌。 / 战术：抽两张牌",
           "clarificationsZh": []
         },
         {
@@ -9359,7 +9359,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Drone 璺?Smash Up",
           "nameZh": "无人机",
-          "textZh": "力量 3 - 在该随从上放置一个 +1 力量指示物。持续能力：当你的一个随从将被消灭时，你可以从该随从身上移除一个+1力量指示物。天赋：移除该随从的+1力量指示物以抓一张牌。",
+          "textZh": "力量 3 - 在该随从上放置一个 +1 力量指示物。持续能力：当你的一个随从将被消灭时，你可以从该随从身上移除一个+1力量指示物。天赋：移除该随从的+1力量指示物以抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -9625,7 +9625,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Chaos Lord 璺?Smash Up",
           "nameZh": "混沌领主",
-          "textZh": "力量 5 - 持续能力：掷硬币后，如果正面朝上，则在你的一个随从上放置一个 +1 力量指示物；如果出现反面，则抓一张牌，然后弃掉一张牌。",
+          "textZh": "力量 5 - 持续能力：掷硬币后，如果正面朝上，则在你的一个随从上放置一个 +1 力量指示物；如果出现反面，则抽一张牌，然后弃掉一张牌。",
           "clarificationsZh": []
         },
         {
@@ -9785,7 +9785,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Goblin Recruiters 璺?Smash Up",
           "nameZh": "妖精招募者",
-          "textZh": "打出到基地上。持续能力：掷硬币后，如果是正面，则抓一张牌；如果是正面，则抓一张牌；如果是正面，则抓一张牌。如果出现反面，你可以将弃牌堆中的一张牌洗入你的牌库。",
+          "textZh": "打出到基地上。持续能力：掷硬币后，如果是正面，则抽一张牌；如果是正面，则抽一张牌；如果是正面，则抽一张牌。如果出现反面，你可以将弃牌堆中的一张牌洗入你的牌库。",
           "clarificationsZh": []
         },
         {
@@ -9924,7 +9924,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Nana 璺?Smash Up",
           "nameZh": "娜娜",
-          "textZh": "Power 3 - 展示你牌组顶牌。如果是一个战术，请将其画出来或作为额外战术进行播放。否则将其放在牌组的底部。",
+          "textZh": "力量 3 - 展示你牌库顶牌。如果是一张战术，抽取它或将其作为额外战术打出。否则将其置于你的牌库底部。",
           "clarificationsZh": []
         },
         {
@@ -10064,7 +10064,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Granny's Purse 璺?Smash Up",
           "nameZh": "奶奶的钱包",
-          "textZh": "展示你牌组顶牌。如果是一个战术，你可以绘制它或返回它。否则将其放在牌组的底部。进行一个额外的战术。",
+          "textZh": "展示你牌组顶牌。如果是一个战术，你可以抽取它或返回它。否则将其放在牌组的底部。进行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -10666,7 +10666,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Lunch Run 璺?Smash Up",
           "nameZh": "午餐跑",
-          "textZh": "打出到基地上。持续能力：每次你在这里打出一个随从后，抓一张牌。",
+          "textZh": "打出到基地上。持续能力：每次你在这里打出一个随从后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -10819,7 +10819,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "红骷髅",
-          "textZh": "力量 5 - 持续能力：当你的一个角色被消灭后，抓一张牌。天赋：摧毁你的一个角色来抽一张牌。",
+          "textZh": "力量 5 - 持续能力：当你的一个角色被消灭后，抽一张牌。天赋：摧毁你的一个角色来抽一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/hydra-1.webp",
           "imageKind": "card",
@@ -11400,7 +11400,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Mysteries of the Deep 璺?Smash Up",
           "nameZh": "深渊之谜",
-          "textZh": "如果你的基地上有 3 个或更多同名随从，则抓 3 张牌，然后你可以再抓 2 张牌和 2 张疯狂牌。",
+          "textZh": "如果你的基地上有 3 个或更多同名随从，则抽 3 张牌，然后你可以再抽 2 张牌和 2 张疯狂牌。",
           "clarificationsZh": [
             "同名的随从必须在同一个基地。"
           ]
@@ -11658,7 +11658,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Floofairy 璺?Smash Up",
           "nameZh": "弗洛费尔里",
-          "textZh": "Power 2 - 你可以抓一张牌。",
+          "textZh": "Power 2 - 你可以抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -12274,7 +12274,7 @@
           ],
           "sourceProvider": "官方规则维基",
           "nameZh": "戈戈佐拉",
-          "textZh": "特殊能力：你可以在有两个或更多战术的基地上打这张牌，而不是常规的随从打法。持续能力：当你在这个基地上进行一个战术或一个随从后，在这张卡上放置一个+1力量指示物。持续能力：当你在这个基地上执行一个战术后，你可以抓一张牌。",
+          "textZh": "特殊能力：你可以在有两个或更多战术的基地上打这张牌，而不是常规的随从打法。持续能力：当你在这个基地上进行一个战术或一个随从后，在这张卡上放置一个+1力量指示物。持续能力：当你在这个基地上执行一个战术后，你可以抽一张牌。",
           "clarificationsZh": [
             "无论你手中是否有随从，你都可以玩这个来代替常规的随从玩法。泰坦游戏对随从游戏没有任何限制。",
             "“两个或多个战术”包括你对基地和那里的随从的战术。"
@@ -12574,7 +12574,7 @@
           "clarifications": [],
           "sourceProvider": "官方规则维基",
           "nameZh": "杀手葛",
-          "textZh": "特殊能力：在你的回合开始时，如果该泰坦不在场上，则在其上放置一个+1力量指示物。在你的回合中，如果这个泰坦上有 3 个或更多指示物，你可以使用它来代替常规的随从玩法，最多保留 6 个指示物。持续能力：此泰坦离开战场后，将弃牌堆中最多两个随从洗入你的牌库或抓两张牌。天赋：消灭这个泰坦，从你的弃牌堆中额外打出一个力量等于或小于这个泰坦上+1力量指示物数量的随从。",
+          "textZh": "特殊能力：在你的回合开始时，如果该泰坦不在场上，则在其上放置一个+1力量指示物。在你的回合中，如果这个泰坦上有 3 个或更多指示物，你可以使用它来代替常规的随从玩法，最多保留 6 个指示物。持续能力：此泰坦离开战场后，将弃牌堆中最多两个随从洗入你的牌库或抽两张牌。天赋：消灭这个泰坦，从你的弃牌堆中额外打出一个力量等于或小于这个泰坦上+1力量指示物数量的随从。",
           "clarificationsZh": [],
           "imageUrl": "card-art/library/killer-plants/killer-plants-15.webp",
           "imageKind": "card",
@@ -12718,7 +12718,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Cat Fight 璺?Smash Up",
           "nameZh": "猫战",
-          "textZh": "选择你的一名随从。抓牌数量等于该随从的力量。消灭那个随从。",
+          "textZh": "选择你的一名随从。抽牌数量等于该随从的力量。消灭那个随从。",
           "clarificationsZh": []
         },
         {
@@ -12978,7 +12978,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Merlin 璺?Smash Up",
           "nameZh": "梅林",
-          "textZh": "力量 4 - 天赋：展示你牌组顶牌。如果它是一个战术，则绘制它或将其作为额外战术播放，否则返回它。",
+          "textZh": "力量 4 - 天赋：展示你牌组顶牌。如果它是一个战术，则抽取它或将其作为额外战术播放，否则返回它。",
           "clarificationsZh": []
         },
         {
@@ -13058,7 +13058,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Good Deed 璺?Smash Up",
           "nameZh": "善行",
-          "textZh": "打出到基地上。画一张卡片。持续能力：当你的一个随从移动到这里后，你可以将这张卡转移到另一个基地并抓一张卡。持续做好事能力每回合只能使用一次。",
+          "textZh": "打出到基地上。抽一张牌。持续能力：当你的一个随从移动到这里后，你可以将这张卡转移到另一个基地并抽一张牌。持续做好事能力每回合只能使用一次。",
           "clarificationsZh": []
         },
         {
@@ -13118,7 +13118,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "The Fisher King 璺?Smash Up",
           "nameZh": "渔王",
-          "textZh": "打出到基地上。持续能力：当你的一个或多个随从移动到这里后，抓一张牌。然后自己的手牌有8张以上的话，将这张卡破坏，VP上升1点。",
+          "textZh": "打出到基地上。持续能力：当你的一个或多个随从移动到这里后，抽一张牌。然后自己的手牌有8张以上的话，将这张卡破坏，VP上升1点。",
           "clarificationsZh": []
         },
         {
@@ -13178,7 +13178,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "The Lady of the Lake 璺?Smash Up",
           "nameZh": "湖中女士",
-          "textZh": "在你的套牌和/或弃牌堆中搜索可以对随从执行的战术。画它或把它作为额外的战术来玩。",
+          "textZh": "在你的套牌和/或弃牌堆中搜索可以对随从执行的战术。抽取它或将其作为额外的战术来玩。",
           "clarificationsZh": []
         },
         {
@@ -13275,7 +13275,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Minn-Erva card art from Smash Up: Marvel",
           "nameZh": "明恩-埃尔瓦",
-          "textZh": "力量 4 - 抓两张牌。",
+          "textZh": "力量 4 - 抽两张牌。",
           "clarificationsZh": []
         },
         {
@@ -13335,7 +13335,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Battle Rage card art from Smash Up: Marvel",
           "nameZh": "战斗狂怒",
-          "textZh": "你的一个角色获得+2力量直到回合结束。画一张卡片。",
+          "textZh": "你的一个角色获得+2力量直到回合结束。抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -13375,7 +13375,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "It Begins card art from Smash Up: Marvel",
           "nameZh": "开始了",
-          "textZh": "你的一个角色获得+1力量直到回合结束。画一张卡片。你可以进行一个额外的战术。",
+          "textZh": "你的一个角色获得+1力量直到回合结束。抽一张牌。你可以进行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -13995,7 +13995,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Smart Set-Up 璺?Smash Up",
           "nameZh": "智能设置",
-          "textZh": "打出到另一名玩家的一个随从上。持续能力：每回合第一次在这里打出随从后，抓一张牌。",
+          "textZh": "打出到另一名玩家的一个随从上。持续能力：每回合第一次在这里打出随从后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -14342,7 +14342,7 @@
           "clarifications": [],
           "sourceProvider": "官方规则维基",
           "nameZh": "泰坦卡牌名称",
-          "textZh": "特殊能力：在你的回合开始时，你可以选择两种效果，并以任意顺序对不同的随从执行这些效果来打出这个泰坦：将你拥有的一个随从从你的手牌或弃牌堆中放入盒子中。消灭你的一名随从。从你的一名随从身上移除一个+1力量指示物。持续能力：每回合一次，在你的随从身上放置或移除能量指示物后，抓一张牌。天赋：在你的一个随从身上放置一个+1力量指示物，或者从你的随从身上移除总共两个+1力量指示物以进行额外的战术。",
+          "textZh": "特殊能力：在你的回合开始时，你可以选择两种效果，并以任意顺序对不同的随从执行这些效果来打出这个泰坦：将你拥有的一个随从从你的手牌或弃牌堆中放入盒子中。消灭你的一名随从。从你的一名随从身上移除一个+1力量指示物。持续能力：每回合一次，在你的随从身上放置或移除能量指示物后，抽一张牌。天赋：在你的一个随从身上放置一个+1力量指示物，或者从你的随从身上移除总共两个+1力量指示物以进行额外的战术。",
           "clarificationsZh": [],
           "imageUrl": "card-art/library/mad-scientists/mad-scientists-15.webp",
           "imageKind": "card",
@@ -15334,7 +15334,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Blue Trooper 璺?Smash Up",
           "nameZh": "蓝色士兵",
-          "textZh": "力量 4 - 特殊能力：在获得任何基地计分前，你可以抓一张牌，或者给予该随从 +2 力量，直到你的回合结束。",
+          "textZh": "力量 4 - 特殊能力：在获得任何基地计分前，你可以抽一张牌，或者给予该随从 +2 力量，直到你的回合结束。",
           "clarificationsZh": []
         },
         {
@@ -15540,7 +15540,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Power Pose 璺?Smash Up",
           "nameZh": "力量姿势",
-          "textZh": "打出到基地上。特殊能力：在此基地计分前，如果您在此没有最强力量，则抓两张牌。特殊能力：在此基地计分后，如果你是获胜者，你可以在替换基地上额外使用一个力量为3或更少的随从。说明：如果您在基地计分前失去基地，然后最终赢得基地，则两种特殊能力都可以激活。",
+          "textZh": "打出到基地上。特殊能力：在此基地计分前，如果您在此没有最强力量，则抽两张牌。特殊能力：在此基地计分后，如果你是获胜者，你可以在替换基地上额外使用一个力量为3或更少的随从。说明：如果您在基地计分前失去基地，然后最终赢得基地，则两种特殊能力都可以激活。",
           "clarificationsZh": [
             "如果您在得分之前失去基地，然后最终赢得基地，则可以激活这两种特殊能力。"
           ]
@@ -15943,7 +15943,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Cthulhu's Chosen 璺?Smash Up",
           "nameZh": "克苏鲁的选民",
-          "textZh": "力量 3 - 特殊能力：在基地计分前，你可以抓一张疯狂卡，让该随从获得 +2 力量，直到回合结束。",
+          "textZh": "力量 3 - 特殊能力：在基地计分前，你可以抽一张疯狂卡，让该随从获得 +2 力量，直到回合结束。",
           "clarificationsZh": [
             "无论哪个基地计分，都会触发此能力。每次基地计分时都会触发。为每个您想要获得 +2 力量的克苏鲁选民抽一张单独的疯狂卡。每次触发时，每个克苏鲁选民最多可以抽一张疯狂卡。"
           ]
@@ -16119,7 +16119,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Madness Unleashed 璺?Smash Up",
           "nameZh": "疯狂释放",
-          "textZh": "丢弃任意数量的疯狂卡。每丢弃一张牌，你就可以抓一张牌，并在本回合进行一次额外战术。",
+          "textZh": "丢弃任意数量的疯狂卡。每丢弃一张牌，你就可以抽一张牌，并在本回合进行一次额外战术。",
           "clarificationsZh": [
             "在绘制任何东西之前，你必须先丢弃所有东西。开始抓牌后，您不得继续丢弃疯狂牌。"
           ]
@@ -16370,7 +16370,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Eldritch Gate 璺?Smash Up",
           "nameZh": "恐怖之门",
-          "textZh": "打出到基地上。天赋：抽一张疯狂卡。你可以在这里打出一个额外的随从。说明：如果你使用它的天赋，无论你是否使用额外的随从，你都必须抓一张疯狂卡。",
+          "textZh": "打出到基地上。天赋：抽一张疯狂卡。你可以在这里打出一个额外的随从。说明：如果你使用它的天赋，无论你是否使用额外的随从，你都必须抽一张疯狂卡。",
           "clarificationsZh": [
             "如果你使用它的天赋，无论你是否使用额外的随从，你都必须抽一张疯狂卡。"
           ]
@@ -16785,7 +16785,7 @@
           "imageSource": "SmashUp Wiki faction deck photograph",
           "imageAlt": "Mulan card art from Smash Up: Disney Edition",
           "nameZh": "木兰",
-          "textZh": "力量 5 - 天赋：如果你本回合在此角色上放置了 +1 力量指示物，则进行一次额外战术，或者抓一张牌。",
+          "textZh": "力量 5 - 天赋：如果你本回合在此角色上放置了 +1 力量指示物，则进行一次额外战术，或者抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -16805,7 +16805,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Chien Po card art from Smash Up: Disney Edition",
           "nameZh": "建波",
-          "textZh": "力量 3 - 直到你的下一个回合开始，这张卡基地上的你的角色不会受到其他玩家卡牌的影响。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抓一张牌。",
+          "textZh": "力量 3 - 直到你的下一个回合开始，这张卡基地上的你的角色不会受到其他玩家卡牌的影响。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -16825,7 +16825,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Ling card art from Smash Up: Disney Edition",
           "nameZh": "凌",
-          "textZh": "力量 3 - 您可以在这里打出力量 2 或以下的额外角色。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抓一张牌。",
+          "textZh": "力量 3 - 您可以在这里打出力量 2 或以下的额外角色。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -16845,7 +16845,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Yao card art from Smash Up: Disney Edition",
           "nameZh": "姚",
-          "textZh": "力量 3 - 你可以在这里消灭力量为 2 或以下的角色。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抓一张牌。",
+          "textZh": "力量 3 - 你可以在这里消灭力量为 2 或以下的角色。持续能力：每回合一次，在你在该角色上放置+1力量指示物后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -17045,7 +17045,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Prepare to Fight card art from Smash Up: Disney Edition",
           "nameZh": "准备战斗",
-          "textZh": "在角色上放置两个 +1 能量指示物。画一张卡片。",
+          "textZh": "在角色上放置两个 +1 能量指示物。抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -17168,7 +17168,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "D'Artagnan 璺?Smash Up",
           "nameZh": "达达尼昂",
-          "textZh": "力量 2 - 持续能力：当你进行一个直接影响该随从的战术后，抓一张牌。",
+          "textZh": "力量 2 - 持续能力：当你进行一个直接影响该随从的战术后，抽一张牌。",
           "clarificationsZh": [
             "由于卡牌解决顺序（请参阅回合的阶段），在执行影响达达尼昂的战术（步骤 1）后，达达尼昂会让你在影响它的战术被丢弃（步骤 5）之前抓一张牌（步骤 3）。因此，除其他外，达达尼昂和狄俄尼索斯的宠爱之间不可能存在无限循环。"
           ]
@@ -17254,7 +17254,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "En Garde 璺?Smash Up",
           "nameZh": "前卫",
-          "textZh": "选择一个随从获得+1力量直到回合结束。画一张卡片。你可以进行一个额外的战术。",
+          "textZh": "选择一个随从获得+1力量直到回合结束。抽一张牌。你可以进行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -17274,7 +17274,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Last Stand 璺?Smash Up",
           "nameZh": "背水一战",
-          "textZh": "特殊能力：在基地计分前，给予你的一个随从+2力量，直到回合结束。画一张卡片。",
+          "textZh": "特殊能力：在基地计分前，给予你的一个随从+2力量，直到回合结束。抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -17753,7 +17753,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Rainbow 璺?Smash Up",
           "nameZh": "彩虹",
-          "textZh": "力量 4 - 天赋：如果你这里还有另一个随从，抓一张牌。",
+          "textZh": "力量 4 - 天赋：如果你这里还有另一个随从，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -17893,7 +17893,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Sharing Power 璺?Smash Up",
           "nameZh": "分享力量",
-          "textZh": "打出到基地上。持续能力：在你的回合结束时，如果你有 2 个或更多随从，则抓一张牌。",
+          "textZh": "打出到基地上。持续能力：在你的回合结束时，如果你有 2 个或更多随从，则抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -18668,7 +18668,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Jam All Night Long 璺?Smash Up",
           "nameZh": "整夜即兴演奏",
-          "textZh": "打出到基地上。天赋：选择一名玩家在此额外打出一个力量为 2 或更少的随从，或者展示一张没有此类随从的手牌。然后，如果你选择了另一位玩家并且他们打出了一个随从，你可以抓一张牌或在此处的一个随从上放置一个+1力量指示物。",
+          "textZh": "打出到基地上。天赋：选择一名玩家在此额外打出一个力量为 2 或更少的随从，或者展示一张没有此类随从的手牌。然后，如果你选择了另一位玩家并且他们打出了一个随从，你可以抽一张牌或在此处的一个随从上放置一个+1力量指示物。",
           "clarificationsZh": []
         },
         {
@@ -18882,7 +18882,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Snazzy Penguin 璺?Smash Up",
           "nameZh": "时髦企鹅",
-          "textZh": "Power 3 - 抓一张牌。如果这不是你手上打出的常规随从，则再抓一张牌。澄清：“不是你手上打出的常规随从”允许它是你从其他地方打出的常规随从，例如帝企鹅。",
+          "textZh": "Power 3 - 抽一张牌。如果这不是你手上打出的常规随从，则再抽一张牌。澄清：“不是你手上打出的常规随从”允许它是你从其他地方打出的常规随从，例如帝企鹅。",
           "clarificationsZh": [
             "“不是您从手中打出的常规随从”允许它是您从其他地方打出的常规随从，例如帝企鹅。"
           ]
@@ -18930,7 +18930,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Regurgitating Penguin 璺?Smash Up",
           "nameZh": "反刍企鹅",
-          "textZh": "Power 2 - 显示你牌组顶部的三张牌。你可以画一个显示战术，然后如果这不是你手上打出的常规随从，你就可以打出那个战术。以任意顺序返回其余部分。澄清：“不是你手上打出的常规随从”允许它是你从其他地方打出的常规随从，例如帝企鹅。",
+          "textZh": "Power 2 - 显示你牌组顶部的三张牌。你可以抽取一张展示的战术，然后如果这不是你手上打出的常规随从，你就可以打出那个战术。以任意顺序返回其余部分。澄清：“不是你手上打出的常规随从”允许它是你从其他地方打出的常规随从，例如帝企鹅。",
           "clarificationsZh": [
             "“不是您从手中打出的常规随从”允许它是您从其他地方打出的常规随从，例如帝企鹅。"
           ]
@@ -19844,7 +19844,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Marie DeGraw 璺?Smash Up",
           "nameZh": "玛丽·德格罗",
-          "textZh": "力量 5 - 天赋：展示你牌组顶牌。如果是随从，就画它。否则，将其放在牌组的底部。",
+          "textZh": "力量 5 - 天赋：展示你牌组顶牌。如果是随从，就抽取它。否则，将其放在牌组的底部。",
           "clarificationsZh": []
         },
         {
@@ -19904,7 +19904,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Direct to DVD Sequel 璺?Smash Up",
           "nameZh": "直接 DVD 续集",
-          "textZh": "将弃牌堆中的一个随从洗入你的牌库并抓一张牌。",
+          "textZh": "将弃牌堆中的一个随从洗入你的牌库并抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -19924,7 +19924,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Fairy Godmother 璺?Smash Up",
           "nameZh": "仙女教母",
-          "textZh": "抓两张牌，或者一个随从获得+3力量直到回合结束。",
+          "textZh": "抽两张牌，或者一个随从获得+3力量直到回合结束。",
           "clarificationsZh": []
         },
         {
@@ -19988,7 +19988,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Skillet 璺?Smash Up",
           "nameZh": "煎锅",
-          "textZh": "消灭一个力量为 2 或以下的随从并抓一张牌。",
+          "textZh": "消灭一个力量为 2 或以下的随从并抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -20222,7 +20222,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Microbot Archive 璺?Smash Up",
           "nameZh": "微型机器人档案",
-          "textZh": "Power 1 - 当你的一个微型机器人（包括这个）被摧毁后，抓一张牌。",
+          "textZh": "Power 1 - 当你的一个微型机器人（包括这个）被摧毁后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -20366,7 +20366,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Classic Rocker 璺?Smash Up",
           "nameZh": "经典摇杆",
-          "textZh": "力量 4 - 天赋：如果该基地的断点为 21 或更高，则抓一张牌。每回合仅使用一种经典摇杆技能。",
+          "textZh": "力量 4 - 天赋：如果该基地的断点为 21 或更高，则抽一张牌。每回合仅使用一种经典摇杆技能。",
           "clarificationsZh": []
         },
         {
@@ -20446,7 +20446,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Hot Venue 璺?Smash Up",
           "nameZh": "热门场地",
-          "textZh": "打出到基地上。持续能力：你的随从拥有+1力量。如果该基地的断点为 21 或更高，则在您在此打出随从的任何回合结束时抓一张牌。",
+          "textZh": "打出到基地上。持续能力：你的随从拥有+1力量。如果该基地的断点为 21 或更高，则在您在此打出随从的任何回合结束时抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -20790,7 +20790,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Magic Weapon 璺?Smash Up",
           "nameZh": "魔法武器",
-          "textZh": "打出到一个随从上。持续能力：该随从拥有以下能力：“天赋：每有一名随从在此的玩家，该随从都会获得 +1 力量，直到下回合开始，或者如果该随从只有一个战术，则抓一张牌。”",
+          "textZh": "打出到一个随从上。持续能力：该随从拥有以下能力：“天赋：每有一名随从在此的玩家，该随从都会获得 +1 力量，直到下回合开始，或者如果该随从只有一个战术，则抽一张牌。”",
           "clarificationsZh": []
         },
         {
@@ -21069,7 +21069,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Tsar Eagle 璺?Smash Up",
           "nameZh": "沙皇鹰",
-          "textZh": "Power 2 - 抓一张牌或将另一位玩家的弃牌堆中的一个随从放在他们的牌组顶部。",
+          "textZh": "Power 2 - 抽一张牌或将另一位玩家的弃牌堆中的一个随从放在他们的牌组顶部。",
           "clarificationsZh": []
         },
         {
@@ -21169,7 +21169,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Go See My Sister 璺?Smash Up",
           "nameZh": "去看我姐姐",
-          "textZh": "打出到基地上。持续能力：当你使用或移动你的一个随从到这里后，你可以抓一张牌。",
+          "textZh": "打出到基地上。持续能力：当你使用或移动你的一个随从到这里后，你可以抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -21189,7 +21189,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Mass Transformation 璺?Smash Up",
           "nameZh": "大规模转型",
-          "textZh": "每个玩家将手放在牌库底部并抓相同数量的牌。",
+          "textZh": "每个玩家将手放在牌库底部并抽相同数量的牌。",
           "clarificationsZh": []
         },
         {
@@ -21391,7 +21391,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "任务汇报",
-          "textZh": "选择一个基地。该基地上你的每个角色各抓一张牌。",
+          "textZh": "选择一个基地。该基地上你的每个角色各抽一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--6.webp",
           "imageKind": "card",
@@ -21451,7 +21451,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "救援任务",
-          "textZh": "特殊能力：在基地计分后，将该基地上你的所有角色洗入其拥有者的牌库中并抓一张牌。",
+          "textZh": "特殊能力：在基地计分后，将该基地上你的所有角色洗入其拥有者的牌库中并抽一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/s-h-i-e-l-d--9.webp",
           "imageKind": "card",
@@ -21621,7 +21621,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Samurai-Chan 璺?Smash Up",
           "nameZh": "武士陈",
-          "textZh": "力量 2 - 持续能力：当该随从从场上进入弃牌堆后，抓一张牌。",
+          "textZh": "力量 2 - 持续能力：当该随从从场上进入弃牌堆后，抽一张牌。",
           "clarificationsZh": [
             "从游戏中进入弃牌堆的随从包括在得分后被弃置以及被摧毁。"
           ]
@@ -21733,7 +21733,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Honor the Fallen 璺?Smash Up",
           "nameZh": "向阵亡将士致敬",
-          "textZh": "打出到基地上。持续能力：当你的一个随从进入弃牌堆后，抓一张牌。",
+          "textZh": "打出到基地上。持续能力：当你的一个随从进入弃牌堆后，抽一张牌。",
           "clarificationsZh": [
             "从游戏中进入弃牌堆的随从包括在得分后被弃置以及被摧毁。"
           ]
@@ -21777,7 +21777,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Way of the Warrior 璺?Smash Up",
           "nameZh": "武士之道",
-          "textZh": "直到回合结束，你的一个随从获得+3力量，如果它从游戏中进入弃牌堆，则抓一张牌。",
+          "textZh": "直到回合结束，你的一个随从获得+3力量，如果它从游戏中进入弃牌堆，则抽一张牌。",
           "clarificationsZh": [
             "从游戏中进入弃牌堆的随从包括在得分后被弃置以及被摧毁。"
           ]
@@ -22344,7 +22344,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Torn Apart 璺?Smash Up",
           "nameZh": "撕裂",
-          "textZh": "消灭一个力量为 3 或以下的随从并抓一张牌。",
+          "textZh": "消灭一个力量为 3 或以下的随从并抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -22364,7 +22364,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Week of Sharks 璺?Smash Up",
           "nameZh": "鲨鱼周",
-          "textZh": "打出到基地上。持续能力：如果你这里有随从，则在你的回合结束时额外抓一张牌。每回合仅使用一周鲨鱼技能。",
+          "textZh": "打出到基地上。持续能力：如果你这里有随从，则在你的回合结束时额外抽一张牌。每回合仅使用一周鲨鱼技能。",
           "clarificationsZh": []
         },
         {
@@ -22536,7 +22536,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Ewe Shall Pass 璺?Smash Up",
           "nameZh": "埃维将通过",
-          "textZh": "将你的一个随从转移到另一个基地。画一张卡片。你可以进行一个额外的战术。",
+          "textZh": "将你的一个随从转移到另一个基地。抽一张牌。你可以进行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -22626,7 +22626,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Shearing 璺?Smash Up",
           "nameZh": "剪毛",
-          "textZh": "打出到一个随从上。画一张卡片。持续能力：该随从的力量为-2。在你的回合开始时，将此战术移回你的手上。",
+          "textZh": "打出到一个随从上。抽一张牌。持续能力：该随从的力量为-2。在你的回合开始时，将此战术移回你的手上。",
           "clarificationsZh": [
             "如果剪切在你的下一回合开始之前离开游戏，你不会将其返回你的手上。"
           ]
@@ -22650,7 +22650,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "To Follow, or Not? 璺?Smash Up",
           "nameZh": "跟随还是不跟随？",
-          "textZh": "选择另一位玩家。在他们的弃牌堆中选择一个随机战术。将其作为额外战术播放或将其退回。画一张卡片。",
+          "textZh": "选择另一位玩家。在他们的弃牌堆中选择一个随机战术。将其作为额外战术播放或将其退回。抽一张牌。",
           "clarificationsZh": [
             "如果你打出其他玩家的牌，你可以控制它，并且它的能力是从你的角度来看的；当它离开游戏时，它会回到拥有者的手上、牌库或弃牌堆。"
           ]
@@ -22729,7 +22729,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "神秘客",
-          "textZh": "力量 4 - 天赋：在这里打出一个基地战术作为额外战术或抓一张牌。",
+          "textZh": "力量 4 - 天赋：在这里打出一个基地战术作为额外战术或抽一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-2.webp",
           "imageKind": "card",
@@ -22909,7 +22909,7 @@
           "clarifications": [],
           "sourceProvider": "SmashUp Wiki",
           "nameZh": "我的总体规划",
-          "textZh": "基地战术。天赋：如果这里的断点是19或更少，抓一张牌。",
+          "textZh": "基地战术。天赋：如果这里的断点是19或更少，抽一张牌。",
           "clarificationsZh": [],
           "imageUrl": "card-art/marvel/sinister-six-11.webp",
           "imageKind": "card",
@@ -23029,7 +23029,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Gravetender 璺?Smash Up",
           "nameZh": "守墓人",
-          "textZh": "力量 4 - 持续能力：每回合一次，在你的一张其他牌被掩埋或揭开后，抓一张牌",
+          "textZh": "力量 4 - 持续能力：每回合一次，在你的一张其他牌被掩埋或揭开后，抽一张牌",
           "clarificationsZh": []
         },
         {
@@ -23229,7 +23229,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Spooky, Scary 璺?Smash Up",
           "nameZh": "阴森的，可怕的",
-          "textZh": "从你的弃牌堆中埋葬一个力量为 3 或更少的随从。画一张卡片。",
+          "textZh": "从你的弃牌堆中埋葬一个力量为 3 或更少的随从。抽一张牌。",
           "clarificationsZh": []
         }
       ],
@@ -23613,7 +23613,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Puzzle Box 璺?Smash Up",
           "nameZh": "拼图盒",
-          "textZh": "打出到你的一个随从上。持续能力：如果你不控制这个随从，它的能力就会被取消。当一个或多个随从被消灭后，抓一张牌。",
+          "textZh": "打出到你的一个随从上。持续能力：如果你不控制这个随从，它的能力就会被取消。当一个或多个随从被消灭后，抽一张牌。",
           "clarificationsZh": []
         }
       ],
@@ -23719,7 +23719,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Imperial Dragon 璺?Smash Up",
           "nameZh": "御龙",
-          "textZh": "力量 3 - 持续能力：当另一位玩家在这里打出或移动一个随从后，抓一张牌。",
+          "textZh": "力量 3 - 持续能力：当另一位玩家在这里打出或移动一个随从后，抽一张牌。",
           "clarificationsZh": [
             "当随从移动到此处（而不是从此处移动）时会触发此操作。移动这个随从就会激活它。"
           ]
@@ -24061,7 +24061,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Square Deal 璺?Smash Up",
           "nameZh": "方形交易",
-          "textZh": "抓牌，直到至少一名玩家手中的牌比你少。",
+          "textZh": "抽牌，直到至少一名玩家手中的牌比你少。",
           "clarificationsZh": []
         }
       ],
@@ -24374,7 +24374,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Medical Officer 璺?Smash Up",
           "nameZh": "医务人员",
-          "textZh": "力量 4 - 持续能力：当你的一个或多个其他随从返回你的手牌时，你可以抓一张牌而不是返回其中一个。",
+          "textZh": "力量 4 - 持续能力：当你的一个或多个其他随从返回你的手牌时，你可以抽一张牌而不是返回其中一个。",
           "clarificationsZh": []
         },
         {
@@ -24784,7 +24784,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Difference Engine 璺?Smash Up",
           "nameZh": "差分机",
-          "textZh": "打出到基地上。持续能力：如果你这里有随从，则在你的回合结束时额外抓一张牌。",
+          "textZh": "打出到基地上。持续能力：如果你这里有随从，则在你的回合结束时额外抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -24932,7 +24932,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Yokozuna 璺?Smash Up",
           "nameZh": "横纲",
-          "textZh": "力量 6 - 持续能力：你的随从不能被其他玩家的牌移动。天赋：抓一张牌，或者将另一个玩家的随从从这里移动到另一个基地。",
+          "textZh": "力量 6 - 持续能力：你的随从不能被其他玩家的牌移动。天赋：抽一张牌，或者将另一个玩家的随从从这里移动到另一个基地。",
           "clarificationsZh": []
         },
         {
@@ -24976,7 +24976,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Third Tier 璺?Smash Up",
           "nameZh": "第三层",
-          "textZh": "力量 3 - 你可以将其他玩家的力量为 3 或以下的随从从这里移动到另一个基地来抓一张牌。",
+          "textZh": "力量 3 - 你可以将其他玩家的力量为 3 或以下的随从从这里移动到另一个基地来抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -25078,7 +25078,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Fighting Spirit Prize 璺?Smash Up",
           "nameZh": "战斗精神奖",
-          "textZh": "抓两张牌并在你的随从身上放置两个总计+1力量指示物。",
+          "textZh": "抽两张牌并在你的随从身上放置两个总计+1力量指示物。",
           "clarificationsZh": [
             "你可以在一个随从上放置两个+1能量指示物，或者在两个随从上各放置一个能量指示物。"
           ]
@@ -25472,7 +25472,7 @@
           "clarifications": [],
           "sourceProvider": "官方规则维基",
           "nameZh": "万能手套",
-          "textZh": "特殊能力：当你的一个随从被消灭后，你可以在它的基地打出这个泰坦。持续能力：你的力量为 3 或以下的随从不会受到其他玩家能力的影响。天赋：在这里额外打出一个力量为2或更少的随从，或者抓一张牌",
+          "textZh": "特殊能力：当你的一个随从被消灭后，你可以在它的基地打出这个泰坦。持续能力：你的力量为 3 或以下的随从不会受到其他玩家能力的影响。天赋：在这里额外打出一个力量为2或更少的随从，或者抽一张牌",
           "clarificationsZh": [],
           "imageUrl": "card-art/library/super-heroes/super-heroes-16.webp",
           "imageKind": "card",
@@ -25918,7 +25918,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Care Package 璺?Smash Up",
           "nameZh": "护理套餐",
-          "textZh": "抓一张牌并额外打出一个随从。",
+          "textZh": "抽一张牌并额外打出一个随从。",
           "clarificationsZh": []
         },
         {
@@ -25998,7 +25998,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Square Deal 璺?Smash Up",
           "nameZh": "方形交易",
-          "textZh": "抓牌，直到至少一名玩家手中的牌比你少。",
+          "textZh": "抽牌，直到至少一名玩家手中的牌比你少。",
           "clarificationsZh": []
         },
         {
@@ -26018,7 +26018,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Tea Party 璺?Smash Up",
           "nameZh": "茶会",
-          "textZh": "打出到基地上。天赋：如果这里有两个或更多随从，并且至少有一个是你的，则抓一张牌。",
+          "textZh": "打出到基地上。天赋：如果这里有两个或更多随从，并且至少有一个是你的，则抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -26078,7 +26078,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Brain 璺?Smash Up",
           "nameZh": "大脑",
-          "textZh": "Power 3 - 如果这里有懒鬼，你可以采取额外战术。持续能力：每回合一次，在你使用另一个力量为 3 的随从后，你可以抓一张牌。",
+          "textZh": "Power 3 - 如果这里有懒鬼，你可以采取额外战术。持续能力：每回合一次，在你使用另一个力量为 3 的随从后，你可以抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -26218,7 +26218,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Booty Trap 璺?Smash Up",
           "nameZh": "战利品陷阱",
-          "textZh": "打出到基地上。持续能力：当你使用或移动一个印有力量 3 的随从到此基地后，抓一张牌。",
+          "textZh": "打出到基地上。持续能力：当你使用或移动一个印有力量 3 的随从到此基地后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -26238,7 +26238,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Brunch Bunch 璺?Smash Up",
           "nameZh": "早午餐束",
-          "textZh": "选择一个基地。对于你的印有力量 3 的随从的每个名字，你可以选择不同的效果：将你的一个随从移到那里。画一张卡片。在那里多打一个力量 3 的随从。给予一名随从 +2 力量直至回合结束。将弃牌堆中的一张牌放在牌组底部。",
+          "textZh": "选择一个基地。对于你的印有力量 3 的随从的每个名字，你可以选择不同的效果：将你的一个随从移到那里。抽一张牌。在那里多打一个力量 3 的随从。给予一名随从 +2 力量直至回合结束。将弃牌堆中的一张牌放在牌组底部。",
           "clarificationsZh": []
         },
         {
@@ -26258,7 +26258,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Explosion at School 璺?Smash Up",
           "nameZh": "学校爆炸",
-          "textZh": "将任意数量的力量为 3 且名称不同的随从从你的弃牌堆中洗入你的牌库并抓一张牌。",
+          "textZh": "将任意数量的力量为 3 且名称不同的随从从你的弃牌堆中洗入你的牌库并抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -26455,7 +26455,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Zazu card art from Smash Up: Disney Edition",
           "nameZh": "扎祖",
-          "textZh": "力量 3 - 天赋：给予你的另一个角色 +2 力量直到回合结束，或者如果木法沙在你的弃牌堆中，则抓一张牌。",
+          "textZh": "力量 3 - 天赋：给予你的另一个角色 +2 力量直到回合结束，或者如果木法沙在你的弃牌堆中，则抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -26615,7 +26615,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "The Hyenas card art from Smash Up: Disney Edition",
           "nameZh": "鬣狗",
-          "textZh": "消灭一个力量为 3 或以下的角色。如果木法沙在你的弃牌堆中，抓一张牌，你就可以执行一个额外战术。",
+          "textZh": "消灭一个力量为 3 或以下的角色。如果木法沙在你的弃牌堆中，抽一张牌，你就可以执行一个额外战术。",
           "clarificationsZh": []
         },
         {
@@ -26669,7 +26669,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Jack Skellington card art from Smash Up: Disney Edition",
           "nameZh": "杰克·斯凯林顿",
-          "textZh": "力量 5 - 将你弃牌堆中的一张随从修正战术移回你的手上。持续能力：在你打出一张随从修正战术后，你可以在一个随从上放置一个 +1 力量指示物，或抓一张牌。",
+          "textZh": "力量 5 - 将你弃牌堆中的一张随从修正战术移回你的手上。持续能力：在你打出一张随从修正战术后，你可以在一个随从上放置一个 +1 力量指示物，或抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -26789,7 +26789,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Halloween Town Folks card art from Smash Up: Disney Edition",
           "nameZh": "万圣节镇的人们",
-          "textZh": "力量 2 - 展示你牌库顶的三张牌。若其中有随从修正战术，抓一张牌。将其余牌以任意顺序放到牌库顶和／或底。",
+          "textZh": "力量 2 - 展示你牌库顶的三张牌。若其中有随从修正战术，抽一张牌。将其余牌以任意顺序放到牌库顶和／或底。",
           "clarificationsZh": []
         },
         {
@@ -26849,7 +26849,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Jack-O’lantern-in-the-Box card art from Smash Up: Disney Edition",
           "nameZh": "盒子里的杰克南瓜灯",
-          "textZh": "随从修正战术。持续能力：若你控制该随从，在你的回合结束前额外抓一张牌；否则，该随从的控制者在其回合中不能额外抓牌。",
+          "textZh": "随从修正战术。持续能力：若你控制该随从，在你的回合结束前额外抽一张牌；否则，该随从的控制者在其回合中不能额外抽牌。",
           "clarificationsZh": []
         },
         {
@@ -27872,7 +27872,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Brownie 璺?Smash Up",
           "nameZh": "布朗尼",
-          "textZh": "力量 4 - 持续能力：每回合一次，当另一名玩家在另一个基地上使用随从后，抓一张牌。",
+          "textZh": "力量 4 - 持续能力：每回合一次，当另一名玩家在另一个基地上使用随从后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -27912,7 +27912,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Gremlin 璺?Smash Up",
           "nameZh": "格雷姆林",
-          "textZh": "力量 2 - 持续能力：当该随从从场上进入弃牌堆后，抓一张牌。如果它被摧毁，其他玩家随机丢弃一张牌。",
+          "textZh": "力量 2 - 持续能力：当该随从从场上进入弃牌堆后，抽一张牌。如果它被摧毁，其他玩家随机丢弃一张牌。",
           "clarificationsZh": []
         },
         {
@@ -28204,7 +28204,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "\"Good Buddy\" 璺?Smash Up",
           "nameZh": "《好伙伴》",
-          "textZh": "Power 2 - 如果你在此基地有战术，则抓一张牌。",
+          "textZh": "Power 2 - 如果你在此基地有战术，则抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -28499,7 +28499,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Aid from Allies card art from Smash Up: Marvel",
           "nameZh": "来自盟友的援助",
-          "textZh": "基地战术。画一张卡片。持续能力：将一个或多个角色移至此处后，抓一张牌。",
+          "textZh": "基地战术。抽一张牌。持续能力：将一个或多个角色移至此处后，抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -28697,7 +28697,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Nightstalker 璺?Smash Up",
           "nameZh": "夜行者",
-          "textZh": "力量 4 - 天赋：如果你本回合消灭了一个随从，抓一张牌并赋予该随从 +2 力量直到回合结束。",
+          "textZh": "力量 4 - 天赋：如果你本回合消灭了一个随从，抽一张牌并赋予该随从 +2 力量直到回合结束。",
           "clarificationsZh": []
         },
         {
@@ -29030,7 +29030,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Foxy Green 璺?Smash Up",
           "nameZh": "狐狸绿",
-          "textZh": "力量 4 - 持续能力：在其他玩家的回合结束时，如果您的力量比他们多，则抓一张牌。",
+          "textZh": "力量 4 - 持续能力：在其他玩家的回合结束时，如果您的力量比他们多，则抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -29090,7 +29090,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Stoneford 璺?Smash Up",
           "nameZh": "斯通福德",
-          "textZh": "Power 4 - 在你的牌组中搜索一个战术并绘制它。",
+          "textZh": "Power 4 - 在你的牌组中搜索一个战术并抽取它。",
           "clarificationsZh": []
         },
         {
@@ -29310,7 +29310,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Who Loves Ya, Baby? 璺?Smash Up",
           "nameZh": "谁爱你，宝贝？",
-          "textZh": "从你的牌组顶部展示一个力量为 4 的随从。画它或将它当作额外的随从来玩。",
+          "textZh": "从你的牌组顶部展示一个力量为 4 的随从。抽取它或将它当作额外的随从来玩。",
           "clarificationsZh": []
         }
       ],
@@ -30120,7 +30120,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Moontouched 璺?Smash Up",
           "nameZh": "月光触动",
-          "textZh": "打出到一个随从上。天赋：如果该随从在这里拥有最高的力量，则抓一张牌。",
+          "textZh": "打出到一个随从上。天赋：如果该随从在这里拥有最高的力量，则抽一张牌。",
           "clarificationsZh": [
             "如果你对另一个玩家的随从使用这个并且它具有最高的力量，你仍然可以获得好处。如果随从拥有最高权力，你也会获得好处。"
           ]
@@ -30250,7 +30250,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Enchantress 璺?Smash Up",
           "nameZh": "女巫",
-          "textZh": "Power 2 - 抓一张牌。",
+          "textZh": "Power 2 - 抽一张牌。",
           "clarificationsZh": []
         },
         {
@@ -30438,7 +30438,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Winds of Change 璺?Smash Up",
           "nameZh": "变革之风",
-          "textZh": "将你的手牌洗入你的牌库并抓五张牌。你可以进行一个额外的战术。",
+          "textZh": "将你的手牌洗入你的牌库并抽五张牌。你可以进行一个额外的战术。",
           "clarificationsZh": []
         },
         {
@@ -30547,7 +30547,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Stoneford 璺?Smash Up",
           "nameZh": "斯通福德",
-          "textZh": "Power 4 - 在你的牌组中搜索一个战术并绘制它。",
+          "textZh": "Power 4 - 在你的牌组中搜索一个战术并抽取它。",
           "clarificationsZh": []
         },
         {
@@ -30705,7 +30705,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Samurai-Chan 璺?Smash Up",
           "nameZh": "武士陈",
-          "textZh": "力量 2 - 持续能力：当该随从从场上进入弃牌堆后，抓一张牌。",
+          "textZh": "力量 2 - 持续能力：当该随从从场上进入弃牌堆后，抽一张牌。",
           "clarificationsZh": [
             "从游戏中进入弃牌堆的随从包括在得分后被弃置以及被摧毁。"
           ]
@@ -30789,7 +30789,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Fighting Spirit Prize 璺?Smash Up",
           "nameZh": "战斗精神奖",
-          "textZh": "抓两张牌并在你的随从身上放置两个总计+1力量指示物。",
+          "textZh": "抽两张牌并在你的随从身上放置两个总计+1力量指示物。",
           "clarificationsZh": [
             "你可以在一个随从上放置两个+1能量指示物，或者在两个随从上各放置一个能量指示物。"
           ]
@@ -30915,7 +30915,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Smart Set-Up 璺?Smash Up",
           "nameZh": "智能设置",
-          "textZh": "打出到另一名玩家的一个随从上。持续能力：每回合第一次在这里打出随从后，抓一张牌。",
+          "textZh": "打出到另一名玩家的一个随从上。持续能力：每回合第一次在这里打出随从后，抽一张牌。",
           "clarificationsZh": []
         }
       ],
@@ -30959,7 +30959,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Funkman 璺?Smash Up",
           "nameZh": "芬克曼",
-          "textZh": "力量 5 - 持续能力：在你摧毁一个战术后，让你的每个随从在其基础上获得 +1 力量，直到回合结束或抓一张牌。特殊能力：在一个基地计分前，你可以将其上的战术转移到另一个基地。",
+          "textZh": "力量 5 - 持续能力：在你摧毁一个战术后，让你的每个随从在其基础上获得 +1 力量，直到回合结束或抽一张牌。特殊能力：在一个基地计分前，你可以将其上的战术转移到另一个基地。",
           "clarificationsZh": [
             "具有“直到 Y”效果的能力仅影响当前场上的牌，但其效果会持续到 Y，即使导致该效果的牌离开场上或移走，或者即使任何先决条件不再成立。",
             "对于具有触发效果的卡牌 – 例如“X 发生后”——每次 X 发生时效果都会完成，即使多个 X 同时发生也是如此。"
@@ -31132,7 +31132,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Librarian Haunt 璺?Smash Up",
           "nameZh": "图书管理员出没",
-          "textZh": "幽灵 - 打出到基地上。持续能力：该基地的断点增加3点。这张卡被破坏后，抽3张卡。",
+          "textZh": "幽灵 - 打出到基地上。持续能力：该基地的断点增加3点。这张卡被破坏后，抽3张牌。",
           "clarificationsZh": [
             "所有幽灵对断点的更改都会添加到一起，即使是两个同名的断点也是如此。"
           ]
@@ -31415,7 +31415,7 @@
           "imageSource": "Tabletop Simulator Workshop — Smash Up! by Mervil",
           "imageAlt": "Kart Bakery card art from Smash Up: Disney Edition",
           "nameZh": "卡丁车面包店",
-          "textZh": "基地战术。天赋：如果你这里有角色，抓一张牌。",
+          "textZh": "基地战术。天赋：如果你这里有角色，抽一张牌。",
           "clarificationsZh": []
         },
         {
