@@ -9294,7 +9294,7 @@
             "A standard action is one that is not played on a base or on a minion, but simply played, resolved, and discarded."
           ],
           "sourceProvider": "官方规则维基",
-          "nameZh": "中出泡芙男",
+          "nameZh": "奶油泡芙人",
           "textZh": "特殊能力：在你的回合中，如果你手上没有牌，你可以打出这个泰坦。持续能力：你的力量+5减去你手上的牌数（最少0）。天赋：从你的弃牌堆中选择一个标准战术。弃掉一张牌以将所选战术作为额外战术打出。将其放在牌组底部而不是弃牌堆上。",
           "clarificationsZh": [
             "标准战术不是在基地或随从上进行的，而是简单地进行、解决和丢弃的战术。"
@@ -9359,7 +9359,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Drone 璺?Smash Up",
           "nameZh": "无人机",
-          "textZh": "力量 3 - 在该随从上放置一个 +1 力量指示物。持续能力：当你的一个随从将被消灭时，你可以从该随从身上移除一个+1力量指示物。天赋：移除该随从的+1力量指示物以抽一张牌。",
+          "textZh": "力量 3 - 在该随从上放置一个 +1 力量指示物。持续能力：当你的一个随从将被消灭时，你可以改为从此随从移除一个 +1 力量指示物。天赋：从此随从移除一个 +1 力量指示物，抽一张牌。",
           "clarificationsZh": []
         },
         {
