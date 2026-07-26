@@ -15301,7 +15301,7 @@
           "power": 5,
           "breakpoint": null,
           "vp": null,
-          "text": "Power 5 - Ongoing: Your total titan limit is increased by 1. Talent: Play Megabot on another base OR move Megabot. Clarifications: *If Red Trooper's ability stops applying while you have two titans in play, you must choose one of them to remove from play. You are permitted to have both of your titans on the same base if you want (they do not clash each other out of play).",
+          "text": "Power 5 - Ongoing: Your total titan limit is increased by 1. Talent: Play Megabot on another base OR move Megabot.",
           "errata": "Unknown",
           "clarifications": [
             "If Red Trooper's ability stops applying while you have two titans in play, you must choose one of them to remove from play. You are permitted to have both of your titans on the same base if you want (they do not clash each other out of play)."
@@ -15311,8 +15311,8 @@
           "imageKind": "card",
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Red Trooper 璺?Smash Up",
-          "nameZh": "红兵",
-          "textZh": "力量 5 - 持续能力：你的泰坦总数上限增加 1。天赋：将 Megabot 打出到另一个基地，或移动 Megabot。澄清：如果红色士兵的能力停止生效时你有两个泰坦在场，你必须选择其中一个将其移出游戏。你可以让两个泰坦位于同一基地；它们不会使彼此冲突移出游戏。",
+          "nameZh": "红色士兵",
+          "textZh": "力量 5 - 持续能力：你的泰坦总数上限增加 1。天赋：将超级机器人打出到另一个基地，或移动超级机器人。",
           "clarificationsZh": [
             "如果当你有两个泰坦在场时，红色士兵的能力停止应用，你必须选择其中一个将其从游戏中移除。如果你愿意的话，你可以让你的两个泰坦在同一个基地（他们不会在游戏外互相冲突）。"
           ]
@@ -15345,7 +15345,7 @@
           "power": 4,
           "breakpoint": null,
           "vp": null,
-          "text": "Power 4 - Special: Before this base scores, you may move one of your other minions to or from this base. ====== 1 x Black Trooper ====== Power 3 - Ongoing: After a Special ability is used, this minion gains +1 power until the end of the turn. ====== 1 x Green Trooper ====== Power 3 - Special: Before a base scores, you may play this minion there as an extra minion. ====== 1 x Pink Trooper ====== Power 3 - Special: After this base scores, you may return one of your minions here of printed power 3 or less to your hand.",
+          "text": "Power 4 - Special: Before this base scores, you may move one of your other minions to or from this base.",
           "errata": "Unknown",
           "clarifications": [],
           "sourceProvider": "官方规则维基",
@@ -15354,7 +15354,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Yellow Trooper 璺?Smash Up",
           "nameZh": "黄色士兵",
-          "textZh": "Power 4 - 特殊能力：在此基地计分前，你可以将其他一名随从移入或移出该基地。说明： *无 ====== 1 x 黑骑兵 ====== 力量 3 - 持续能力：打出特殊能力后，该随从获得 +1 力量直至回合结束。说明：无 ====== 1 x 绿色士兵 ====== 力量 3 - 特殊能力：在基地计分前，您可以将这个随从作为额外的随从。说明：无 ====== 1 x 粉红士兵 ====== 力量 3 - 特殊能力：在此基地计分后，你可以将这里印刷力量为 3 或更少的一个随从返回到你的手上。",
+          "textZh": "力量 4 - 特殊能力：在此基地计分前，你可以将你的一名其他随从移入或移出该基地。",
           "clarificationsZh": []
         },
         {
@@ -15505,7 +15505,7 @@
           "power": null,
           "breakpoint": null,
           "vp": null,
-          "text": "Look at the top three cards of your deck. You may draw one or play one as an extra minion, then return the rest to the top and/or bottom of your deck in any order. Clarifications: A minion played in this manner counts as being played off the top of the deck.",
+          "text": "Look at the top three cards of your deck. You may draw one or play one as an extra minion, then return the rest to the top and/or bottom of your deck in any order.",
           "errata": "Unknown",
           "clarifications": [
             "A minion played in this manner counts as being played off the top of the deck."
@@ -15516,7 +15516,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Plan for More! 璺?Smash Up",
           "nameZh": "计划更多！",
-          "textZh": "查看你牌组顶部的三张牌。你可以抽取一个或将一个作为额外的随从，然后将其余的按任意顺序放回牌组的顶部和/或底部。澄清：以这种方式打出的随从算作是在牌组顶部打出的。",
+          "textZh": "查看你牌组顶部的三张牌。你可以抽一张牌，或将其中一张作为额外随从打出；然后将其余牌以任意顺序放回牌组顶部和/或底部。",
           "clarificationsZh": [
             "以这种方式打出的随从算作是在牌组顶部打出的。"
           ]
@@ -15529,7 +15529,7 @@
           "power": null,
           "breakpoint": null,
           "vp": null,
-          "text": "Play on a base. Special: Before this base scores, if you do not have the most power here, draw two cards. Special: After this base scores, if you were the winner, you may play an extra minion of power 3 or less on the replacement base. Clarifications: Both Special abilities can activate if you are losing the base before it scores, and then end up winning it.",
+          "text": "Play on a base. Special: Before this base scores, if you do not have the most power here, draw two cards. Special: After this base scores, if you were the winner, you may play an extra minion of power 3 or less on the replacement base.",
           "errata": "Unknown",
           "clarifications": [
             "Both Special abilities can activate if you are losing the base before it scores, and then end up winning it."
@@ -15540,13 +15540,13 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Power Pose 璺?Smash Up",
           "nameZh": "力量姿势",
-          "textZh": "打出到基地上。特殊能力：在此基地计分前，如果您在此没有最强力量，则抽两张牌。特殊能力：在此基地计分后，如果你是获胜者，你可以在替换基地上额外打出一个力量为3或更少的随从。说明：如果您在基地计分前失去基地，然后最终赢得基地，则两种特殊能力都可以激活。",
+          "textZh": "打出到基地上。特殊能力：在此基地计分前，如果你在此处的力量不是最高的，则抽两张牌。特殊能力：在此基地计分后，若你是获胜者，你可以在替换基地上额外打出一名力量为 3 或以下的随从。",
           "clarificationsZh": [
             "如果您在得分之前失去基地，然后最终赢得基地，则可以激活这两种特殊能力。"
           ]
         },
         {
-          "id": "mega-troopers-15",
+          "id": "mega-troopers-13",
           "name": "Megabot",
           "type": "titan",
           "quantity": 1,
@@ -15558,9 +15558,9 @@
           "clarifications": [],
           "sourceProvider": "官方规则维基",
           "nameZh": "超级机器人",
-          "textZh": "特殊能力：在你打出一个随从后，如果你在至少三个基地上有一个随从，你可以在它的基地打出这个泰坦。持续能力：你的随从拥有+1力量。特殊能力：在另一个基地计分前，你可以将这个泰坦移动到那里。",
+          "textZh": "特殊能力：在你打出一名随从后，若你至少在三个基地各有一名随从，你可以将此泰坦打出到该随从所在的基地。持续能力：此处你的随从获得 +1 力量。特殊能力：在另一个基地计分前，你可以将此泰坦移动到那里。",
           "clarificationsZh": [],
-          "imageUrl": "card-art/library/mega-troopers/mega-troopers-15.webp",
+          "imageUrl": "card-art/library/mega-troopers/mega-troopers-13.webp",
           "imageKind": "card",
           "imageSource": "AEG Official Rulebook Wiki",
           "imageAlt": "Megabot · Smash Up"
@@ -15581,8 +15581,8 @@
           "imageKind": "card",
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Black Trooper 璺?Smash Up",
-          "nameZh": "黑骑兵",
-          "textZh": "持续能力：使用特殊能力后，该随从获得+1力量直至回合结束。",
+          "nameZh": "黑色士兵",
+          "textZh": "力量 3 - 持续能力：在使用一个特殊能力后，该随从获得 +1 力量，直到回合结束。",
           "clarificationsZh": []
         },
         {
@@ -15601,8 +15601,8 @@
           "imageKind": "card",
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Green Trooper 璺?Smash Up",
-          "nameZh": "绿兵",
-          "textZh": "特殊能力：在基地计分前，你可以将这个随从作为额外随从打出。",
+          "nameZh": "绿色士兵",
+          "textZh": "力量 3 - 特殊能力：在任一基地计分前，你可以将该随从作为额外随从打出到该基地。",
           "clarificationsZh": []
         },
         {
@@ -15622,7 +15622,7 @@
           "imageSource": "AEG 鐎规ɑ鏌熺憴鍕灟缂佹潙鐔€",
           "imageAlt": "Pink Trooper 璺?Smash Up",
           "nameZh": "粉红士兵",
-          "textZh": "特殊能力：在此基地计分后，你可以将你的一名印刷力量为 3 或以下的随从移回你的手上。",
+          "textZh": "力量 3 - 特殊能力：在此基地计分后，你可以将此处一名印制力量为 3 或以下的随从移回你的手上。",
           "clarificationsZh": []
         }
       ],
@@ -32002,9 +32002,7 @@
       },
       {
         "faction": "Mega Troopers",
-        "missing": [
-          "Megabot"
-        ]
+        "missing": []
       },
       {
         "faction": "Mermaids",
