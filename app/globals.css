@@ -383,22 +383,6 @@ h1 em {
   letter-spacing: 0.1em;
 }
 
-.mechanics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin: 4px 0 22px;
-}
-
-.mechanics span {
-  border: 1px solid rgba(21, 20, 17, 0.12);
-  border-radius: 999px;
-  padding: 6px 9px;
-  color: #5b554c;
-  background: #f7f2e9;
-  font-size: 11px;
-}
-
 .filterRow {
   display: flex;
   flex-wrap: wrap;

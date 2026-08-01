@@ -734,14 +734,6 @@ export default function Home() {
             <span><i>{ui.cardsLabel}</i>{activeFaction.cards.reduce((sum, card) => sum + card.quantity, 0)}</span>
           </div>
 
-          {activeFaction.mechanics.length > 0 && (
-            <div className="mechanics" aria-label="Faction mechanics">
-              {(language === "zh" ? activeFaction.mechanicsZh || activeFaction.mechanics : activeFaction.mechanics).map((mechanic, index) => (
-                <span key={activeFaction.mechanics[index] + index}>{mechanic}</span>
-              ))}
-            </div>
-          )}
-
           <div className="filterRow" aria-label={ui.filters}>
             {Object.entries(ui.type).map(([value, label]) => (
               <button
