@@ -321,10 +321,6 @@ function factionMatches(faction: Faction, term: string) {
     faction.name,
     faction.nameZh,
     faction.slug,
-    faction.set,
-    faction.setZh,
-    ...faction.mechanics,
-    ...(faction.mechanicsZh ?? []),
   ]
     .filter(Boolean)
     .join(" ")
