@@ -479,6 +479,11 @@ h1 em {
   font-size: 10px;
 }
 
+.factionMark {
+  color: var(--orange);
+  font-weight: 900;
+}
+
 .cardRowName { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 .cardRow strong, .searchResultRow strong {
